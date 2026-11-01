@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-01",
+  "build": "VS Code task SUCCESS, 51.84 seconds",
+  "level": "Wokwi ESP32 variant with additive Serial sample observer",
+  "files": {
+    "evidence/sources/sensor.cpp": {
+      "bytes": 8146,
+      "sha256": "69c636f42431dea905609ff13d304426e7ec87efd93459ee4a84ff8365a6dbe6"
+    },
+    "validation/sensor/diagram.json": {
+      "bytes": 3709,
+      "sha256": "619fb53d618140cd9582b5d5389b61fb5730af87e81e345339fc2f0d0ef28a14"
+    },
+    "validation/sensor/platformio.ini": {
+      "bytes": 189,
+      "sha256": "639262f7094ae3eb81c552b26acccf8587e900cc9e0793956aff30868d9dbef9"
+    },
+    "validation/sensor/wokwi.toml": {
+      "bytes": 155,
+      "sha256": "e0654acc2bdbcbc003b50e2bd121c63b7c8c07b87241c3dad9e5976d08d8178e"
+    },
+    "validation/sensor/.pio/build/sensor_validation/firmware.bin": {
+      "bytes": 291696,
+      "sha256": "583031dbb04e29310e0f3cd2197705311ef39e3d3dd65ee5c5fd76c107c14204"
+    },
+    "validation/sensor/.pio/build/sensor_validation/firmware.elf": {
+      "bytes": 6628764,
+      "sha256": "40d42bb0bf14a2eb6e0257f10bb96afeab564697db14d8de0d65ccba84a05eaa"
+    },
+    "validation/sensor/.pio/build/sensor_validation/bootloader.bin": {
+      "bytes": 17536,
+      "sha256": "3d234a7471f67b013686dabd4dee7c1fa915c9928463616a94bc9297acf1abf8"
+    },
+    "validation/sensor/.pio/build/sensor_validation/partitions.bin": {
+      "bytes": 3072,
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1"
+    }
+  },
+  "source_note": "Captured source snapshots are retained; working sources remove inactive code/comments. scripts/source_identity.py verifies the exact cleanup."
+}

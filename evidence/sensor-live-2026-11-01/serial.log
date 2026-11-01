@@ -1,0 +1,318 @@
+# {"started_utc": "2026-11-01T10:18:19.652452+00:00", "port": "rfc2217://localhost:4002", "baud": 115200, "time_basis": "host elapsed RX seconds"}
+0.250 RX [SAMPLE] ms=14559 temp=24.0 output=0
+2.234 RX [SAMPLE] ms=15564 temp=24.0 output=0
+4.062 RX [SAMPLE] ms=16559 temp=24.0 output=0
+6.109 RX [SAMPLE] ms=17564 temp=24.0 output=0
+8.156 RX [SAMPLE] ms=18559 temp=24.0 output=0
+10.250 RX [SAMPLE] ms=19564 temp=24.0 output=0
+12.109 RX [SAMPLE] ms=20559 temp=24.0 output=0
+14.109 RX [SAMPLE] ms=21564 temp=24.0 output=0
+16.297 RX [SAMPLE] ms=22559 temp=24.0 output=0
+18.516 RX [SAMPLE] ms=23564 temp=24.0 output=0
+20.500 RX [SAMPLE] ms=24559 temp=24.0 output=0
+22.359 RX [SAMPLE] ms=25564 temp=24.0 output=0
+24.203 RX [SAMPLE] ms=26559 temp=24.0 output=0
+26.062 RX [SAMPLE] ms=27564 temp=24.0 output=0
+28.469 RX [SAMPLE] ms=28559 temp=24.0 output=0
+30.656 RX [SAMPLE] ms=29564 temp=24.0 output=0
+32.812 RX [SAMPLE] ms=30559 temp=24.0 output=0
+34.922 RX [SAMPLE] ms=31564 temp=24.0 output=0
+36.812 RX [SAMPLE] ms=32559 temp=24.0 output=0
+38.781 RX [SAMPLE] ms=33564 temp=24.0 output=0
+40.609 RX [SAMPLE] ms=34559 temp=24.0 output=0
+42.562 RX [SAMPLE] ms=35564 temp=24.0 output=0
+44.406 RX [SAMPLE] ms=36559 temp=24.0 output=0
+46.281 RX [SAMPLE] ms=37564 temp=24.0 output=0
+48.703 RX [SAMPLE] ms=38559 temp=24.0 output=0
+50.703 RX Relay Activated.
+50.703 RX [SAMPLE] ms=39564 temp=19.9 output=1
+52.609 RX [SAMPLE] ms=40559 temp=19.9 output=1
+54.484 RX [SAMPLE] ms=41564 temp=19.9 output=1
+56.672 RX [SAMPLE] ms=42559 temp=19.9 output=1
+58.703 RX [SAMPLE] ms=43564 temp=19.9 output=1
+60.672 RX [SAMPLE] ms=44559 temp=19.9 output=1
+62.922 RX [SAMPLE] ms=45564 temp=20.0 output=1
+64.812 RX [SAMPLE] ms=46559 temp=20.0 output=1
+66.937 RX [SAMPLE] ms=47564 temp=20.0 output=1
+68.828 RX [SAMPLE] ms=48559 temp=20.0 output=1
+71.078 RX [SAMPLE] ms=49564 temp=20.0 output=1
+72.875 RX [SAMPLE] ms=50559 temp=20.0 output=1
+74.969 RX [SAMPLE] ms=51564 temp=20.0 output=1
+76.906 RX [SAMPLE] ms=52559 temp=20.0 output=1
+79.078 RX [SAMPLE] ms=53564 temp=20.1 output=1
+80.781 RX [SAMPLE] ms=54559 temp=20.1 output=1
+83.031 RX [SAMPLE] 
+83.047 RX ms=55564 temp=20.1 output=1
+85.219 RX [SAMPLE] ms=56559 temp=20.1 output=1
+87.516 RX [SAMPLE] ms=57564 temp=20.1 output=1
+89.359 RX [SAMPLE] ms=58559 temp=20.1 output=1
+91.625 RX [SAMPLE] ms=59564 temp=24.9 output=1
+93.625 RX [SAMPLE] ms=60559 temp=24.9 output=1
+96.047 RX [SAMPLE] ms=61564 temp=24.9 output=1
+98.172 RX [SAMPLE] ms=62559 temp=24.9 output=1
+100.359 RX [SAMPLE] ms=63564 temp=24.9 output=1
+102.047 RX [SAMPLE] ms=64559 temp=24.9 output=1
+104.312 RX [SAMPLE] ms=65564 temp=24.9 output=1
+106.234 RX [SAMPLE] ms=66559 temp=24.9 output=1
+108.281 RX Relay Deactivated.
+108.281 RX [SAMPLE] ms=67564 temp=25.0 output=0
+110.187 RX [SAMPLE] ms=68559 temp=25.0 output=0
+112.500 RX [SAMPLE] ms=69564 temp=25.0 output=0
+114.344 RX [SAMPLE] ms=70559 temp=25.0 output=0
+116.328 RX [SAMPLE] ms=71564 temp=25.0 output=0
+118.500 RX [SAMPLE] ms=72559 temp=25.0 output=0
+120.469 RX [SAMPLE] ms=73564 temp=25.1 output=0
+122.359 RX [SAMPLE] ms=74559 temp=25.1 output=0
+124.531 RX [SAMPLE] ms=75564 temp=25.1 output=0
+126.422 RX [SAMPLE] ms=76559 temp=25.1 output=0
+128.437 RX [SAMPLE] ms=77564 temp=25.1 output=0
+130.578 RX [SAMPLE] ms=78559 temp=25.1 output=0
+132.500 RX [SAMPLE] ms=79564 temp=25.0 output=0
+134.359 RX [SAMPLE] ms=80559 temp=25.0 output=0
+136.625 RX [SAMPLE] ms=81564 temp=25.0 output=0
+138.547 RX [SAMPLE] ms=82559 temp=25.0 output=0
+140.469 RX [SAMPLE] ms=83564 temp=25.0 output=0
+142.297 RX [SAMPLE] ms=84559 temp=25.0 output=0
+144.641 RX [SAMPLE] ms=85564 temp=24.9 output=0
+146.500 RX [SAMPLE] ms=86559 temp=24.9 output=0
+148.562 RX [SAMPLE] ms=87564 temp=24.9 output=0
+150.766 RX [SAMPLE] ms=88559 temp=24.9 output=0
+152.750 RX [SAMPLE] ms=89564 temp=24.9 output=0
+154.828 RX [SAMPLE] ms=90559 temp=24.9 output=0
+156.734 RX [SAMPLE] ms=91564 temp=24.9 output=0
+158.906 RX [SAMPLE] ms=92559 temp=24.9 output=0
+161.125 RX [SAMPLE] ms=93564 temp=24.9 output=0
+163.469 RX [SAMPLE] ms=94559 temp=24.9 output=0
+165.859 RX [SAMPLE] ms=95564 temp=20.1 output=0
+167.703 RX [SAMPLE] ms=96559 temp=20.1 output=0
+169.656 RX [SAMPLE] ms=97564 temp=20.1 output=0
+171.766 RX [SAMPLE] ms=98559 temp=20.1 output=0
+173.953 RX [SAMPLE] ms=99564 temp=20.1 output=0
+175.891 RX [SAMPLE] ms=100559 temp=20.1 output=0
+178.125 RX [SAMPLE] ms=101564 temp=20.1 output=0
+180.125 RX [SAMPLE] ms=102559 temp=20.1 output=0
+182.000 RX [SAMPLE] ms=103564 temp=20.0 output=0
+183.891 RX [SAMPLE] ms=104559 temp=20.0 output=0
+185.969 RX [SAMPLE] ms=105564 temp=20.0 output=0
+187.984 RX [SAMPLE] ms=106559 temp=20.0 output=0
+190.047 RX [SAMPLE] ms=107564 temp=20.0 output=0
+191.797 RX [SAMPLE] ms=108559 temp=20.0 output=0
+193.859 RX [SAMPLE] ms=109564 temp=20.0 output=0
+195.687 RX [SAMPLE] ms=110559 temp=20.0 output=0
+197.578 RX [SAMPLE] ms=111564 temp=20.0 output=0
+199.687 RX [SAMPLE] ms=112559 temp=20.0 output=0
+201.797 RX Relay Activated.
+201.797 RX [SAMPLE] ms=113564 temp=19.9 output=1
+203.625 RX [SAMPLE] ms=114559 temp=19.9 output=1
+205.453 RX [SAMPLE] ms=115564 temp=19.9 output=1
+207.766 RX [SAMPLE] ms=116559 temp=19.9 output=1
+210.312 RX [SAMPLE] ms=117564 temp=19.9 output=1
+212.328 RX [SAMPLE] ms=118559 temp=19.9 output=1
+214.516 RX [SAMPLE] ms=119564 temp=19.9 output=1
+217.406 RX [SAMPLE] ms=120559 temp=19.9 output=1
+219.375 RX Relay Deactivated.
+219.375 RX [SAMPLE] ms=121564 temp=25.1 output=0
+221.734 RX [SAMPLE] ms=122559 temp=25.1 output=0
+224.328 RX [SAMPLE] ms=123564 temp=25.1 output=0
+226.547 RX [SAMPLE] ms=124559 temp=25.1 output=0
+228.922 RX [SAMPLE] ms=125564 temp=25.1 output=0
+231.734 RX [SAMPLE] ms=126559 temp=25.1 output=0
+234.516 RX Relay Activated.
+234.516 RX [SAMPLE] ms=127564 temp=0.0 output=1
+236.734 RX [SAMPLE] ms=128559 temp=0.0 output=1
+239.687 RX [SAMPLE] ms=129564 temp=0.0 output=1
+242.453 RX [SAMPLE] ms=130559 temp=0.0 output=1
+245.234 RX [SAMPLE] ms=131564 temp=0.0 output=1
+248.281 RX [SAMPLE] ms=132559 temp=0.0 output=1
+250.953 RX [SAMPLE] ms=133564 temp=0.0 output=1
+253.734 RX [SAMPLE] ms=134559 temp=0.0 output=1
+257.156 RX [SAMPLE] ms=135564 temp=0.0 output=1
+260.391 RX [SAMPLE] ms=136559 temp=0.0 output=1
+264.250 RX [SAMPLE] ms=137564 temp=0.0 output=1
+268.266 RX [SAMPLE] ms=138559 temp=0.0 output=1
+271.937 RX [SAMPLE] ms=139564 temp=0.0 output=1
+275.016 RX [SAMPLE] ms=140559 temp=0.0 output=1
+277.625 RX [SAMPLE] ms=141564 temp=0.0 output=1
+280.078 RX [SAMPLE] ms=142559 temp=0.0 output=1
+282.750 RX [SAMPLE] ms=143564 temp=0.0 output=1
+285.344 RX [SAMPLE] ms=144559 temp=0.0 output=1
+288.750 RX [SAMPLE] ms=145564 temp=0.0 output=1
+291.359 RX [SAMPLE] ms=146559 temp=0.0 output=1
+294.594 RX [SAMPLE] ms=147564 temp=0.0 output=1
+297.844 RX [SAMPLE] ms=148559 temp=0.0 output=1
+300.812 RX [SAMPLE] ms=149564 temp=0.0 output=1
+303.281 RX [SAMPLE] ms=150559 temp=0.0 output=1
+305.766 RX [SAMPLE] ms=151564 temp=0.0 output=1
+308.656 RX [SAMPLE] ms=152559 temp=0.0 output=1
+311.625 RX [SAMPLE] ms=153564 temp=0.0 output=1
+314.750 RX [SAMPLE] ms=154559 temp=0.0 output=1
+317.672 RX [SAMPLE] ms=155564 temp=0.0 output=1
+320.719 RX [SAMPLE] ms=156559 temp=0.0 output=1
+323.859 RX [SAMPLE] ms=157564 temp=0.0 output=1
+326.344 RX [SAMPLE] ms=158559 temp=0.0 output=1
+329.406 RX [SAMPLE] ms=159564 temp=0.0 output=1
+332.812 RX [SAMPLE] ms=160559 temp=0.0 output=1
+335.875 RX [SAMPLE] ms=161564 temp=0.0 output=1
+338.594 RX [SAMPLE] ms=162559 temp=0.0 output=1
+341.125 RX [SAMPLE] ms=163564 temp=0.0 output=1
+343.547 RX [SAMPLE] ms=164559 temp=0.0 output=1
+346.125 RX [SAMPLE] ms=165564 temp=0.0 output=1
+348.406 RX [SAMPLE] ms=166559 temp=0.0 output=1
+350.828 RX [SAMPLE] ms=167564 temp=0.0 output=1
+353.375 RX [SAMPLE] ms=168559 temp=0.0 output=1
+355.922 RX [SAMPLE] ms=169564 temp=0.0 output=1
+358.562 RX [SAMPLE] ms=170559 temp=0.0 output=1
+361.234 RX [SAMPLE] ms=171564 temp=0.0 output=1
+363.656 RX [SAMPLE] ms=172559 temp=0.0 output=1
+365.844 RX [SAMPLE] ms=173564 temp=0.0 output=1
+368.000 RX [SAMPLE] ms=174559 temp=0.0 output=1
+370.078 RX [SAMPLE] ms=175564 temp=0.0 output=1
+372.312 RX [SAMPLE] ms=176559 temp=0.0 output=1
+374.391 RX [SAMPLE] ms=177564 temp=0.0 output=1
+376.484 RX [SAMPLE] ms=178559 temp=0.0 output=1
+378.531 RX [SAMPLE] ms=179564 temp=0.0 output=1
+380.656 RX [SAMPLE] ms=180559 temp=0.0 output=1
+382.703 RX [SAMPLE] ms=181564 temp=0.0 output=1
+384.766 RX [SAMPLE] ms=182559 temp=0.0 output=1
+386.828 RX [SAMPLE] ms=183564 temp=0.0 output=1
+389.031 RX [SAMPLE] ms=184559 temp=0.0 output=1
+391.156 RX [SAMPLE] ms=185564 temp=0.0 output=1
+393.203 RX [SAMPLE] ms=186559 temp=0.0 output=1
+395.422 RX [SAMPLE] ms=187564 temp=0.0 output=1
+397.594 RX [SAMPLE] ms=188559 temp=0.0 output=1
+399.766 RX [SAMPLE] ms=189564 temp=0.0 output=1
+401.922 RX [SAMPLE] ms=190559 temp=0.0 output=1
+404.016 RX [SAMPLE] ms=191564 temp=0.0 output=1
+406.437 RX [SAMPLE] ms=192559 temp=0.0 output=1
+408.828 RX [SAMPLE] ms=193564 temp=0.0 output=1
+411.219 RX [SAMPLE] ms=194559 temp=0.0 output=1
+413.812 RX [SAMPLE] ms=195564 temp=0.0 output=1
+416.281 RX [SAMPLE] ms=196559 temp=0.0 output=1
+418.516 RX [SAMPLE] ms=197564 temp=0.0 output=1
+420.609 RX [SAMPLE] ms=198559 temp=0.0 output=1
+422.734 RX [SAMPLE] ms=199564 temp=0.0 output=1
+424.891 RX [SAMPLE] ms=200559 temp=0.0 output=1
+427.766 RX [SAMPLE] ms=201564 temp=0.0 output=1
+429.906 RX [SAMPLE] ms=202559 temp=0.0 output=1
+432.047 RX [SAMPLE] ms=203564 temp=0.0 output=1
+434.281 RX [SAMPLE] ms=204559 temp=0.0 output=1
+436.391 RX [SAMPLE] ms=205564 temp=0.0 output=1
+438.484 RX [SAMPLE] ms=206559 temp=0.0 output=1
+440.937 RX [SAMPLE] ms=207564 temp=0.0 output=1
+443.094 RX [SAMPLE] ms=208559 temp=0.0 output=1
+445.234 RX [SAMPLE] ms=209564 temp=0.0 output=1
+447.391 RX [SAMPLE] ms=210559 temp=0.0 output=1
+449.687 RX [SAMPLE] ms=211564 temp=0.0 output=1
+452.062 RX [SAMPLE] ms=212559 temp=0.0 output=1
+454.422 RX [SAMPLE] ms=213564 temp=0.0 output=1
+457.031 RX [SAMPLE] ms=214559 temp=0.0 output=1
+459.219 RX [SAMPLE] ms=215564 temp=0.0 output=1
+461.484 RX [SAMPLE] ms=216559 temp=0.0 output=1
+463.625 RX [SAMPLE] ms=217564 temp=0.0 output=1
+465.734 RX [SAMPLE] ms=218559 temp=0.0 output=1
+467.797 RX [SAMPLE] ms=219564 temp=0.0 output=1
+469.953 RX [SAMPLE] ms=220559 temp=0.0 output=1
+472.047 RX [SAMPLE] ms=221564 temp=0.0 output=1
+474.094 RX [SAMPLE] ms=222559 temp=0.0 output=1
+476.516 RX [SAMPLE] ms=223564 temp=0.0 output=1
+478.969 RX [SAMPLE] ms=224559 temp=0.0 output=1
+481.437 RX [SAMPLE] ms=225564 temp=0.0 output=1
+483.812 RX [SAMPLE] ms=226559 temp=0.0 output=1
+486.156 RX [SAMPLE] ms=227564 temp=0.0 output=1
+488.453 RX [SAMPLE] ms=228559 temp=0.0 output=1
+490.922 RX [SAMPLE] ms=229564 temp=0.0 output=1
+493.156 RX [SAMPLE] ms=230559 temp=0.0 output=1
+495.562 RX [SAMPLE] ms=231564 temp=0.0 output=1
+497.953 RX [SAMPLE] ms=232559 temp=0.0 output=1
+501.203 RX Failed to read from DHT sensor!
+501.203 RX [SAMPLE] ms=233577 temp=0.0 output=1
+503.500 RX Failed to read from DHT sensor!
+503.500 RX [SAMPLE] ms=234559 temp=0.0 output=1
+506.891 RX Failed to read from DHT sensor!
+506.891 RX [SAMPLE] ms=235577 temp=0.0 output=1
+510.656 RX Failed to read from DHT sensor!
+510.656 RX [SAMPLE] ms=236559 temp=0.0 output=1
+513.641 RX Failed to read from DHT sensor!
+513.656 RX [SAMPLE] ms=237577 temp=0.0 output=1
+515.750 RX Failed to read from DHT sensor!
+515.766 RX [SAMPLE] ms=238559 temp=0.0 output=1
+518.687 RX Failed to read from DHT sensor!
+518.687 RX [SAMPLE] ms=239577 temp=0.0 output=1
+521.047 RX Failed to read from DHT sensor!
+521.047 RX [SAMPLE] ms=240559 temp=0.0 output=1
+524.156 RX Failed to read from DHT sensor!
+524.156 RX [SAMPLE] ms=241577 temp=0.0 output=1
+526.656 RX Failed to read from DHT sensor!
+526.656 RX [SAMPLE] ms=242559 temp=0.0 output=1
+529.266 RX Failed to read from DHT sensor!
+529.266 RX [SAMPLE] ms=243577 temp=0.0 output=1
+531.031 RX Failed to read from DHT sensor!
+531.031 RX [SAMPLE] ms=244559 temp=0.0 output=1
+533.500 RX Failed to read from DHT sensor!
+533.500 RX [SAMPLE] ms=245577 temp=0.0 output=1
+535.375 RX Failed to read from DHT sensor!
+535.375 RX [SAMPLE] ms=246559 temp=0.0 output=1
+537.500 RX Failed to read from DHT sensor!
+537.500 RX [SAMPLE] ms=247577 temp=0.0 output=1
+539.250 RX Failed to read from DHT sensor!
+539.250 RX [SAMPLE] ms=248559 temp=0.0 output=1
+541.406 RX Failed to read from DHT sensor!
+541.406 RX [SAMPLE] ms=249577 temp=0.0 output=1
+543.125 RX Failed to read from DHT sensor!
+543.125 RX [SAMPLE] ms=250559 temp=0.0 output=1
+545.375 RX Failed to read from DHT sensor!
+545.375 RX [SAMPLE] ms=251577 temp=0.0 output=1
+547.156 RX Failed to read from DHT sensor!
+547.156 RX [SAMPLE] ms=252559 temp=0.0 output=1
+549.562 RX Failed to read from DHT sensor!
+549.562 RX [SAMPLE] ms=253577 temp=0.0 output=1
+551.484 RX Failed to read from DHT sensor!
+551.484 RX [SAMPLE] ms=254559 temp=0.0 output=1
+553.672 RX Failed to read from DHT sensor!
+553.687 RX [SAMPLE] ms=255577 temp=0.0 output=1
+555.297 RX Failed to read from DHT sensor!
+555.297 RX [SAMPLE] ms=256559 temp=0.0 output=1
+557.469 RX Failed to read from DHT sensor!
+557.469 RX [SAMPLE] ms=257577 temp=0.0 output=1
+559.187 RX Failed to read from DHT sensor!
+559.187 RX [SAMPLE] ms=258559 temp=0.0 output=1
+561.687 RX Failed to read from DHT sensor!
+561.687 RX [SAMPLE] ms=259577 temp=0.0 output=1
+563.437 RX Failed to read from DHT sensor!
+563.437 RX [SAMPLE] ms=260559 temp=0.0 output=1
+565.719 RX Failed to read from DHT sensor!
+565.719 RX [SAMPLE] ms=261577 temp=0.0 output=1
+567.500 RX Failed to read from DHT sensor!
+567.672 RX [SAMPLE] ms=262559 temp=0.0 output=1
+569.891 RX Failed to read from DHT sensor!
+569.891 RX [SAMPLE] ms=263577 temp=0.0 output=1
+571.562 RX Failed to read from DHT sensor!
+571.687 RX [SAMPLE] ms=264559 temp=0.0 output=1
+573.672 RX Failed to read from DHT sensor!
+573.672 RX [SAMPLE] ms=265577 temp=0.0 output=1
+575.422 RX Failed to read from DHT sensor!
+575.578 RX [SAMPLE] ms=266559 temp=0.0 output=1
+577.625 RX Failed to read from DHT sensor!
+577.625 RX [SAMPLE] ms=267577 temp=0.0 output=1
+579.266 RX Failed to read from DHT sensor!
+579.406 RX [SAMPLE] ms=268559 temp=0.0 output=1
+581.453 RX Failed to read from DHT sensor!
+581.453 RX [SAMPLE] ms=269577 temp=0.0 output=1
+583.391 RX Failed to read from DHT sensor!
+583.406 RX [SAMPLE] ms=270559 temp=0.0 output=1
+585.500 RX Failed to read from DHT sensor!
+585.500 RX [SAMPLE] ms=271577 temp=0.0 output=1
+587.375 RX Failed to read from DHT sensor!
+587.375 RX [SAMPLE] ms=272559 temp=0.0 output=1
+589.609 RX Failed to read from DHT sensor!
+589.609 RX [SAMPLE] ms=273577 temp=0.0 output=1
+591.828 RX Failed t
+591.844 RX o read from DHT sensor!
+591.844 RX [SAMPLE] ms=274559 temp=0.0 output=1
+594.031 RX Failed to read from DHT sensor!
+594.031 RX [SAMPLE] ms=275577 temp=0.0 output=1
+596.187 RX Failed to read from DHT sensor!
+596.187 RX [SAMPLE] ms=276559 temp=0.0 output=1
+598.484 RX Failed to read from DHT sensor!
+598.484 RX [SAMPLE] ms=277577 temp=0.0 output=1
+# capture_end: completed; received_bytes=11374

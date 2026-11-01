@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="20" time="0.498" timestamp="2026-11-01T10:54:30.891353+01:00" hostname="Olena"><testcase classname="tests.test_negative_acceptance" name="test_component_evidence_matches_current_firmware" time="0.002" /><testcase classname="tests.test_negative_acceptance" name="test_negative_testing_control_cases[long_press_without_bounce]" time="0.001" /><testcase classname="tests.test_negative_acceptance" name="test_negative_testing_control_cases[short_bounce_after_press]" time="0.001" /><testcase classname="tests.test_negative_acceptance" name="test_negative_testing_control_cases[mode_feedback_after_refresh]" time="0.001" /><testcase classname="tests.test_negative_acceptance" name="test_negative_testing_control_cases[hysteresis_control]" time="0.001" /><testcase classname="tests.test_negative_acceptance" name="test_negative_testing_control_cases[lower_below_minimum]" time="0.001" /><testcase classname="tests.test_negative_acceptance" name="test_negative_testing_control_cases[upper_above_maximum]" time="0.000" /><testcase classname="tests.test_negative_acceptance" name="test_negative_testing_control_cases[lower_crosses_upper]" time="0.001" /><testcase classname="tests.test_negative_acceptance" name="test_long_press_release_bounce_must_not_advance_mode_twice" time="0.001"><failure message="AssertionError: BUG-T04 / RTH-06: one long press plus release bounce advances two modes; component reproduction, Wokwi confirmation pending.&#10;assert 2 == 1">def test_long_press_release_bounce_must_not_advance_mode_twice():
+        case=CASES['long_press_release_bounce']
+&gt;       assert case['actual_mode']==case['expected_mode'], (
+            'BUG-T04 / RTH-06: one long press plus release bounce advances two modes; '
+            'component reproduction, Wokwi confirmation pending.'
+        )
+E       AssertionError: BUG-T04 / RTH-06: one long press plus release bounce advances two modes; component reproduction, Wokwi confirmation pending.
+E       assert 2 == 1
+
+tests\test_negative_acceptance.py:34: AssertionError</failure></testcase><testcase classname="tests.test_negative_acceptance" name="test_display_mode_must_meet_proposed_feedback_budget" time="0.001"><failure message="AssertionError: BUG-T05 / proposed RTH-12: displayed mode is stale after 510 ms; fake-clock component reproduction, not a measured ESP32 latency.&#10;assert 0 == 1">def test_display_mode_must_meet_proposed_feedback_budget():
+        case=CASES['mode_feedback_510ms']
+        assert case['elapsed_since_press_ms']&gt;case['budget_ms']
+&gt;       assert case['displayed_mode']==case['actual_mode'], (
+            'BUG-T05 / proposed RTH-12: displayed mode is stale after 510 ms; '
+            'fake-clock component reproduction, not a measured ESP32 latency.'
+        )
+E       AssertionError: BUG-T05 / proposed RTH-12: displayed mode is stale after 510 ms; fake-clock component reproduction, not a measured ESP32 latency.
+E       assert 0 == 1
+
+tests\test_negative_acceptance.py:42: AssertionError</failure></testcase><testcase classname="tests.test_recorded_evidence" name="test_recorded_build_identity[.pio/build/esp32dev/firmware.bin]" time="0.001" /><testcase classname="tests.test_recorded_evidence" name="test_recorded_build_identity[.pio/build/esp32dev/firmware.elf]" time="0.008" /><testcase classname="tests.test_recorded_evidence" name="test_recorded_build_identity[diagram.json]" time="0.002" /><testcase classname="tests.test_recorded_evidence" name="test_recorded_build_identity[diagram.sensor-fault.json]" time="0.001" /><testcase classname="tests.test_recorded_evidence" name="test_recorded_build_identity[platformio.ini]" time="0.001" /><testcase classname="tests.test_recorded_evidence" name="test_recorded_build_identity[src/main.cpp]" time="0.001" /><testcase classname="tests.test_recorded_evidence" name="test_recorded_reboot_has_no_previous_interrupt_errors" time="0.002" /><testcase classname="tests.test_recorded_evidence" name="test_recorded_hysteresis_output_transition_order" time="0.001" /><testcase classname="tests.test_recorded_evidence" name="test_fault_capture_contains_sensor_error_after_reboot" time="0.001" /><testcase classname="tests.test_recorded_evidence" name="test_sensor_failure_must_not_request_heating" time="0.001"><failure message="AssertionError: BUG-T03 / RTH-07: heating was requested after a missing-sensor read; see evidence/live-2026-11-01/live-serial.log. This is recorded evidence, not a new live test execution.&#10;assert 'Relay Activated.' not in '\n\n29.625 ... sensor!\n\n'&#10;  &#10;  'Relay Activated.' is contained here:&#10;    &#10;    &#10;    29.625 RX Relay Activated.&#10;    &#10;    31.563 RX Failed to read from DHT sensor!...&#10;  &#10;  ...Full output truncated (29 lines hidden), use '-vv' to show">def test_sensor_failure_must_not_request_heating():
+        """RTH-07/TT-07: intentionally remains a normal FAIL while BUG-T03 is open."""
+        reboot = captured_reboot()
+        error = 'Failed to read from DHT sensor!'
+        assert error in reboot
+        after_error = reboot.split(error, 1)[1]
+&gt;       assert 'Relay Activated.' not in after_error, (
+            'BUG-T03 / RTH-07: heating was requested after a missing-sensor read; '
+            'see evidence/live-2026-11-01/live-serial.log. This is recorded evidence, '
+            'not a new live test execution.'
+        )
+E       AssertionError: BUG-T03 / RTH-07: heating was requested after a missing-sensor read; see evidence/live-2026-11-01/live-serial.log. This is recorded evidence, not a new live test execution.
+E       assert 'Relay Activated.' not in '\n\n29.625 ... sensor!\n\n'
+E         
+E         'Relay Activated.' is contained here:
+E           
+E           
+E           29.625 RX Relay Activated.
+E           
+E           31.563 RX Failed to read from DHT sensor!...
+E         
+E         ...Full output truncated (29 lines hidden), use '-vv' to show
+
+tests\test_recorded_evidence.py:54: AssertionError</failure></testcase></testsuite></testsuites>

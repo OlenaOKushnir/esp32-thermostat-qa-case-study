@@ -1,0 +1,57 @@
+{
+  "id": "F01",
+  "host_elapsed": 262.946842,
+  "temperature": 0.0,
+  "expected_output": 1,
+  "samples": [
+    {
+      "rx": 501.203,
+      "ms": 233577,
+      "temperature": 0.0,
+      "output": 1
+    },
+    {
+      "rx": 503.5,
+      "ms": 234559,
+      "temperature": 0.0,
+      "output": 1
+    },
+    {
+      "rx": 506.891,
+      "ms": 235577,
+      "temperature": 0.0,
+      "output": 1
+    },
+    {
+      "rx": 510.656,
+      "ms": 236559,
+      "temperature": 0.0,
+      "output": 1
+    },
+    {
+      "rx": 513.656,
+      "ms": 237577,
+      "temperature": 0.0,
+      "output": 1
+    },
+    {
+      "rx": 515.766,
+      "ms": 238559,
+      "temperature": 0.0,
+      "output": 1
+    },
+    {
+      "rx": 518.687,
+      "ms": 239577,
+      "temperature": 0.0,
+      "output": 1
+    },
+    {
+      "rx": 521.047,
+      "ms": 240559,
+      "temperature": 0.0,
+      "output": 1
+    }
+  ],
+  "pass": true
+}

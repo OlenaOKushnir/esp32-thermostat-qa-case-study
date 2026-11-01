@@ -1,0 +1,33 @@
+{
+  "id": "B09",
+  "host_elapsed": 162.556448,
+  "temperature": 20.1,
+  "expected_output": 0,
+  "samples": [
+    {
+      "rx": 165.859,
+      "ms": 95564,
+      "temperature": 20.1,
+      "output": 0
+    },
+    {
+      "rx": 167.703,
+      "ms": 96559,
+      "temperature": 20.1,
+      "output": 0
+    },
+    {
+      "rx": 169.656,
+      "ms": 97564,
+      "temperature": 20.1,
+      "output": 0
+    },
+    {
+      "rx": 171.766,
+      "ms": 98559,
+      "temperature": 20.1,
+      "output": 0
+    }
+  ],
+  "pass": true
+}

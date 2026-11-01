@@ -1,0 +1,15 @@
+{"id": "B01", "host_elapsed": 48.09284, "temperature": 19.9, "expected_output": 1}
+{"id": "B02", "host_elapsed": 61.416297, "temperature": 20.0, "expected_output": 1}
+{"id": "B03", "host_elapsed": 76.720545, "temperature": 20.1, "expected_output": 1}
+{"id": "B04", "host_elapsed": 89.281361, "temperature": 24.9, "expected_output": 1}
+{"id": "B05", "host_elapsed": 104.532037, "temperature": 25.0, "expected_output": 0}
+{"id": "B06", "host_elapsed": 116.860897, "temperature": 25.1, "expected_output": 0}
+{"id": "B07", "host_elapsed": 129.116146, "temperature": 25.0, "expected_output": 0}
+{"id": "B08", "host_elapsed": 143.286525, "temperature": 24.9, "expected_output": 0}
+{"id": "B09", "host_elapsed": 162.556448, "temperature": 20.1, "expected_output": 0}
+{"id": "B10", "host_elapsed": 177.786666, "temperature": 20.0, "expected_output": 0}
+{"id": "B11", "host_elapsed": 199.333674, "temperature": 19.9, "expected_output": 1}
+{"id": "B12", "host_elapsed": 215.232626, "temperature": 25.1, "expected_output": 0}
+{"id": "Z01", "host_elapsed": 230.623926, "temperature": 0.0, "expected_output": 1}
+{"id": "F01", "host_elapsed": 262.946842, "temperature": 0.0, "expected_output": 1}
+{"id": "R01", "host_elapsed": 560.255155, "temperature": 25.0, "expected_output": 0}

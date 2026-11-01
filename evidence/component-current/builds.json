@@ -1,0 +1,226 @@
+{
+  "date": "2026-11-01",
+  "method": "VS Code sequential Build all images task; final task SUCCESS. Fresh ELF files compared to captured ELF files. Supplied captures retain original ELF/debug identity.",
+  "images": [
+    {
+      "image": "esp32dev",
+      "working_source": "src/main.cpp",
+      "source_sha256": "988fa33fc33eb1d6171f5954f3a124198ab8fe3e319e97ac67f9c4041ff58774",
+      "captured_elf": ".pio/build/esp32dev/firmware.elf",
+      "built_elf_sha256": "b16f4bdee3a14f91908254f3ddb3588908f9bf33053646ee4a56a55a8c90ff5d",
+      "loadable_sections": {
+        ".rtc_noinit": {
+          "address": "0x50000200",
+          "bytes": 16,
+          "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        },
+        ".iram0.vectors": {
+          "address": "0x40080000",
+          "bytes": 1027,
+          "sha256": "0caec538379ec1e0c51997f1f3222d22757ee7ff8390ed673e1320aa6a756156"
+        },
+        ".iram0.text": {
+          "address": "0x40080404",
+          "bytes": 57275,
+          "sha256": "f92ca065aeb13bab52f85ba3b9b58a3996bc59e07d4a33d07ed2381c3ce95e30"
+        },
+        ".dram0.data": {
+          "address": "0x3ffbdb60",
+          "bytes": 16616,
+          "sha256": "1ce18e3254314b21fd54d17381592d178c7e9635a62c9e5351247107ee6a071f"
+        },
+        ".dram0.bss": {
+          "address": "0x3ffc1c48",
+          "bytes": 5824,
+          "sha256": "e21603fe26e3bcd8338845d23b3d76684883cf880fad6e0b60ed9080942ac355"
+        },
+        ".flash.appdesc": {
+          "address": "0x3f400020",
+          "bytes": 256,
+          "sha256": "8847ed433f1f605ae01b176b20854f29426288ae32c1c728e2e298819b498702"
+        },
+        ".flash.rodata": {
+          "address": "0x3f400120",
+          "bytes": 60476,
+          "sha256": "9d0e17d3601303738fe99399cdae0fd31e05c626962d252b5dd79aaa765ac7a8"
+        },
+        ".flash.text": {
+          "address": "0x400d0020",
+          "bytes": 155699,
+          "sha256": "0a984da0d88a044318b1382edbbcae11598b4ea11da852acc209aef6fd853606"
+        },
+        ".iram0.text_end": {
+          "address": "0x4008e3bf",
+          "bytes": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      },
+      "result": "BUILD SUCCESS; loadable sections identical"
+    },
+    {
+      "image": "live_validation",
+      "working_source": "validation/device/src/main.cpp",
+      "source_sha256": "72c272ec00794a5dc3a2b63343eb32cdff770eb3ffdfd2f30221f929c63924a3",
+      "captured_elf": "validation/device/.pio/build/live_validation/firmware.elf",
+      "built_elf_sha256": "5bd72cae88e9f293441d777a9d0118433a98a77e1f7da6d839a1f2ea506e2f94",
+      "loadable_sections": {
+        ".rtc_noinit": {
+          "address": "0x50000200",
+          "bytes": 16,
+          "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        },
+        ".iram0.vectors": {
+          "address": "0x40080000",
+          "bytes": 1027,
+          "sha256": "0caec538379ec1e0c51997f1f3222d22757ee7ff8390ed673e1320aa6a756156"
+        },
+        ".iram0.text": {
+          "address": "0x40080404",
+          "bytes": 57275,
+          "sha256": "5037e30bf948734dffc6940d6786c772f86b0d889bb1f8dcb033e4e86ced6e39"
+        },
+        ".dram0.data": {
+          "address": "0x3ffbdb60",
+          "bytes": 16616,
+          "sha256": "f9349f2a78ae6ac80811a3a9e8fac2911b5732b630efd5f79ff36baa5d01ccc6"
+        },
+        ".dram0.bss": {
+          "address": "0x3ffc1c48",
+          "bytes": 5840,
+          "sha256": "9adf742a3dfc0934927ef9eb718922528508cc5054154b1d114122a181138acb"
+        },
+        ".flash.appdesc": {
+          "address": "0x3f400020",
+          "bytes": 256,
+          "sha256": "8847ed433f1f605ae01b176b20854f29426288ae32c1c728e2e298819b498702"
+        },
+        ".flash.rodata": {
+          "address": "0x3f400120",
+          "bytes": 61356,
+          "sha256": "911d1019f6f4cb390f43907e6443abbf4eb373c7962b002674644bbb92f10cf8"
+        },
+        ".flash.text": {
+          "address": "0x400d0020",
+          "bytes": 156831,
+          "sha256": "a7760971dcc1e9af13ac11e85cfcab4d749c8f01ba726c403f6cc3b3e856e628"
+        },
+        ".iram0.text_end": {
+          "address": "0x4008e3bf",
+          "bytes": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      },
+      "result": "BUILD SUCCESS; loadable sections identical"
+    },
+    {
+      "image": "sensor_validation",
+      "working_source": "validation/sensor/src/main.cpp",
+      "source_sha256": "9e7e308557365ba3e3f0fde8a4189195a1212d98de3ad836a6beeef868032442",
+      "captured_elf": "validation/sensor/.pio/build/sensor_validation/firmware.elf",
+      "built_elf_sha256": "90edf50c790801f5248dc7fe2cfd6be88db1f0904bd9583b1dcc040dde5c080c",
+      "loadable_sections": {
+        ".rtc_noinit": {
+          "address": "0x50000200",
+          "bytes": 16,
+          "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        },
+        ".iram0.vectors": {
+          "address": "0x40080000",
+          "bytes": 1027,
+          "sha256": "0caec538379ec1e0c51997f1f3222d22757ee7ff8390ed673e1320aa6a756156"
+        },
+        ".iram0.text": {
+          "address": "0x40080404",
+          "bytes": 57275,
+          "sha256": "f53fdfc7cb06927eab978123bb7cf82845de58b5520c8795585f91c289609e07"
+        },
+        ".dram0.data": {
+          "address": "0x3ffbdb60",
+          "bytes": 16616,
+          "sha256": "14b7d26f40d2c7faa338aadf5ec1f0c91b764c22cfa5c4dcabe7d1545c048799"
+        },
+        ".dram0.bss": {
+          "address": "0x3ffc1c48",
+          "bytes": 5824,
+          "sha256": "e21603fe26e3bcd8338845d23b3d76684883cf880fad6e0b60ed9080942ac355"
+        },
+        ".flash.appdesc": {
+          "address": "0x3f400020",
+          "bytes": 256,
+          "sha256": "8847ed433f1f605ae01b176b20854f29426288ae32c1c728e2e298819b498702"
+        },
+        ".flash.rodata": {
+          "address": "0x3f400120",
+          "bytes": 60508,
+          "sha256": "b2470e241ed923624674fbb5ab7d1cc39a87828939ca469706f69bcdfab2073d"
+        },
+        ".flash.text": {
+          "address": "0x400d0020",
+          "bytes": 155899,
+          "sha256": "4c2b918bf91a5dac1ed7576a130d311e2d35480a509f061325154d58d7fe88ad"
+        },
+        ".iram0.text_end": {
+          "address": "0x4008e3bf",
+          "bytes": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      },
+      "result": "BUILD SUCCESS; loadable sections identical"
+    },
+    {
+      "image": "campaign",
+      "working_source": "validation/campaign/src/main.cpp",
+      "source_sha256": "9bf1fe8b30d347eaebfd873e714cad4a079639bd544e9069d84a2c47c5c96151",
+      "captured_elf": "validation/campaign/.pio/build/campaign/firmware.elf",
+      "built_elf_sha256": "cb2659160d2cf91a0f3de98050fff42a511e642048b3d225abeea846aa8b6e97",
+      "loadable_sections": {
+        ".rtc_noinit": {
+          "address": "0x50000200",
+          "bytes": 16,
+          "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        },
+        ".iram0.vectors": {
+          "address": "0x40080000",
+          "bytes": 1027,
+          "sha256": "f5df3f4870404f8f0c384dfdd0091f93296054a65ad06b3214d0cee21edf5186"
+        },
+        ".iram0.text": {
+          "address": "0x40080404",
+          "bytes": 59355,
+          "sha256": "50e5843a8d7a4737f9f6420cf3ec762960218a524ed9afd84ab16d686de005ae"
+        },
+        ".dram0.data": {
+          "address": "0x3ffbdb60",
+          "bytes": 16616,
+          "sha256": "cd95b5a4dd8e04882526cf5a023ba86492f82d8f4d08aa71f45a4a3b60bd31d7"
+        },
+        ".dram0.bss": {
+          "address": "0x3ffc1c48",
+          "bytes": 5856,
+          "sha256": "0404c19e0464b9646a6aaadfc08180452dd69bc985144d2d1a5e015317855bda"
+        },
+        ".flash.appdesc": {
+          "address": "0x3f400020",
+          "bytes": 256,
+          "sha256": "8847ed433f1f605ae01b176b20854f29426288ae32c1c728e2e298819b498702"
+        },
+        ".flash.rodata": {
+          "address": "0x3f400120",
+          "bytes": 63140,
+          "sha256": "eab6ca76ff5ed3c406e89c0a93c1f4b27c9df1c21d3f49d40c5a010073399722"
+        },
+        ".flash.text": {
+          "address": "0x400d0020",
+          "bytes": 182783,
+          "sha256": "48cbb5fab53cfab23d171c66db164b11c315c4484d3d47d6b9abb8cbae0137f6"
+        },
+        ".iram0.text_end": {
+          "address": "0x4008ebdf",
+          "bytes": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        }
+      },
+      "result": "BUILD SUCCESS; loadable sections identical"
+    }
+  ]
+}

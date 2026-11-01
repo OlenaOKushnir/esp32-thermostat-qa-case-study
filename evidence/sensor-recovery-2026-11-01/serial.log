@@ -1,0 +1,137 @@
+# {"started_utc": "2026-11-01T10:28:54.083102+00:00", "port": "rfc2217://localhost:4002", "baud": 115200, "time_basis": "host elapsed RX seconds"}
+1.610 RX Failed to read from DHT sensor!
+1.610 RX [SAMPLE] ms=294559 temp=0.0 output=1
+3.797 RX Failed to read from DHT sensor!
+3.797 RX [SAMPLE] ms=295577 temp=0.0 output=1
+5.657 RX Failed to read from DHT sensor!
+5.657 RX [SAMPLE] ms=296559 temp=0.0 output=1
+7.750 RX Failed to read from DHT sensor!
+7.750 RX [SAMPLE] ms=297577 temp=0.0 output=1
+9.766 RX Failed to read from DHT sensor!
+9.766 RX [SAMPLE] ms=298559 temp=0.0 output=1
+12.079 RX Failed to read from DHT sensor!
+12.079 RX [SAMPLE] ms=299577 temp=0.0 output=1
+13.907 RX Failed to read from DHT sensor!
+13.907 RX [SAMPLE] ms=300559 temp=0.0 output=1
+16.032 RX Failed to read from DHT sensor!
+16.032 RX [SAMPLE] ms=301577 temp=0.0 output=1
+17.860 RX Failed to read from DHT sensor!
+17.860 RX [SAMPLE] ms=302559 temp=0.0 output=1
+19.907 RX Failed to read from DHT sensor!
+20.110 RX [SAMPLE] ms=303577 temp=0.0 output=1
+21.844 RX Failed to read from DHT sensor!
+21.844 RX [SAMPLE] ms=304559 temp=0.0 output=1
+23.954 RX Failed to read from DHT sensor!
+24.110 RX [SAMPLE] ms=305577 temp=0.0 output=1
+25.797 RX Failed to read from DHT sensor!
+25.797 RX [SAMPLE] ms=306559 temp=0.0 output=1
+27.938 RX Failed to read from DHT sensor!
+28.063 RX [SAMPLE] ms=307577 temp=0.0 output=1
+29.829 RX Failed to read from DHT sensor!
+29.844 RX [SAMPLE] ms=308559 temp=0.0 output=1
+31.875 RX Failed to read from DHT sensor!
+32.032 RX [SAMPLE] ms=309577 temp=0.0 output=1
+34.047 RX Failed to read from DHT sensor!
+34.063 RX [SAMPLE] ms=310559 temp=0.0 output=1
+36.438 RX Failed to read from DHT sensor!
+36.438 RX [SAMPLE] ms=311577 temp=0.0 output=1
+38.250 RX Failed to read from DHT sensor!
+38.250 RX [SAMPLE] ms=312559 temp=0.0 output=1
+40.672 RX Failed to read from DHT sensor!
+40.688 RX [SAMPLE] ms=313577 temp=0.0 output=1
+42.875 RX Failed to read from DHT sensor!
+42.875 RX [SAMPLE] ms=314559 temp=0.0 output=1
+45.297 RX Failed to read from DHT sensor!
+45.297 RX [SAMPLE] ms=315577 temp=0.0 output=1
+47.204 RX Failed to read from DHT sensor!
+47.204 RX [SAMPLE] ms=316559 temp=0.0 output=1
+49.719 RX Failed to read from DHT sensor!
+49.719 RX [SAMPLE] ms=317577 temp=0.0 output=1
+51.750 RX Failed to read from DHT sensor!
+51.766 RX [SAMPLE] ms=318559 temp=0.0 output=1
+53.704 RX Relay Deactivated.
+53.704 RX [SAMPLE] ms=319564 temp=25.0 output=0
+55.516 RX [SAMPLE] ms=320559 temp=25.0 output=0
+57.797 RX [SAMPLE] ms=321564 temp=25.0 output=0
+59.704 RX [SAMPLE] ms=322559 temp=25.0 output=0
+61.844 RX [SAMPLE] ms=323564 temp=25.0 output=0
+64.032 RX [SAMPLE] ms=324559 temp=25.0 output=0
+66.282 RX [SAMPLE] ms=325564 temp=25.0 output=0
+68.297 RX [SAMPLE] ms=326559 temp=25.0 output=0
+70.219 RX [SAMPLE] ms=327564 temp=25.0 output=0
+72.204 RX [SAMPLE] ms=328559 temp=25.0 output=0
+74.204 RX [SAMPLE] ms=329564 temp=25.0 output=0
+76.063 RX [SAMPLE] ms=330559 temp=25.0 output=0
+77.938 RX [SAMPLE] ms=331564 temp=25.0 output=0
+79.860 RX [SAMPLE] ms=332559 temp=25.0 output=0
+81.672 RX [SAMPLE] ms=333564 temp=25.0 output=0
+83.516 RX [SAMPLE] ms=334559 temp=25.0 output=0
+85.375 RX [SAMPLE] ms=335564 temp=25.0 output=0
+87.172 RX [SAMPLE] ms=336559 temp=25.0 output=0
+89.032 RX [SAMPLE] ms=337564 temp=25.0 output=0
+90.782 RX [SAMPLE] ms=338559 temp=25.0 output=0
+92.594 RX [SAMPLE] ms=339564 temp=25.0 output=0
+94.469 RX [SAMPLE] ms=340559 temp=25.0 output=0
+96.719 RX [SAMPLE] ms=341564 temp=25.0 output=0
+98.672 RX [SAMPLE] ms=342559 temp=25.0 output=0
+100.516 RX [SAMPLE] ms=343564 temp=25.0 output=0
+102.375 RX [SAMPLE] ms=344559 temp=25.0 output=0
+104.532 RX Failed to read from DHT sensor!
+104.532 RX Relay Activated.
+104.532 RX [SAMPLE] ms=345577 temp=0.0 output=1
+106.235 RX Failed to read from DHT sensor!
+106.235 RX [SAMPLE] ms=346559 temp=0.0 output=1
+108.891 RX Failed to read from DHT sensor!
+108.907 RX [SAMPLE] ms=347577 temp=0.0 output=1
+111.297 RX Failed to read from DHT sensor!
+111.297 RX [SAMPLE] ms=348559 temp=0.0 output=1
+114.204 RX Failed to read from DHT sensor!
+114.204 RX [SAMPLE] ms=349577 temp=0.0 output=1
+116.047 RX Failed to read from DHT sensor!
+116.047 RX [SAMPLE] ms=350559 temp=0.0 output=1
+118.500 RX Failed to read from DHT sensor!
+118.500 RX [SAMPLE] ms=351577 temp=0.0 output=1
+120.594 RX Failed to read from DHT sensor!
+120.594 RX [SAMPLE] ms=352559 temp=0.0 output=1
+123.219 RX Failed to read from DHT sensor!
+123.235 RX [SAMPLE] ms=353577 temp=0.0 output=1
+124.969 RX Failed to read from DHT sensor!
+124.985 RX [SAMPLE] ms=354559 temp=0.0 output=1
+127.188 RX Failed to read from DHT sensor!
+127.188 RX [SAMPLE] ms=355577 temp=0.0 output=1
+129.032 RX Failed to read from DHT sensor!
+129.032 RX [SAMPLE] ms=356559 temp=0.0 output=1
+131.157 RX Failed to read from DHT sensor!
+131.157 RX [SAMPLE] ms=357577 temp=0.0 output=1
+133.063 RX Failed to read from DHT sensor!
+133.063 RX [SAMPLE] ms=358559 temp=0.0 output=1
+135.250 RX Failed to read from DHT sensor!
+135.250 RX [SAMPLE] ms=359577 temp=0.0 output=1
+136.891 RX Failed to read from DHT sensor!
+137.047 RX [SAMPLE] ms=360559 temp=0.0 output=1
+139.047 RX Failed to read from DHT sensor!
+139.047 RX [SAMPLE] ms=361577 temp=0.0 output=1
+140.797 RX Failed to read from DHT sensor!
+140.985 RX [SAMPLE] ms=362559 temp=0.0 output=1
+143.422 RX Failed to read from DHT sensor!
+143.422 RX [SAMPLE] ms=363577 temp=0.0 output=1
+145.219 RX Failed to read from DHT sensor!
+145.375 RX [SAMPLE] ms=364559 temp=0.0 output=1
+147.422 RX Failed to read from DHT sensor!
+147.422 RX [SAMPLE] ms=365577 temp=0.0 output=1
+149.141 RX Failed to read from DHT sensor!
+149.282 RX [SAMPLE] ms=366559 temp=0.0 output=1
+151.344 RX Failed to read from DHT sensor!
+151.344 RX [SAMPLE] ms=367577 temp=0.0 output=1
+153.094 RX Failed to read from DHT sensor!
+153.110 RX [SAMPLE] ms=368559 temp=0.0 output=1
+155.079 RX [SAMPLE] ms=369564 temp=19.0 output=1
+156.844 RX [SAMPLE] ms=370559 temp=19.0 output=1
+158.844 RX [SAMPLE] ms=371564 temp=19.0 output=1
+161.047 RX [SAMPLE] ms=372559 temp=19.0 output=1
+162.860 RX [SAMPLE] ms=373564 temp=19.0 output=1
+164.610 RX [SAMPLE] ms=374559 temp=19.0 output=1
+166.438 RX [SAMPLE] ms=375564 temp=19.0 output=1
+168.297 RX [SAMPLE] ms=376559 temp=19.0 output=1
+170.172 RX [SAMPLE] ms=377564 temp=19.0 output=1
+171.907 RX [SAMPLE] ms=378559 temp=19.0 output=1

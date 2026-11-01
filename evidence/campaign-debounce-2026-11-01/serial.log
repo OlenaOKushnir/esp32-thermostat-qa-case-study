@@ -1,0 +1,212 @@
+0.281 RX [QA_ACK] id=C0001 op=PING begin=530238 end=530238 a=0 b=0
+0.546 RX [QA_ACK] id=C0002 op=RESET begin=530338 end=530338
+0.781 RX ets Jul 29 2019 12:21:46
+0.781 RX 
+0.796 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+0.796 RX configsip: 0, SPIWP:0xee
+0.796 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+0.796 RX mode:DIO, clock div:2
+0.796 RX load:0x3fff0030,len:1156
+0.796 RX load:0x40078000,len:11456
+0.796 RX ho 0 tail 12 room 4
+0.828 RX load:0x40080400,len:2972
+0.828 RX entry 0x400805dc
+1.781 RX [QA_BOOT] phase=early ms=531002 pin=0 no=1 nc=0
+1.781 RX [QA_BOOT] phase=output_init ms=531005 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+6.906 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+7.156 RX [QA_SAMPLE] ms=534065 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+8.203 RX [QA_FRAME] ms=534281 temp=24.0 mode=0 lower=20.0 upper=25.0
+10.093 RX [QA_SAMPLE] ms=535059 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+10.750 RX [QA_ACK] id=C0003 op=TURN begin=535171 end=535191 a=1 b=1
+11.156 RX [QA_FRAME] ms=535272 temp=24.0 mode=0 lower=20.0 upper=25.0
+12.203 RX [QA_FRAME] ms=535486 temp=24.0 mode=0 lower=20.0 upper=25.0
+13.843 RX [QA_SAMPLE] ms=536064 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=-4 edges=0 high_edges=0
+14.562 RX [QA_ACK] id=C0004 op=TURN begin=536171 end=536191 a=1 b=-1
+15.031 RX [QA_FRAME] ms=536278 temp=24.0 mode=0 lower=20.0 upper=25.0
+16.234 RX [QA_FRAME] ms=536492 temp=24.0 mode=0 lower=20.0 upper=25.0
+17.734 RX [QA_SAMPLE] ms=537059 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+18.437 RX [QA_ACK] id=C0005 op=RESET begin=537171 end=537171
+18.703 RX ets Jul 29 2019 12:21:46
+18.703 RX 
+18.703 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18.703 RX configsip: 0, SPIWP:0xee
+18.703 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+18.703 RX mode:DIO, clock div:2
+18.703 RX load:0x3fff0030,len:1156
+18.718 RX load:0x40078000,len:11456
+18.718 RX ho 0 tail 12 room 4
+18.734 RX load:0x40080400,len:2972
+18.734 RX entry 0x400805dc
+19.546 RX [QA_BOOT] phase=early ms=537834 pin=0 no=1 nc=0
+19.562 RX [QA_BOOT] phase=output_init ms=537837 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+24.328 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+24.562 RX [QA_SAMPLE] ms=540895 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+25.562 RX [QA_FRAME] ms=541113 temp=24.0 mode=0 lower=20.0 upper=25.0
+25.750 RX [QA_ACK] id=C0006 op=PRESS begin=541011 end=541210 a=30 b=169
+25.750 RX Mode changed to: SET LOWER
+25.750 RX [QA_MODE] ms=541213 mode=1
+26.171 RX [QA_ACK] id=C0007 op=PRESS begin=541212 end=541411 a=30 b=169
+26.171 RX Mode changed to: SET UPPER
+26.171 RX [QA_MODE] ms=541414 mode=2
+26.546 RX [QA_ACK] id=C0008 op=PRESS begin=541413 end=541612 a=30 b=169
+26.562 RX Mode changed to: VIEW
+26.562 RX [QA_MODE] ms=541615 mode=0
+26.937 RX [QA_ACK] id=C0009 op=PRESS begin=541614 end=541813 a=30 b=169
+26.937 RX Mode changed to: SET LOWER
+26.937 RX [QA_MODE] ms=541816 mode=1
+27.375 RX [QA_SAMPLE] ms=541889 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+28.031 RX [QA_ACK] id=C0010 op=PRESS begin=541815 end=542014 a=30 b=169
+28.484 RX [QA_FRAME] ms=542151 temp=24.0 mode=1 lower=20.0 upper=25.0
+28.843 RX [QA_ACK] id=C0011 op=PRESS begin=542111 end=542310 a=30 b=169
+28.843 RX Mode changed to: SET UPPER
+28.843 RX [QA_MODE] ms=542313 mode=2
+29.250 RX [QA_ACK] id=C0012 op=PRESS begin=542312 end=542511 a=30 b=169
+29.250 RX Mode changed to: VIEW
+29.250 RX [QA_MODE] ms=542514 mode=0
+29.640 RX [QA_ACK] id=C0013 op=PRESS begin=542513 end=542712 a=30 b=169
+29.640 RX Mode changed to: SET LOWER
+29.640 RX [QA_MODE] ms=542715 mode=1
+30.390 RX [QA_SAMPLE] ms=542894 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+30.390 RX [QA_ACK] id=C0014 op=PRESS begin=542714 end=542913 a=30 b=169
+31.218 RX [QA_ACK] id=C0015 op=PRESS begin=542915 end=543114 a=30 b=169
+31.343 RX [QA_FRAME] ms=543159 temp=24.0 mode=1 lower=20.0 upper=25.0
+33.109 RX [QA_SAMPLE] ms=543889 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+33.718 RX [QA_ACK] id=C0016 op=RESET begin=544003 end=544003
+34.015 RX ets Jul 29 2019 12:21:46
+34.015 RX 
+34.015 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+34.015 RX configsip: 0, SPIWP:0xee
+34.031 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+34.031 RX mode:DIO, clock div:2
+34.031 RX load:0x3fff0030,len:1156
+34.031 RX load:0x40078000,len:11456
+34.031 RX ho 0 tail 12 room 4
+34.062 RX load:0x40080400,len:2972
+34.062 RX entry 0x400805dc
+34.750 RX [QA_BOOT] phase=early ms=544667 pin=0 no=1 nc=0
+34.750 RX [QA_BOOT] phase=output_init ms=544670 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+39.515 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+39.718 RX [QA_SAMPLE] ms=547727 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+40.750 RX [QA_FRAME] ms=547946 temp=24.0 mode=0 lower=20.0 upper=25.0
+40.937 RX [QA_ACK] id=C0017 op=PRESS begin=547843 end=548043 a=30 b=170
+40.937 RX Mode changed to: SET LOWER
+40.937 RX [QA_MODE] ms=548046 mode=1
+41.328 RX [QA_ACK] id=C0018 op=PRESS begin=548046 end=548246 a=30 b=170
+41.328 RX Mode changed to: SET UPPER
+41.328 RX [QA_MODE] ms=548249 mode=2
+41.843 RX [QA_ACK] id=C0019 op=PRESS begin=548249 end=548449 a=30 b=170
+41.843 RX Mode changed to: VIEW
+41.843 RX [QA_MODE] ms=548452 mode=0
+42.312 RX [QA_ACK] id=C0020 op=PRESS begin=548452 end=548652 a=30 b=170
+42.312 RX Mode changed to: SET LOWER
+42.328 RX [QA_MODE] ms=548655 mode=1
+42.781 RX [QA_SAMPLE] ms=548721 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+43.609 RX [QA_ACK] id=C0021 op=PRESS begin=548655 end=548855 a=30 b=170
+44.218 RX [QA_FRAME] ms=548984 temp=24.0 mode=1 lower=20.0 upper=25.0
+44.640 RX [QA_ACK] id=C0022 op=PRESS begin=548943 end=549143 a=30 b=170
+44.640 RX Mode changed to: SET UPPER
+44.640 RX [QA_MODE] ms=549146 mode=2
+45.093 RX [QA_ACK] id=C0023 op=PRESS begin=549146 end=549346 a=30 b=170
+45.109 RX Mode changed to: VIEW
+45.109 RX [QA_MODE] ms=549349 mode=0
+45.578 RX [QA_ACK] id=C0024 op=PRESS begin=549349 end=549549 a=30 b=170
+45.578 RX Mode changed to: SET LOWER
+45.578 RX [QA_MODE] ms=549552 mode=1
+46.375 RX [QA_SAMPLE] ms=549726 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+46.375 RX [QA_ACK] id=C0025 op=PRESS begin=549552 end=549752 a=30 b=170
+47.375 RX [QA_ACK] id=C0026 op=PRESS begin=549755 end=549955 a=30 b=170
+47.468 RX [QA_FRAME] ms=549992 temp=24.0 mode=1 lower=20.0 upper=25.0
+49.656 RX [QA_SAMPLE] ms=550721 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+50.515 RX [QA_ACK] id=C0027 op=RESET begin=550836 end=550836
+50.921 RX ets Jul 29 2019 12:21:46
+50.921 RX 
+50.921 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+50.921 RX configsip: 0, SPIWP:0xee
+50.921 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+50.921 RX mode:DIO, clock div:2
+50.921 RX load:0x3fff0030,len:1156
+50.937 RX load:0x40078000,len:11456
+50.937 RX ho 0 tail 12 room 4
+50.937 RX load:0x40080400,len:2972
+50.968 RX entry 0x400805dc
+52.015 RX [QA_BOOT] phase=early ms=551499 pin=0 no=1 nc=0
+52.015 RX [QA_BOOT] phase=output_init ms=551502 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+57.250 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+57.484 RX [QA_SAMPLE] ms=554560 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+58.437 RX [QA_FRAME] ms=554778 temp=24.0 mode=0 lower=20.0 upper=25.0
+58.671 RX [QA_ACK] id=C0028 op=PRESS begin=554677 end=554878 a=30 b=171
+58.671 RX Mode changed to: SET LOWER
+58.671 RX [QA_MODE] ms=554881 mode=1
+59.062 RX [QA_ACK] id=C0029 op=PRESS begin=554880 end=555081 a=30 b=171
+59.062 RX Mode changed to: SET UPPER
+59.062 RX [QA_MODE] ms=555084 mode=2
+59.437 RX [QA_ACK] id=C0030 op=PRESS begin=555083 end=555284 a=30 b=171
+59.437 RX Mode changed to: VIEW
+59.437 RX [QA_MODE] ms=555287 mode=0
+59.828 RX [QA_ACK] id=C0031 op=PRESS begin=555286 end=555487 a=30 b=171
+59.843 RX Mode changed to: SET LOWER
+59.843 RX [QA_MODE] ms=555490 mode=1
+60.218 RX [QA_SAMPLE] ms=555554 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+60.843 RX [QA_ACK] id=C0032 op=PRESS begin=555489 end=555690 a=30 b=171
+61.375 RX [QA_FRAME] ms=555817 temp=24.0 mode=1 lower=20.0 upper=25.0
+61.687 RX [QA_ACK] id=C0033 op=PRESS begin=555777 end=555978 a=30 b=171
+61.687 RX Mode changed to: SET UPPER
+61.687 RX [QA_MODE] ms=555981 mode=2
+62.031 RX [QA_ACK] id=C0034 op=PRESS begin=555980 end=556181 a=30 b=171
+62.031 RX Mode changed to: VIEW
+62.031 RX [QA_MODE] ms=556184 mode=0
+62.500 RX [QA_ACK] id=C0035 op=PRESS begin=556183 end=556384 a=30 b=171
+62.500 RX Mode changed to: SET LOWER
+62.500 RX [QA_MODE] ms=556387 mode=1
+63.250 RX [QA_SAMPLE] ms=556559 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+63.250 RX [QA_ACK] id=C0036 op=PRESS begin=556386 end=556587 a=30 b=171
+64.218 RX [QA_ACK] id=C0037 op=PRESS begin=556590 end=556791 a=30 b=171
+64.328 RX [QA_FRAME] ms=556825 temp=24.0 mode=1 lower=20.0 upper=25.0
+66.656 RX [QA_SAMPLE] ms=557554 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+67.328 RX [QA_ACK] id=C0038 op=RESET begin=557670 end=557670
+67.640 RX ets Jul 29 2019 12:21:46
+67.640 RX 
+67.640 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+67.640 RX configsip: 0, SPIWP:0xee
+67.640 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+67.640 RX mode:DIO, clock div:2
+67.640 RX load:0x3fff0030,len:1156
+67.656 RX load:0x40078000,len:11456
+67.656 RX ho 0 tail 12 room 4
+67.687 RX load:0x40080400,len:2972
+67.687 RX entry 0x400805dc
+68.562 RX [QA_BOOT] phase=early ms=558333 pin=0 no=1 nc=0
+68.562 RX [QA_BOOT] phase=output_init ms=558336 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+73.375 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+73.578 RX [QA_SAMPLE] ms=561393 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+74.250 RX [QA_ACK] id=C0039 op=TEMP begin=561501 end=561501 a=250 b=0
+74.609 RX [QA_FRAME] ms=561607 temp=24.0 mode=0 lower=20.0 upper=25.0
+76.453 RX [QA_SAMPLE] ms=562387 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+77.453 RX [QA_FRAME] ms=562602 temp=24.0 mode=0 lower=20.0 upper=25.0
+79.500 RX [QA_SAMPLE] ms=563393 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+80.156 RX [QA_ACK] id=C0040 op=FAULT begin=563501 end=563501 a=1 b=0
+80.468 RX [QA_FRAME] ms=563606 temp=25.0 mode=0 lower=20.0 upper=25.0
+82.312 RX [QA_SAMPLE] ms=564387 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+83.281 RX [QA_FRAME] ms=564602 temp=25.0 mode=0 lower=20.0 upper=25.0
+85.531 RX Failed to read from DHT sensor!
+85.531 RX Relay Activated.
+85.546 RX [QA_SAMPLE] ms=565406 valid=0 temp=0.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+86.640 RX [QA_FRAME] ms=565630 temp=0.0 mode=0 lower=20.0 upper=25.0
+88.203 RX Failed to read from DHT sensor!
+88.421 RX [QA_SAMPLE] ms=566387 valid=0 temp=0.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+89.109 RX [QA_ACK] id=C0041 op=RESET begin=566501 end=566501
+89.406 RX ets Jul 29 2019 12:21:46
+89.406 RX 
+89.406 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+89.406 RX configsip: 0, SPIWP:0xee
+89.421 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+89.421 RX mode:DIO, clock div:2
+89.421 RX load:0x3fff0030,len:1156
+89.421 RX load:0x40078000,len:11456
+89.421 RX ho 0 tail 12 room 4
+89.421 RX load:0x40080400,len:2972
+89.437 RX entry 0x400805dc
+90.234 RX [QA_BOOT] phase=early ms=567164 pin=1 no=0 nc=1
+90.250 RX [QA_BOOT] phase=output_init ms=567167 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=0 nc=1
+95.031 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+95.296 RX [QA_SAMPLE] ms=570225 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0

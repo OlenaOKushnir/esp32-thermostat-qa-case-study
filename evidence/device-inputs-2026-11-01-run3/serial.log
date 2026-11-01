@@ -1,0 +1,46 @@
+1.500 RX [VAL_FRAME] ms=23846 mode=2
+3.469 RX [VAL_FRAME] ms=24839 mode=2
+5.516 RX [VAL_FRAME] ms=25846 mode=2
+7.297 RX [VAL_FRAME] ms=26839 mode=2
+9.578 RX [VAL_FRAME] ms=27846 mode=2
+11.359 RX [VAL_FRAME] ms=28839 mode=2
+11.953 RX ets Jul 29 2019 12:21:46
+11.953 RX 
+11.969 RX rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11.969 RX configsip: 0, SPIWP:0xee
+11.969 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11.969 RX mode:DIO, clock div:2
+11.969 RX load:0x3fff0030,len:1156
+11.969 RX load:0x40078000,len:11456
+11.969 RX ho 0 tail 12 room 4
+11.984 RX load:0x40080400,len:2972
+11.984 RX entry 0x400805dc
+16.813 RX [VAL_BEGIN] instrumented ESP32 GPIO32->GPIO27; no logical-state injection
+17.594 RX [VAL_FRAME] ms=3782 mode=0
+17.594 RX Mode changed to: SET LOWER
+17.594 RX [VAL_MODE] ms=3793 mode=1
+19.734 RX [VAL_FRAME] ms=4817 mode=1
+19.734 RX [VAL_RESULT] case=T05 accepted_ms=3793 frame_ms=4817 elapsed_ms=1024 budget_ms=500 actual_mode=1 frame_mode=1 pass=0
+20.203 RX Mode changed to: SET UPPER
+20.203 RX [VAL_MODE] ms=5169 mode=2
+20.578 RX Mode changed to: VIEW
+20.625 RX [VAL_MODE] ms=5530 mode=0
+21.563 RX [VAL_FRAME] ms=5802 mode=0
+23.563 RX [VAL_FRAME] ms=6776 mode=0
+23.563 RX Mode changed to: SET LOWER
+23.563 RX [VAL_MODE] ms=6787 mode=1
+25.406 RX [VAL_FRAME] ms=7846 mode=1
+25.625 RX [VAL_RESULT] case=T04_CLEAN actual_mode=1 expected_mode=1 pass=1
+26.000 RX Mode changed to: SET UPPER
+26.000 RX [VAL_MODE] ms=8337 mode=2
+27.234 RX [VAL_FRAME] ms=8829 mode=2
+27.250 RX Mode changed to: VIEW
+27.250 RX [VAL_MODE] ms=8830 mode=0
+29.172 RX [VAL_FRAME] ms=9782 mode=0
+29.188 RX Mode changed to: SET LOWER
+29.219 RX [VAL_MODE] ms=9793 mode=1
+31.063 RX [VAL_FRAME] ms=10839 mode=1
+31.156 RX Mode changed to: SET UPPER
+31.156 RX [VAL_MODE] ms=10898 mode=2
+31.375 RX [VAL_RESULT] case=T04_BOUNCE press_ms=9793 release_ms=10893 bounce_ms=10898 rebound_low_ms=20 actual_mode=2 expected_mode=1 pass=0
+31.375 RX [VAL_END] stimulus pin HIGH; original control logic retained

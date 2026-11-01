@@ -1,0 +1,17 @@
+{
+  "tests": 21,
+  "passed": 19,
+  "failed": 2,
+  "errors": 0,
+  "skipped": 0,
+  "failures": [
+    "test_fault_and_recovery_complete_matrix[250-190]",
+    "test_fault_and_recovery_complete_matrix[250-250]"
+  ],
+  "cycles": 20,
+  "temperature_observations": 80,
+  "request_edges": 40,
+  "rising_edges": 20,
+  "maximum_response_device_ms": 1890,
+  "scope": "Instrumented ESP32 GPIO-wire campaign; physical bench excluded"
+}

@@ -1,0 +1,25 @@
+{
+  "T05": {
+    "accepted_ms": 3793,
+    "frame_ms": 4817,
+    "elapsed_ms": 1024,
+    "budget_ms": 500,
+    "actual_mode": 1,
+    "frame_mode": 1,
+    "pass": 0
+  },
+  "T04_CLEAN": {
+    "actual_mode": 1,
+    "expected_mode": 1,
+    "pass": 1
+  },
+  "T04_BOUNCE": {
+    "press_ms": 9793,
+    "release_ms": 10893,
+    "bounce_ms": 10898,
+    "rebound_low_ms": 20,
+    "actual_mode": 2,
+    "expected_mode": 1,
+    "pass": 0
+  }
+}

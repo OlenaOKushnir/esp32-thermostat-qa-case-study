@@ -1,0 +1,10 @@
+--- src/main.cpp
++++ validation/sensor/src/main.cpp
+@@ -77,6 +77,7 @@
+     float temperature = readTemperature();
+ 
+     updateRelay(temperature);
++    Serial.printf("[SAMPLE] ms=%lu temp=%.1f output=%d\n", millis(), temperature, (int)relayState);
+ 
+     updateDisplay(temperature);
+   }

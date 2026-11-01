@@ -1,0 +1,3 @@
+{"id": "R01", "host_elapsed": 50.092234, "temperature": 25.0, "expected_output": 0}
+{"id": "F02", "host_elapsed": 65.117361, "temperature": 0.0, "expected_output": 0}
+{"id": "R02", "host_elapsed": 142.444542, "temperature": 19.0, "expected_output": 1}

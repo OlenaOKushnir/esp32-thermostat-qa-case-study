@@ -1,0 +1,27 @@
+{
+  "id": "R02",
+  "host_elapsed": 142.444542,
+  "temperature": 19.0,
+  "expected_output": 1,
+  "samples": [
+    {
+      "rx": 155.079,
+      "ms": 369564,
+      "temperature": 19.0,
+      "output": 1
+    },
+    {
+      "rx": 156.844,
+      "ms": 370559,
+      "temperature": 19.0,
+      "output": 1
+    },
+    {
+      "rx": 158.844,
+      "ms": 371564,
+      "temperature": 19.0,
+      "output": 1
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,41 @@
+1.235 RX Failed to read from DHT sensor!
+2.875 RX Failed to read from DHT sensor!
+4.985 RX Failed to read from DHT sensor!
+6.657 RX Failed to read from DHT sensor!
+8.922 RX Failed to read from DHT sensor!
+10.579 RX Failed to read from DHT sensor!
+12.579 RX Failed to read from DHT sensor!
+14.188 RX Failed to read from DHT sensor!
+16.313 RX Failed to read from DHT sensor!
+18.047 RX Failed to read from DHT sensor!
+20.000 RX Failed to read from DHT sensor!
+21.672 RX Failed to read from DHT sensor!
+23.641 RX Failed to read from DHT sensor!
+24.407 RX ets Jul 29 2019 12:21:46
+24.407 RX 
+24.407 RX rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+24.422 RX configsip: 0, SPIWP:0xee
+24.422 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+24.422 RX mode:DIO, clock div:2
+24.422 RX load:0x3fff0030,len:1156
+24.422 RX load:0x40078000,len:11456
+24.422 RX ho 0 tail 12 room 4
+24.438 RX load:0x40080400,len:2972
+24.438 RX entry 0x400805dc
+29.625 RX Failed to read from DHT sensor!
+29.625 RX Relay Activated.
+31.563 RX Failed to read from DHT sensor!
+33.672 RX Failed to read from DHT sensor!
+35.313 RX Failed to read from DHT sensor!
+37.485 RX Failed to read from DHT sensor!
+39.141 RX Failed to read from DHT sensor!
+41.235 RX Failed to read from DHT sensor!
+42.813 RX Failed to read from DHT sensor!
+45.297 RX Failed to read from DHT sensor!
+47.485 RX Failed to read from DHT sensor!
+49.766 RX Failed to read from DHT sensor!
+51.688 RX Failed to read from DHT sensor!
+53.766 RX Failed to read from DHT sensor!
+55.547 RX Failed to read from DHT sensor!
+57.500 RX Failed to read from DHT sensor!
+59.329 RX Failed to read from DHT sensor!

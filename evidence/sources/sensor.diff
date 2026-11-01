@@ -1,0 +1,10 @@
+--- src/main.cpp
++++ validation/sensor/src/main.cpp
+@@ -128,6 +128,7 @@
+ 
+     // Update Relay State
+     updateRelay(temperature);
++    Serial.printf("[SAMPLE] ms=%lu temp=%.1f output=%d\n", millis(), temperature, (int)relayState);
+ 
+     // Update Display
+     updateDisplay(temperature);

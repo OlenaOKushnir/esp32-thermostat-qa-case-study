@@ -1,0 +1,38 @@
+[
+  {
+    "name": "DHT",
+    "repository": "https://github.com/adafruit/DHT-sensor-library",
+    "tag": "1.4.6",
+    "archive": "https://codeload.github.com/adafruit/DHT-sensor-library/zip/refs/tags/1.4.6"
+  },
+  {
+    "name": "Adafruit_Unified_Sensor",
+    "repository": "https://github.com/adafruit/Adafruit_Sensor",
+    "tag": "1.1.15",
+    "archive": "https://codeload.github.com/adafruit/Adafruit_Sensor/zip/refs/tags/1.1.15"
+  },
+  {
+    "name": "Adafruit_GFX",
+    "repository": "https://github.com/adafruit/Adafruit-GFX-Library",
+    "tag": "1.12.1",
+    "archive": "https://codeload.github.com/adafruit/Adafruit-GFX-Library/zip/refs/tags/1.12.1"
+  },
+  {
+    "name": "Adafruit_ILI9341",
+    "repository": "https://github.com/adafruit/Adafruit_ILI9341",
+    "tag": "1.6.2",
+    "archive": "https://codeload.github.com/adafruit/Adafruit_ILI9341/zip/refs/tags/1.6.2"
+  },
+  {
+    "name": "Encoder",
+    "repository": "https://github.com/PaulStoffregen/Encoder",
+    "tag": "1.4.4",
+    "archive": "https://codeload.github.com/PaulStoffregen/Encoder/zip/refs/tags/1.4.4"
+  },
+  {
+    "name": "Adafruit_BusIO",
+    "repository": "https://github.com/adafruit/Adafruit_BusIO",
+    "tag": "1.17.2",
+    "archive": "https://codeload.github.com/adafruit/Adafruit_BusIO/zip/refs/tags/1.17.2"
+  }
+]

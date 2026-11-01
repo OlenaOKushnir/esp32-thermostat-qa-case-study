@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="21" time="1166.843" timestamp="2026-11-01T16:31:25.677978+01:00" hostname="Olena"><testcase classname="campaign_tests.test_acceptance_campaign" name="test_startup_defaults_and_pin_level" time="21.419" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_encoder_both_directions_and_half_steps" time="37.083" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_setpoint_exact_boundary_clamp_and_reversal[lower_min-1--140-lower--50--49.5]" time="40.430" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_setpoint_exact_boundary_clamp_and_reversal[lower_gap-1-9-lower-24.5-24]" time="32.090" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_setpoint_exact_boundary_clamp_and_reversal[upper_max-2-150-upper-100-99.5]" time="54.221" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_setpoint_exact_boundary_clamp_and_reversal[upper_gap-2--9-upper-20.5-21]" time="40.030" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_rotation_in_view_keeps_thresholds" time="41.168" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_thirty_valid_presses_cycle_modes" time="98.783" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_rapid_press_train_does_not_corrupt_state" time="23.192" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_reset_from_each_operating_state[OFF]" time="19.651" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_reset_from_each_operating_state[ON]" time="20.463" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_reset_from_each_operating_state[SET_LOWER]" time="26.681" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_reset_from_each_operating_state[SET_UPPER]" time="29.510" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_twenty_hysteresis_cycles_and_response_budget" time="500.124" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_relay_contact_polarity_on_low_and_high" time="21.668" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_fault_and_recovery_complete_matrix[190-190]" time="26.132" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_fault_and_recovery_complete_matrix[190-250]" time="24.938" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_fault_and_recovery_complete_matrix[250-190]" time="26.233"><failure message="AssertionError: BUG-T03: fault from OFF creates a new heat request&#10;assert 1 == 0&#10; +  where 1 = int('1')">campaign = &lt;campaign_client.Campaign object at 0x000001E9D5E555E0&gt;
+initial = 250, restored = 190
+
+    @pytest.mark.parametrize('initial,restored',[(190,190),(190,250),(250,190),(250,250)])
+    def test_fault_and_recovery_complete_matrix(campaign,initial,restored):
+        campaign.reset();_,pre=campaign.temperature(initial)
+        ack=campaign.command('FAULT',1)
+        fault=campaign.sample(lambda r:int(r['valid'])==0,after=int(ack['begin']))
+        campaign.command('TEMP',restored);reconnect=campaign.command('FAULT',0)
+        recovered=campaign.sample(lambda r:int(r['valid'])==1 and abs(float(r['temp'])-restored/10)&lt;.01,after=int(reconnect['begin']))
+        campaign.result(f'recovery_{initial}_{restored}',{'pre':pre,'fault_stimulus':ack,'fault':fault,'reconnect':reconnect,'recovered':recovered})
+        assert int(recovered['pin'])==(1 if restored&lt;200 else 0)
+        assert int(recovered['ms'])-int(reconnect['begin'])&lt;=5000
+        assert int(fault['ms'])-int(ack['begin'])&lt;=5000
+        if initial&gt;=250:
+&gt;           assert int(fault['pin'])==0,'BUG-T03: fault from OFF creates a new heat request'
+E           AssertionError: BUG-T03: fault from OFF creates a new heat request
+E           assert 1 == 0
+E            +  where 1 = int('1')
+
+campaign_tests\test_acceptance_campaign.py:94: AssertionError</failure></testcase><testcase classname="campaign_tests.test_acceptance_campaign" name="test_fault_and_recovery_complete_matrix[250-250]" time="25.143"><failure message="AssertionError: BUG-T03: fault from OFF creates a new heat request&#10;assert 1 == 0&#10; +  where 1 = int('1')">campaign = &lt;campaign_client.Campaign object at 0x000001E9D5E555E0&gt;
+initial = 250, restored = 250
+
+    @pytest.mark.parametrize('initial,restored',[(190,190),(190,250),(250,190),(250,250)])
+    def test_fault_and_recovery_complete_matrix(campaign,initial,restored):
+        campaign.reset();_,pre=campaign.temperature(initial)
+        ack=campaign.command('FAULT',1)
+        fault=campaign.sample(lambda r:int(r['valid'])==0,after=int(ack['begin']))
+        campaign.command('TEMP',restored);reconnect=campaign.command('FAULT',0)
+        recovered=campaign.sample(lambda r:int(r['valid'])==1 and abs(float(r['temp'])-restored/10)&lt;.01,after=int(reconnect['begin']))
+        campaign.result(f'recovery_{initial}_{restored}',{'pre':pre,'fault_stimulus':ack,'fault':fault,'reconnect':reconnect,'recovered':recovered})
+        assert int(recovered['pin'])==(1 if restored&lt;200 else 0)
+        assert int(recovered['ms'])-int(reconnect['begin'])&lt;=5000
+        assert int(fault['ms'])-int(ack['begin'])&lt;=5000
+        if initial&gt;=250:
+&gt;           assert int(fault['pin'])==0,'BUG-T03: fault from OFF creates a new heat request'
+E           AssertionError: BUG-T03: fault from OFF creates a new heat request
+E           assert 1 == 0
+E            +  where 1 = int('1')
+
+campaign_tests\test_acceptance_campaign.py:94: AssertionError</failure></testcase><testcase classname="campaign_tests.test_acceptance_campaign" name="test_display_fields_match_stable_normal_and_edit_state" time="38.818" /><testcase classname="campaign_tests.test_acceptance_campaign" name="test_valid_zero_and_negative_sensor_temperature" time="18.530" /></testsuite></testsuites>

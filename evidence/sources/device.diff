@@ -1,0 +1,118 @@
+--- src/main.cpp
++++ validation/device/src/main.cpp
+@@ -7,6 +7,10 @@
+ #include <Adafruit_ILI9341.h>
+ #include <Encoder.h>
+ 
++void validationFrame(int mode);
++void validationMode(int mode, uint32_t acceptedAt);
++void validationStart();
++
+ // Added for PlatformIO main.cpp (Arduino .ino generates these automatically).
+ void displayInfo(String message);
+ void updateDisplay(float currentTemp);
+@@ -113,6 +117,7 @@
+ 
+   // Small delay to allow sensors and display to initialize
+   delay(2000);
++  validationStart();
+ }
+ 
+ // ===================== Loop Function =====================
+@@ -228,6 +233,7 @@
+     tft.setCursor(10, 130);
+     tft.print("Rotate to adjust, Press to confirm.");
+   }
++  validationFrame((int)currentMode);
+ }
+ 
+ // ===================== Rotary Encoder Handling =====================
+@@ -272,6 +278,7 @@
+ }
+ 
+ void toggleMode() {
++  const uint32_t valAcceptedAt = millis();
+   switch (currentMode) {
+     case VIEW:
+       currentMode = SET_LOWER;
+@@ -296,6 +303,80 @@
+       Serial.println("SET UPPER");
+       break;
+   }
++  validationMode((int)currentMode, valAcceptedAt);
+ }
+ 
+ // ===================== End of Code =====================
++
++// Validation-only observers and GPIO waveform controller.
++// No control mode, thresholds or relay state is written by this controller.
++volatile uint32_t valFrameAt = 0, valModeAt = 0, valFrameCount = 0;
++volatile int valFrameMode = -1, valObservedMode = 0;
++const int VAL_STIM_PIN = 32;
++void validationFrame(int mode) {
++  valFrameMode = mode; valFrameAt = millis(); valFrameCount++;
++  Serial.printf("[VAL_FRAME] ms=%lu mode=%d\n", (unsigned long)valFrameAt, mode);
++}
++void validationMode(int mode, uint32_t acceptedAt) {
++  valModeAt = acceptedAt; valObservedMode = mode;
++  Serial.printf("[VAL_MODE] ms=%lu mode=%d\n", (unsigned long)acceptedAt, mode);
++}
++int observedMode() { return valObservedMode; }
++void valWait(uint32_t ms) { vTaskDelay(pdMS_TO_TICKS(ms)); }
++bool waitNewFrame(uint32_t before, uint32_t timeout=4000) {
++  uint32_t start=millis();
++  while (valFrameCount==before && millis()-start<timeout) valWait(1);
++  return valFrameCount!=before;
++}
++bool physicalPress(uint32_t holdAfterAccept=60) {
++  int before=observedMode(); uint32_t start=millis();
++  digitalWrite(VAL_STIM_PIN,LOW);
++  while (observedMode()==before && millis()-start<2500) valWait(1);
++  bool accepted=observedMode()!=before;
++  valWait(holdAfterAccept); digitalWrite(VAL_STIM_PIN,HIGH); valWait(300);
++  return accepted;
++}
++bool returnToView() {
++  for(int i=0;i<3 && observedMode()!=0;i++) if(!physicalPress()) return false;
++  return observedMode()==0;
++}
++void validationTask(void*) {
++  Serial.println("[VAL_BEGIN] instrumented ESP32 GPIO32->GPIO27; no logical-state injection");
++  if(!waitNewFrame(0)) { Serial.println("[VAL_ABORT] no initial frame"); vTaskDelete(nullptr); return; }
++  valWait(10);
++  // T05: press immediately after a completed frame, then time actual next frame.
++  int before=observedMode(); uint32_t start=millis();
++  digitalWrite(VAL_STIM_PIN,LOW);
++  while(observedMode()==before && millis()-start<2500) valWait(1);
++  if(observedMode()==before) { digitalWrite(VAL_STIM_PIN,HIGH); Serial.println("[VAL_ABORT] no accepted press"); vTaskDelete(nullptr); return; }
++  int target=observedMode(); uint32_t accepted=valModeAt;
++  valWait(60); digitalWrite(VAL_STIM_PIN,HIGH);
++  start=millis();
++  while(valFrameMode!=target && millis()-start<4000) valWait(1);
++  uint32_t elapsed=valFrameAt-accepted;
++  Serial.printf("[VAL_RESULT] case=T05 accepted_ms=%lu frame_ms=%lu elapsed_ms=%lu budget_ms=500 actual_mode=%d frame_mode=%d pass=%d\n",
++    (unsigned long)accepted,(unsigned long)valFrameAt,(unsigned long)elapsed,target,valFrameMode,(int)(valFrameMode==target && elapsed<=500));
++  valWait(350);
++  if(!returnToView()) { Serial.println("[VAL_ABORT] could not return to VIEW"); vTaskDelete(nullptr); return; }
++  // Clean long-hold control.
++  uint32_t count=valFrameCount; waitNewFrame(count); valWait(10);
++  digitalWrite(VAL_STIM_PIN,LOW); valWait(1100);
++  digitalWrite(VAL_STIM_PIN,HIGH); valWait(150);
++  Serial.printf("[VAL_RESULT] case=T04_CLEAN actual_mode=%d expected_mode=1 pass=%d\n",observedMode(),(int)(observedMode()==1));
++  valWait(300);
++  if(!returnToView()) { Serial.println("[VAL_ABORT] could not reset after control"); vTaskDelete(nullptr); return; }
++  // Release bounce: genuine pin transitions, no call to toggleMode().
++  count=valFrameCount; waitNewFrame(count); valWait(10);
++  uint32_t pressAt=millis(); digitalWrite(VAL_STIM_PIN,LOW); valWait(1100);
++  uint32_t releaseAt=millis(); digitalWrite(VAL_STIM_PIN,HIGH); valWait(5);
++  uint32_t bounceAt=millis(); digitalWrite(VAL_STIM_PIN,LOW); valWait(20);
++  digitalWrite(VAL_STIM_PIN,HIGH); valWait(150);
++  Serial.printf("[VAL_RESULT] case=T04_BOUNCE press_ms=%lu release_ms=%lu bounce_ms=%lu rebound_low_ms=20 actual_mode=%d expected_mode=1 pass=%d\n",
++    (unsigned long)pressAt,(unsigned long)releaseAt,(unsigned long)bounceAt,observedMode(),(int)(observedMode()==1));
++  Serial.println("[VAL_END] stimulus pin HIGH; original control logic retained");
++  vTaskDelete(nullptr);
++}
++void validationStart() {
++  pinMode(VAL_STIM_PIN,OUTPUT); digitalWrite(VAL_STIM_PIN,HIGH);
++  xTaskCreatePinnedToCore(validationTask,"validation",6144,nullptr,1,nullptr,0);
++}

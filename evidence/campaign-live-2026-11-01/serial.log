@@ -1,0 +1,1502 @@
+0.250 RX [QA_SAMPLE] ms=11612 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+0.422 RX [QA_ACK] id=C0001 op=PING begin=11652 end=11652 a=0 b=0
+0.906 RX [QA_ACK] id=C0002 op=RESET begin=11754 end=11754
+1.047 RX [QA_FRAME] ms=11827 temp=24.0 mode=0 lower=20.0 upper=25.0
+1.094 RX ets Jul 29 2019 12:21:46
+1.094 RX 
+1.094 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+1.094 RX configsip: 0, SPIWP:0xee
+1.110 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+1.110 RX mode:DIO, clock div:2
+1.110 RX load:0x3fff0030,len:1156
+1.110 RX load:0x40078000,len:11456
+1.110 RX ho 0 tail 12 room 4
+1.125 RX load:0x40080400,len:2972
+1.141 RX entry 0x400805dc
+1.766 RX [QA_BOOT] phase=early ms=12416 pin=0 no=1 nc=0
+1.781 RX [QA_BOOT] phase=output_init ms=12419 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+5.985 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+6.156 RX [QA_SAMPLE] ms=15476 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+6.938 RX [QA_FRAME] ms=15692 temp=24.0 mode=0 lower=20.0 upper=25.0
+8.422 RX [QA_SAMPLE] ms=16471 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+8.953 RX [QA_ACK] id=C0003 op=TURN begin=16586 end=16606 a=1 b=1
+9.313 RX [QA_FRAME] ms=16685 temp=24.0 mode=0 lower=20.0 upper=25.0
+10.094 RX [QA_FRAME] ms=16899 temp=24.0 mode=0 lower=20.0 upper=25.0
+11.281 RX [QA_SAMPLE] ms=17477 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=-4 edges=0 high_edges=0
+11.813 RX [QA_ACK] id=C0004 op=TURN begin=17586 end=17606 a=1 b=-1
+12.156 RX [QA_FRAME] ms=17691 temp=24.0 mode=0 lower=20.0 upper=25.0
+12.938 RX [QA_FRAME] ms=17905 temp=24.0 mode=0 lower=20.0 upper=25.0
+14.266 RX [QA_SAMPLE] ms=18471 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+15.078 RX [QA_ACK] id=C0005 op=RESET begin=18586 end=18586
+15.406 RX ets Jul 29 2019 12:21:46
+15.406 RX 
+15.406 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+15.406 RX configsip: 0, SPIWP:0xee
+15.422 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+15.422 RX mode:DIO, clock div:2
+15.422 RX load:0x3fff0030,len:1156
+15.422 RX load:0x40078000,len:11456
+15.422 RX ho 0 tail 12 room 4
+15.422 RX load:0x40080400,len:2972
+15.469 RX entry 0x400805dc
+16.141 RX [QA_BOOT] phase=early ms=19249 pin=0 no=1 nc=0
+16.156 RX [QA_BOOT] phase=output_init ms=19251 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+20.766 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+21.000 RX [QA_SAMPLE] ms=22309 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+21.531 RX [QA_ACK] id=C0006 op=RESET begin=22420 end=22420
+21.781 RX ets Jul 29 2019 12:21:46
+21.781 RX 
+21.781 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+21.781 RX configsip: 0, SPIWP:0xee
+21.781 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+21.797 RX mode:DIO, clock div:2
+21.797 RX load:0x3fff0030,len:1156
+21.797 RX load:0x40078000,len:11456
+21.797 RX ho 0 tail 12 room 4
+21.813 RX load:0x40080400,len:2972
+21.813 RX entry 0x400805dc
+22.485 RX [QA_BOOT] phase=early ms=23083 pin=0 no=1 nc=0
+22.500 RX [QA_BOOT] phase=output_init ms=23086 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+26.922 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+27.078 RX [QA_SAMPLE] ms=26144 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+27.922 RX [QA_FRAME] ms=26359 temp=24.0 mode=0 lower=20.0 upper=25.0
+29.375 RX [QA_SAMPLE] ms=27138 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+30.141 RX [QA_FRAME] ms=27356 temp=24.0 mode=0 lower=20.0 upper=25.0
+30.141 RX Mode changed to: SET LOWER
+30.141 RX [QA_MODE] ms=27357 mode=1
+31.047 RX [QA_ACK] id=C0007 op=PRESS begin=27254 end=27954 a=350 b=350
+31.781 RX [QA_SAMPLE] ms=28143 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+32.406 RX [QA_ACK] id=C0008 op=TURN begin=28252 end=28272 a=1 b=-1
+32.860 RX [QA_FRAME] ms=28398 temp=24.0 mode=1 lower=20.0 upper=25.0
+32.860 RX Lower Threshold: 20.50
+33.985 RX [QA_FRAME] ms=28653 temp=24.0 mode=1 lower=20.5 upper=25.0
+35.000 RX [QA_SAMPLE] ms=29138 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.5 upper=25.0 enc=4 edges=0 high_edges=0
+35.860 RX [QA_FRAME] ms=29393 temp=24.0 mode=1 lower=20.5 upper=25.0
+37.375 RX [QA_SAMPLE] ms=30143 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.5 upper=25.0 enc=4 edges=0 high_edges=0
+37.969 RX [QA_ACK] id=C0009 op=TURN begin=30252 end=30272 a=1 b=1
+38.375 RX [QA_FRAME] ms=30398 temp=24.0 mode=1 lower=20.5 upper=25.0
+38.375 RX Lower Threshold: 20.00
+39.328 RX [QA_FRAME] ms=30653 temp=24.0 mode=1 lower=20.0 upper=25.0
+40.281 RX [QA_SAMPLE] ms=31138 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+41.063 RX [QA_FRAME] ms=31393 temp=24.0 mode=1 lower=20.0 upper=25.0
+42.563 RX [QA_SAMPLE] ms=32144 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+43.422 RX [QA_FRAME] ms=32399 temp=24.0 mode=1 lower=20.0 upper=25.0
+44.844 RX [QA_SAMPLE] ms=33138 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+45.766 RX [QA_FRAME] ms=33399 temp=24.0 mode=1 lower=20.0 upper=25.0
+45.766 RX Mode changed to: SET UPPER
+45.766 RX [QA_MODE] ms=33400 mode=2
+46.610 RX [QA_ACK] id=C0010 op=PRESS begin=33252 end=33952 a=350 b=350
+47.219 RX [QA_SAMPLE] ms=34143 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+47.688 RX [QA_ACK] id=C0011 op=TURN begin=34252 end=34272 a=1 b=-1
+48.110 RX [QA_FRAME] ms=34398 temp=24.0 mode=2 lower=20.0 upper=25.0
+48.110 RX Upper Threshold: 25.50
+49.063 RX [QA_FRAME] ms=34653 temp=24.0 mode=2 lower=20.0 upper=25.5
+50.063 RX [QA_SAMPLE] ms=35138 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.5 enc=4 edges=0 high_edges=0
+50.938 RX [QA_FRAME] ms=35393 temp=24.0 mode=2 lower=20.0 upper=25.5
+52.438 RX [QA_SAMPLE] ms=36143 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.5 enc=4 edges=0 high_edges=0
+53.000 RX [QA_ACK] id=C0012 op=TURN begin=36252 end=36272 a=1 b=1
+53.500 RX [QA_FRAME] ms=36398 temp=24.0 mode=2 lower=20.0 upper=25.5
+53.500 RX Upper Threshold: 25.00
+54.547 RX [QA_FRAME] ms=36653 temp=24.0 mode=2 lower=20.0 upper=25.0
+55.531 RX [QA_SAMPLE] ms=37138 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+56.406 RX [QA_FRAME] ms=37393 temp=24.0 mode=2 lower=20.0 upper=25.0
+58.094 RX [QA_SAMPLE] ms=38143 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+58.703 RX [QA_ACK] id=C0013 op=RESET begin=38252 end=38252
+58.969 RX ets Jul 29 2019 12:21:46
+58.969 RX 
+58.969 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+58.969 RX configsip: 0, SPIWP:0xee
+58.985 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+58.985 RX mode:DIO, clock div:2
+58.985 RX load:0x3fff0030,len:1156
+58.985 RX load:0x40078000,len:11456
+58.985 RX ho 0 tail 12 room 4
+58.985 RX load:0x40080400,len:2972
+59.000 RX entry 0x400805dc
+59.656 RX [QA_BOOT] phase=early ms=38915 pin=0 no=1 nc=0
+59.656 RX [QA_BOOT] phase=output_init ms=38918 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+64.203 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+64.485 RX [QA_SAMPLE] ms=41975 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+65.516 RX [QA_FRAME] ms=42190 temp=24.0 mode=0 lower=20.0 upper=25.0
+67.031 RX [QA_SAMPLE] ms=42969 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+68.031 RX [QA_FRAME] ms=43189 temp=24.0 mode=0 lower=20.0 upper=25.0
+68.031 RX Mode changed to: SET LOWER
+68.031 RX [QA_MODE] ms=43191 mode=1
+68.906 RX [QA_ACK] id=C0014 op=PRESS begin=43053 end=43753 a=350 b=350
+69.641 RX [QA_SAMPLE] ms=43974 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+70.766 RX [QA_FRAME] ms=44235 temp=24.0 mode=1 lower=20.0 upper=25.0
+70.766 RX Lower Threshold: 16.50
+71.813 RX [QA_FRAME] ms=44504 temp=24.0 mode=1 lower=16.5 upper=25.0
+71.813 RX Lower Threshold: 9.50
+73.000 RX [QA_FRAME] ms=44773 temp=24.0 mode=1 lower=9.5 upper=25.0
+73.000 RX Lower Threshold: 3.00
+74.110 RX [QA_FRAME] ms=45041 temp=24.0 mode=1 lower=3.0 upper=25.0
+74.281 RX [QA_SAMPLE] ms=45042 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=3.0 upper=25.0 enc=-192 edges=0 high_edges=0
+75.438 RX [QA_FRAME] ms=45321 temp=24.0 mode=1 lower=3.0 upper=25.0
+75.438 RX Lower Threshold: -11.00
+76.531 RX [QA_FRAME] ms=45591 temp=24.0 mode=1 lower=-11.0 upper=25.0
+76.531 RX Lower Threshold: -17.50
+77.656 RX [QA_FRAME] ms=45860 temp=24.0 mode=1 lower=-17.5 upper=25.0
+77.656 RX Lower Threshold: -24.50
+78.875 RX [QA_FRAME] ms=46131 temp=24.0 mode=1 lower=-24.5 upper=25.0
+79.047 RX [QA_SAMPLE] ms=46137 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=-24.5 upper=25.0 enc=-410 edges=0 high_edges=0
+79.985 RX [QA_FRAME] ms=46408 temp=24.0 mode=1 lower=-24.5 upper=25.0
+80.125 RX Lower Threshold: -38.00
+81.328 RX [QA_FRAME] ms=46679 temp=24.0 mode=1 lower=-38.0 upper=25.0
+81.328 RX Lower Threshold: -44.50
+82.188 RX [QA_ACK] id=C0015 op=TURN begin=44086 end=46888 a=140 b=1
+82.500 RX [QA_FRAME] ms=46946 temp=24.0 mode=1 lower=-44.5 upper=25.0
+82.500 RX Lower Threshold: -50.00
+83.438 RX [QA_FRAME] ms=47202 temp=24.0 mode=1 lower=-50.0 upper=25.0
+83.656 RX [QA_SAMPLE] ms=47203 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=-50.0 upper=25.0 enc=-560 edges=0 high_edges=0
+84.625 RX [QA_FRAME] ms=47469 temp=24.0 mode=1 lower=-50.0 upper=25.0
+86.453 RX [QA_SAMPLE] ms=48208 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=-50.0 upper=25.0 enc=-560 edges=0 high_edges=0
+86.985 RX [QA_ACK] id=C0016 op=TURN begin=48319 end=48339 a=1 b=1
+87.500 RX [QA_FRAME] ms=48464 temp=24.0 mode=1 lower=-50.0 upper=25.0
+87.500 RX Lower Threshold: -50.00
+88.531 RX [QA_FRAME] ms=48719 temp=24.0 mode=1 lower=-50.0 upper=25.0
+89.672 RX [QA_SAMPLE] ms=49203 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=-50.0 upper=25.0 enc=-564 edges=0 high_edges=0
+90.625 RX [QA_FRAME] ms=49459 temp=24.0 mode=1 lower=-50.0 upper=25.0
+92.266 RX [QA_SAMPLE] ms=50208 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=-50.0 upper=25.0 enc=-564 edges=0 high_edges=0
+92.860 RX [QA_ACK] id=C0017 op=TURN begin=50319 end=50339 a=1 b=-1
+93.328 RX [QA_FRAME] ms=50464 temp=24.0 mode=1 lower=-50.0 upper=25.0
+93.328 RX Lower Threshold: -49.50
+94.578 RX [QA_FRAME] ms=50719 temp=24.0 mode=1 lower=-49.5 upper=25.0
+95.766 RX [QA_SAMPLE] ms=51203 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=-49.5 upper=25.0 enc=-560 edges=0 high_edges=0
+96.735 RX [QA_FRAME] ms=51458 temp=24.0 mode=1 lower=-49.5 upper=25.0
+98.516 RX [QA_SAMPLE] ms=52208 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=-49.5 upper=25.0 enc=-560 edges=0 high_edges=0
+99.047 RX [QA_ACK] id=C0018 op=RESET begin=52319 end=52319
+99.344 RX ets Jul 29 2019 12:21:46
+99.360 RX 
+99.360 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+99.360 RX configsip: 0, SPIWP:0xee
+99.360 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+99.360 RX mode:DIO, clock div:2
+99.360 RX load:0x3fff0030,len:1156
+99.360 RX load:0x40078000,len:11456
+99.360 RX ho 0 tail 12 room 4
+99.391 RX load:0x40080400,len:2972
+99.391 RX entry 0x400805dc
+100.031 RX [QA_BOOT] phase=early ms=52982 pin=0 no=1 nc=0
+100.047 RX [QA_BOOT] phase=output_init ms=52985 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+104.594 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+104.813 RX [QA_SAMPLE] ms=56043 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+105.688 RX [QA_FRAME] ms=56258 temp=24.0 mode=0 lower=20.0 upper=25.0
+107.328 RX [QA_SAMPLE] ms=57037 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+108.094 RX [QA_FRAME] ms=57255 temp=24.0 mode=0 lower=20.0 upper=25.0
+108.094 RX Mode changed to: SET LOWER
+108.110 RX [QA_MODE] ms=57256 mode=1
+109.094 RX [QA_ACK] id=C0019 op=PRESS begin=57151 end=57851 a=350 b=350
+109.828 RX [QA_SAMPLE] ms=58042 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+110.766 RX [QA_FRAME] ms=58304 temp=24.0 mode=1 lower=20.0 upper=25.0
+110.766 RX Lower Threshold: 23.50
+110.969 RX [QA_ACK] id=C0020 op=TURN begin=58151 end=58331 a=9 b=-1
+112.078 RX [QA_FRAME] ms=58560 temp=24.0 mode=1 lower=23.5 upper=25.0
+112.078 RX Lower Threshold: 24.50
+113.219 RX [QA_FRAME] ms=58814 temp=24.0 mode=1 lower=24.5 upper=25.0
+113.672 RX Relay Activated.
+113.875 RX [QA_SAMPLE] ms=59037 valid=1 temp=24.0 req=1 pin=1 no=1 nc=0 mode=1 lower=24.5 upper=25.0 enc=36 edges=1 high_edges=1
+114.797 RX [QA_FRAME] ms=59292 temp=24.0 mode=1 lower=24.5 upper=25.0
+116.547 RX [QA_SAMPLE] ms=60042 valid=1 temp=24.0 req=1 pin=1 no=0 nc=1 mode=1 lower=24.5 upper=25.0 enc=36 edges=1 high_edges=1
+117.141 RX [QA_ACK] id=C0021 op=TURN begin=60151 end=60171 a=1 b=-1
+117.641 RX [QA_FRAME] ms=60296 temp=24.0 mode=1 lower=24.5 upper=25.0
+117.656 RX Lower Threshold: 24.50
+118.860 RX [QA_FRAME] ms=60550 temp=24.0 mode=1 lower=24.5 upper=25.0
+120.094 RX [QA_SAMPLE] ms=61037 valid=1 temp=24.0 req=1 pin=1 no=0 nc=1 mode=1 lower=24.5 upper=25.0 enc=40 edges=1 high_edges=1
+121.250 RX [QA_FRAME] ms=61292 temp=24.0 mode=1 lower=24.5 upper=25.0
+123.141 RX [QA_SAMPLE] ms=62042 valid=1 temp=24.0 req=1 pin=1 no=0 nc=1 mode=1 lower=24.5 upper=25.0 enc=40 edges=1 high_edges=1
+123.844 RX [QA_ACK] id=C0022 op=TURN begin=62151 end=62171 a=1 b=1
+124.406 RX [QA_FRAME] ms=62296 temp=24.0 mode=1 lower=24.5 upper=25.0
+124.406 RX Lower Threshold: 24.00
+125.813 RX [QA_FRAME] ms=62551 temp=24.0 mode=1 lower=24.0 upper=25.0
+127.219 RX [QA_SAMPLE] ms=63037 valid=1 temp=24.0 req=1 pin=1 no=0 nc=1 mode=1 lower=24.0 upper=25.0 enc=36 edges=1 high_edges=1
+128.422 RX [QA_FRAME] ms=63292 temp=24.0 mode=1 lower=24.0 upper=25.0
+130.610 RX [QA_SAMPLE] ms=64042 valid=1 temp=24.0 req=1 pin=1 no=0 nc=1 mode=1 lower=24.0 upper=25.0 enc=36 edges=1 high_edges=1
+131.313 RX [QA_ACK] id=C0023 op=RESET begin=64151 end=64151
+131.625 RX ets Jul 29 2019 12:21:46
+131.625 RX 
+131.641 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+131.641 RX configsip: 0, SPIWP:0xee
+131.641 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+131.641 RX mode:DIO, clock div:2
+131.641 RX load:0x3fff0030,len:1156
+131.641 RX load:0x40078000,len:11456
+131.641 RX ho 0 tail 12 room 4
+131.641 RX load:0x40080400,len:2972
+131.688 RX entry 0x400805dc
+132.735 RX [QA_BOOT] phase=early ms=64815 pin=1 no=0 nc=1
+132.735 RX [QA_BOOT] phase=output_init ms=64818 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=0 nc=1
+137.656 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+137.891 RX [QA_SAMPLE] ms=67875 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+138.953 RX [QA_FRAME] ms=68091 temp=24.0 mode=0 lower=20.0 upper=25.0
+140.891 RX [QA_SAMPLE] ms=68869 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+142.516 RX [QA_FRAME] ms=69089 temp=24.0 mode=0 lower=20.0 upper=25.0
+142.516 RX Mode changed to: SET LOWER
+142.516 RX [QA_MODE] ms=69091 mode=1
+144.016 RX [QA_ACK] id=C0024 op=PRESS begin=68952 end=69652 a=350 b=350
+145.125 RX [QA_SAMPLE] ms=69874 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+146.422 RX [QA_FRAME] ms=70135 temp=24.0 mode=1 lower=20.0 upper=25.0
+146.422 RX Mode changed to: SET UPPER
+146.422 RX [QA_MODE] ms=70137 mode=2
+147.641 RX [QA_ACK] id=C0025 op=PRESS begin=69985 end=70685 a=350 b=350
+148.110 RX [QA_SAMPLE] ms=70869 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+149.656 RX [QA_FRAME] ms=71132 temp=24.0 mode=2 lower=20.0 upper=25.0
+149.672 RX Upper Threshold: 29.50
+151.141 RX [QA_FRAME] ms=71402 temp=24.0 mode=2 lower=20.0 upper=29.5
+151.141 RX Upper Threshold: 36.00
+152.516 RX [QA_FRAME] ms=71672 temp=24.0 mode=2 lower=20.0 upper=36.0
+152.531 RX Upper Threshold: 43.00
+154.281 RX [QA_FRAME] ms=71942 temp=24.0 mode=2 lower=20.0 upper=43.0
+154.281 RX [QA_SAMPLE] ms=71948 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=43.0 enc=199 edges=1 high_edges=0
+155.719 RX [QA_FRAME] ms=72219 temp=24.0 mode=2 lower=20.0 upper=43.0
+155.719 RX Upper Threshold: 56.50
+157.156 RX [QA_FRAME] ms=72489 temp=24.0 mode=2 lower=20.0 upper=56.5
+157.156 RX Upper Threshold: 63.50
+158.485 RX [QA_FRAME] ms=72759 temp=24.0 mode=2 lower=20.0 upper=63.5
+158.485 RX Upper Threshold: 70.00
+159.797 RX [QA_FRAME] ms=73029 temp=24.0 mode=2 lower=20.0 upper=70.0
+159.797 RX [QA_SAMPLE] ms=73031 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=70.0 enc=416 edges=1 high_edges=0
+161.375 RX [QA_FRAME] ms=73312 temp=24.0 mode=2 lower=20.0 upper=70.0
+161.375 RX Upper Threshold: 84.00
+162.672 RX [QA_FRAME] ms=73582 temp=24.0 mode=2 lower=20.0 upper=84.0
+162.672 RX Upper Threshold: 90.50
+164.016 RX [QA_FRAME] ms=73853 temp=24.0 mode=2 lower=20.0 upper=90.5
+164.016 RX Upper Threshold: 97.50
+164.672 RX [QA_ACK] id=C0026 op=TURN begin=70952 end=73954 a=150 b=-1
+165.610 RX [QA_FRAME] ms=74113 temp=24.0 mode=2 lower=20.0 upper=97.5
+165.610 RX [QA_SAMPLE] ms=74120 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=97.5 enc=600 edges=1 high_edges=0
+167.078 RX [QA_FRAME] ms=74376 temp=24.0 mode=2 lower=20.0 upper=97.5
+167.078 RX Upper Threshold: 100.00
+168.235 RX [QA_FRAME] ms=74632 temp=24.0 mode=2 lower=20.0 upper=100.0
+169.547 RX [QA_SAMPLE] ms=75114 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=100.0 enc=600 edges=1 high_edges=0
+170.313 RX [QA_ACK] id=C0027 op=TURN begin=75218 end=75238 a=1 b=-1
+170.891 RX [QA_FRAME] ms=75370 temp=24.0 mode=2 lower=20.0 upper=100.0
+170.891 RX Upper Threshold: 100.00
+172.281 RX [QA_FRAME] ms=75627 temp=24.0 mode=2 lower=20.0 upper=100.0
+173.797 RX [QA_SAMPLE] ms=76119 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=100.0 enc=604 edges=1 high_edges=0
+175.110 RX [QA_FRAME] ms=76376 temp=24.0 mode=2 lower=20.0 upper=100.0
+177.235 RX [QA_SAMPLE] ms=77114 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=100.0 enc=604 edges=1 high_edges=0
+178.172 RX [QA_ACK] id=C0028 op=TURN begin=77218 end=77238 a=1 b=1
+178.735 RX [QA_FRAME] ms=77370 temp=24.0 mode=2 lower=20.0 upper=100.0
+178.735 RX Upper Threshold: 99.50
+180.110 RX [QA_FRAME] ms=77625 temp=24.0 mode=2 lower=20.0 upper=99.5
+181.563 RX [QA_SAMPLE] ms=78119 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=99.5 enc=600 edges=1 high_edges=0
+182.750 RX [QA_FRAME] ms=78375 temp=24.0 mode=2 lower=20.0 upper=99.5
+184.828 RX [QA_SAMPLE] ms=79114 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=99.5 enc=600 edges=1 high_edges=0
+185.500 RX [QA_ACK] id=C0029 op=RESET begin=79218 end=79218
+185.797 RX ets Jul 29 2019 12:21:46
+185.797 RX 
+185.797 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+185.797 RX configsip: 0, SPIWP:0xee
+185.813 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+185.813 RX mode:DIO, clock div:2
+185.813 RX load:0x3fff0030,len:1156
+185.813 RX load:0x40078000,len:11456
+185.813 RX ho 0 tail 12 room 4
+185.813 RX load:0x40080400,len:2972
+185.844 RX entry 0x400805dc
+186.703 RX [QA_BOOT] phase=early ms=79881 pin=0 no=1 nc=0
+186.703 RX [QA_BOOT] phase=output_init ms=79884 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+191.625 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+191.875 RX [QA_SAMPLE] ms=82942 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+192.969 RX [QA_FRAME] ms=83157 temp=24.0 mode=0 lower=20.0 upper=25.0
+194.953 RX [QA_SAMPLE] ms=83936 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+195.953 RX [QA_FRAME] ms=84154 temp=24.0 mode=0 lower=20.0 upper=25.0
+195.969 RX Mode changed to: SET LOWER
+195.969 RX [QA_MODE] ms=84155 mode=1
+197.188 RX [QA_ACK] id=C0030 op=PRESS begin=84051 end=84751 a=350 b=350
+198.047 RX [QA_SAMPLE] ms=84941 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+199.188 RX [QA_FRAME] ms=85202 temp=24.0 mode=1 lower=20.0 upper=25.0
+199.188 RX Mode changed to: SET UPPER
+199.188 RX [QA_MODE] ms=85203 mode=2
+200.438 RX [QA_ACK] id=C0031 op=PRESS begin=85052 end=85752 a=350 b=350
+201.266 RX [QA_SAMPLE] ms=85936 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+202.516 RX [QA_FRAME] ms=86197 temp=24.0 mode=2 lower=20.0 upper=25.0
+202.516 RX Upper Threshold: 21.50
+202.750 RX [QA_ACK] id=C0032 op=TURN begin=86050 end=86230 a=9 b=1
+204.031 RX [QA_FRAME] ms=86454 temp=24.0 mode=2 lower=20.0 upper=21.5
+204.031 RX Upper Threshold: 20.50
+205.375 RX [QA_FRAME] ms=86709 temp=24.0 mode=2 lower=20.0 upper=20.5
+206.438 RX [QA_SAMPLE] ms=86941 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=20.5 enc=-36 edges=0 high_edges=0
+207.906 RX [QA_FRAME] ms=87197 temp=24.0 mode=2 lower=20.0 upper=20.5
+210.094 RX [QA_SAMPLE] ms=87936 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=20.5 enc=-36 edges=0 high_edges=0
+210.781 RX [QA_ACK] id=C0033 op=TURN begin=88050 end=88070 a=1 b=1
+211.328 RX [QA_FRAME] ms=88191 temp=24.0 mode=2 lower=20.0 upper=20.5
+211.328 RX Upper Threshold: 20.50
+212.672 RX [QA_FRAME] ms=88446 temp=24.0 mode=2 lower=20.0 upper=20.5
+214.141 RX [QA_SAMPLE] ms=88941 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=20.5 enc=-40 edges=0 high_edges=0
+215.391 RX [QA_FRAME] ms=89197 temp=24.0 mode=2 lower=20.0 upper=20.5
+217.531 RX [QA_SAMPLE] ms=89936 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=20.5 enc=-40 edges=0 high_edges=0
+218.297 RX [QA_ACK] id=C0034 op=TURN begin=90050 end=90070 a=1 b=-1
+218.828 RX [QA_FRAME] ms=90191 temp=24.0 mode=2 lower=20.0 upper=20.5
+218.828 RX Upper Threshold: 21.00
+220.141 RX [QA_FRAME] ms=90445 temp=24.0 mode=2 lower=20.0 upper=21.0
+221.688 RX [QA_SAMPLE] ms=90941 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=21.0 enc=-36 edges=0 high_edges=0
+222.797 RX [QA_FRAME] ms=91196 temp=24.0 mode=2 lower=20.0 upper=21.0
+224.875 RX [QA_SAMPLE] ms=91936 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=21.0 enc=-36 edges=0 high_edges=0
+225.563 RX [QA_ACK] id=C0035 op=RESET begin=92051 end=92051
+225.860 RX ets Jul 29 2019 12:21:46
+225.860 RX 
+225.860 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+225.860 RX configsip: 0, SPIWP:0xee
+225.860 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+225.875 RX mode:DIO, clock div:2
+225.875 RX load:0x3fff0030,len:1156
+225.875 RX load:0x40078000,len:11456
+225.875 RX ho 0 tail 12 room 4
+225.875 RX load:0x40080400,len:2972
+225.906 RX entry 0x400805dc
+226.672 RX [QA_BOOT] phase=early ms=92714 pin=0 no=1 nc=0
+226.672 RX [QA_BOOT] phase=output_init ms=92717 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+231.453 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+231.688 RX [QA_SAMPLE] ms=95774 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+232.797 RX [QA_FRAME] ms=95997 temp=24.0 mode=0 lower=20.0 upper=25.0
+234.094 RX [QA_FRAME] ms=96225 temp=24.0 mode=0 lower=20.0 upper=25.0
+235.360 RX [QA_FRAME] ms=96452 temp=24.0 mode=0 lower=20.0 upper=25.0
+236.672 RX [QA_FRAME] ms=96679 temp=24.0 mode=0 lower=20.0 upper=25.0
+237.953 RX [QA_FRAME] ms=96906 temp=24.0 mode=0 lower=20.0 upper=25.0
+238.188 RX [QA_SAMPLE] ms=96907 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=203 edges=0 high_edges=0
+239.766 RX [QA_FRAME] ms=97146 temp=24.0 mode=0 lower=20.0 upper=25.0
+240.953 RX [QA_FRAME] ms=97373 temp=24.0 mode=0 lower=20.0 upper=25.0
+242.235 RX [QA_FRAME] ms=97600 temp=24.0 mode=0 lower=20.0 upper=25.0
+243.641 RX [QA_FRAME] ms=97827 temp=24.0 mode=0 lower=20.0 upper=25.0
+244.094 RX [QA_ACK] id=C0036 op=TURN begin=95884 end=97899 a=100 b=-1
+244.860 RX [QA_FRAME] ms=98055 temp=24.0 mode=0 lower=20.0 upper=25.0
+244.860 RX [QA_SAMPLE] ms=98056 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=400 edges=0 high_edges=0
+246.172 RX [QA_FRAME] ms=98288 temp=24.0 mode=0 lower=20.0 upper=25.0
+247.422 RX [QA_FRAME] ms=98508 temp=24.0 mode=0 lower=20.0 upper=25.0
+248.703 RX [QA_SAMPLE] ms=99056 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=400 edges=0 high_edges=0
+249.985 RX [QA_FRAME] ms=99279 temp=24.0 mode=0 lower=20.0 upper=25.0
+251.141 RX [QA_FRAME] ms=99507 temp=24.0 mode=0 lower=20.0 upper=25.0
+252.438 RX [QA_FRAME] ms=99734 temp=24.0 mode=0 lower=20.0 upper=25.0
+253.797 RX [QA_FRAME] ms=99961 temp=24.0 mode=0 lower=20.0 upper=25.0
+254.922 RX [QA_FRAME] ms=100194 temp=24.0 mode=0 lower=20.0 upper=25.0
+254.922 RX [QA_SAMPLE] ms=100195 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=193 edges=0 high_edges=0
+256.188 RX [QA_FRAME] ms=100434 temp=24.0 mode=0 lower=20.0 upper=25.0
+257.422 RX [QA_FRAME] ms=100661 temp=24.0 mode=0 lower=20.0 upper=25.0
+258.688 RX [QA_FRAME] ms=100888 temp=24.0 mode=0 lower=20.0 upper=25.0
+259.985 RX [QA_FRAME] ms=101115 temp=24.0 mode=0 lower=20.0 upper=25.0
+260.188 RX [QA_ACK] id=C0037 op=TURN begin=99150 end=101166 a=100 b=1
+261.125 RX [QA_FRAME] ms=101336 temp=24.0 mode=0 lower=20.0 upper=25.0
+261.406 RX [QA_SAMPLE] ms=101337 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+262.719 RX [QA_FRAME] ms=101570 temp=24.0 mode=0 lower=20.0 upper=25.0
+264.250 RX [QA_FRAME] ms=101790 temp=24.0 mode=0 lower=20.0 upper=25.0
+266.031 RX [QA_SAMPLE] ms=102342 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+266.844 RX [QA_ACK] id=C0038 op=RESET begin=102451 end=102451
+267.203 RX ets Jul 29 2019 12:21:46
+267.203 RX 
+267.203 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+267.203 RX configsip: 0, SPIWP:0xee
+267.203 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+267.219 RX mode:DIO, clock div:2
+267.219 RX load:0x3fff0030,len:1156
+267.219 RX load:0x40078000,len:11456
+267.250 RX ho 0 tail 12 room 4
+267.250 RX load:0x40080400,len:2972
+267.250 RX entry 0x400805dc
+268.094 RX [QA_BOOT] phase=early ms=103115 pin=0 no=1 nc=0
+268.094 RX [QA_BOOT] phase=output_init ms=103118 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+272.969 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+273.188 RX [QA_SAMPLE] ms=106176 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+274.172 RX [QA_FRAME] ms=106395 temp=24.0 mode=0 lower=20.0 upper=25.0
+274.172 RX Mode changed to: SET LOWER
+274.172 RX [QA_MODE] ms=106396 mode=1
+275.360 RX [QA_ACK] id=C0039 op=PRESS begin=106284 end=106984 a=350 b=350
+275.985 RX [QA_SAMPLE] ms=107170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+277.094 RX [QA_FRAME] ms=107430 temp=24.0 mode=1 lower=20.0 upper=25.0
+277.094 RX Mode changed to: SET UPPER
+277.094 RX [QA_MODE] ms=107432 mode=2
+278.203 RX [QA_ACK] id=C0040 op=PRESS begin=107284 end=107984 a=350 b=350
+278.922 RX [QA_SAMPLE] ms=108175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+280.016 RX [QA_FRAME] ms=108436 temp=24.0 mode=2 lower=20.0 upper=25.0
+280.016 RX Mode changed to: VIEW
+280.063 RX [QA_MODE] ms=108437 mode=0
+281.172 RX [QA_ACK] id=C0041 op=PRESS begin=108284 end=108984 a=350 b=350
+281.860 RX [QA_SAMPLE] ms=109170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+282.813 RX [QA_FRAME] ms=109388 temp=24.0 mode=0 lower=20.0 upper=25.0
+282.813 RX Mode changed to: SET LOWER
+282.813 RX [QA_MODE] ms=109389 mode=1
+283.985 RX [QA_ACK] id=C0042 op=PRESS begin=109284 end=109984 a=350 b=350
+284.813 RX [QA_SAMPLE] ms=110175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+285.969 RX [QA_FRAME] ms=110436 temp=24.0 mode=1 lower=20.0 upper=25.0
+285.969 RX Mode changed to: SET UPPER
+286.031 RX [QA_MODE] ms=110437 mode=2
+287.063 RX [QA_ACK] id=C0043 op=PRESS begin=110284 end=110984 a=350 b=350
+287.656 RX [QA_SAMPLE] ms=111170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+288.750 RX [QA_FRAME] ms=111431 temp=24.0 mode=2 lower=20.0 upper=25.0
+288.750 RX Mode changed to: VIEW
+288.750 RX [QA_MODE] ms=111432 mode=0
+289.891 RX [QA_ACK] id=C0044 op=PRESS begin=111284 end=111984 a=350 b=350
+290.641 RX [QA_SAMPLE] ms=112175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+291.703 RX [QA_FRAME] ms=112394 temp=24.0 mode=0 lower=20.0 upper=25.0
+291.703 RX Mode changed to: SET LOWER
+291.703 RX [QA_MODE] ms=112395 mode=1
+292.938 RX [QA_ACK] id=C0045 op=PRESS begin=112284 end=112984 a=350 b=350
+293.625 RX [QA_SAMPLE] ms=113170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+294.672 RX [QA_FRAME] ms=113431 temp=24.0 mode=1 lower=20.0 upper=25.0
+294.672 RX Mode changed to: SET UPPER
+294.672 RX [QA_MODE] ms=113432 mode=2
+295.766 RX [QA_ACK] id=C0046 op=PRESS begin=113284 end=113984 a=350 b=350
+296.610 RX [QA_SAMPLE] ms=114175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+297.735 RX [QA_FRAME] ms=114436 temp=24.0 mode=2 lower=20.0 upper=25.0
+297.735 RX Mode changed to: VIEW
+297.797 RX [QA_MODE] ms=114437 mode=0
+298.844 RX [QA_ACK] id=C0047 op=PRESS begin=114284 end=114984 a=350 b=350
+299.453 RX [QA_SAMPLE] ms=115170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+300.453 RX [QA_FRAME] ms=115388 temp=24.0 mode=0 lower=20.0 upper=25.0
+300.453 RX Mode changed to: SET LOWER
+300.453 RX [QA_MODE] ms=115389 mode=1
+301.688 RX [QA_ACK] id=C0048 op=PRESS begin=115284 end=115984 a=350 b=350
+302.453 RX [QA_SAMPLE] ms=116175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+303.547 RX [QA_FRAME] ms=116436 temp=24.0 mode=1 lower=20.0 upper=25.0
+303.547 RX Mode changed to: SET UPPER
+303.610 RX [QA_MODE] ms=116437 mode=2
+304.719 RX [QA_ACK] id=C0049 op=PRESS begin=116284 end=116984 a=350 b=350
+305.485 RX [QA_SAMPLE] ms=117170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+306.688 RX [QA_FRAME] ms=117430 temp=24.0 mode=2 lower=20.0 upper=25.0
+306.688 RX Mode changed to: VIEW
+306.688 RX [QA_MODE] ms=117432 mode=0
+307.750 RX [QA_ACK] id=C0050 op=PRESS begin=117284 end=117984 a=350 b=350
+308.547 RX [QA_SAMPLE] ms=118175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+309.875 RX [QA_FRAME] ms=118394 temp=24.0 mode=0 lower=20.0 upper=25.0
+309.875 RX Mode changed to: SET LOWER
+309.875 RX [QA_MODE] ms=118395 mode=1
+311.453 RX [QA_ACK] id=C0051 op=PRESS begin=118284 end=118984 a=350 b=350
+312.235 RX [QA_SAMPLE] ms=119170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+313.438 RX [QA_FRAME] ms=119431 temp=24.0 mode=1 lower=20.0 upper=25.0
+313.438 RX Mode changed to: SET UPPER
+313.438 RX [QA_MODE] ms=119432 mode=2
+314.610 RX [QA_ACK] id=C0052 op=PRESS begin=119284 end=119984 a=350 b=350
+315.344 RX [QA_SAMPLE] ms=120175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+316.406 RX [QA_FRAME] ms=120436 temp=24.0 mode=2 lower=20.0 upper=25.0
+316.406 RX Mode changed to: VIEW
+316.469 RX [QA_MODE] ms=120437 mode=0
+317.500 RX [QA_ACK] id=C0053 op=PRESS begin=120284 end=120984 a=350 b=350
+318.328 RX [QA_SAMPLE] ms=121170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+319.531 RX [QA_FRAME] ms=121388 temp=24.0 mode=0 lower=20.0 upper=25.0
+319.531 RX Mode changed to: SET LOWER
+319.531 RX [QA_MODE] ms=121389 mode=1
+320.719 RX [QA_ACK] id=C0054 op=PRESS begin=121284 end=121984 a=350 b=350
+321.516 RX [QA_SAMPLE] ms=122175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+322.703 RX [QA_FRAME] ms=122436 temp=24.0 mode=1 lower=20.0 upper=25.0
+322.703 RX Mode changed to: SET UPPER
+322.766 RX [QA_MODE] ms=122437 mode=2
+323.813 RX [QA_ACK] id=C0055 op=PRESS begin=122284 end=122984 a=350 b=350
+324.453 RX [QA_SAMPLE] ms=123170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+325.797 RX [QA_FRAME] ms=123431 temp=24.0 mode=2 lower=20.0 upper=25.0
+325.797 RX Mode changed to: VIEW
+325.797 RX [QA_MODE] ms=123432 mode=0
+327.063 RX [QA_ACK] id=C0056 op=PRESS begin=123284 end=123984 a=350 b=350
+327.906 RX [QA_SAMPLE] ms=124175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+328.844 RX [QA_FRAME] ms=124394 temp=24.0 mode=0 lower=20.0 upper=25.0
+328.844 RX Mode changed to: SET LOWER
+328.860 RX [QA_MODE] ms=124395 mode=1
+330.000 RX [QA_ACK] id=C0057 op=PRESS begin=124284 end=124984 a=350 b=350
+330.641 RX [QA_SAMPLE] ms=125170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+331.750 RX [QA_FRAME] ms=125431 temp=24.0 mode=1 lower=20.0 upper=25.0
+331.750 RX Mode changed to: SET UPPER
+331.750 RX [QA_MODE] ms=125432 mode=2
+332.766 RX [QA_ACK] id=C0058 op=PRESS begin=125284 end=125984 a=350 b=350
+333.531 RX [QA_SAMPLE] ms=126175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+334.719 RX [QA_FRAME] ms=126436 temp=24.0 mode=2 lower=20.0 upper=25.0
+334.719 RX Mode changed to: VIEW
+334.781 RX [QA_MODE] ms=126437 mode=0
+335.891 RX [QA_ACK] id=C0059 op=PRESS begin=126284 end=126984 a=350 b=350
+336.531 RX [QA_SAMPLE] ms=127170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+337.703 RX [QA_FRAME] ms=127388 temp=24.0 mode=0 lower=20.0 upper=25.0
+337.703 RX Mode changed to: SET LOWER
+337.703 RX [QA_MODE] ms=127389 mode=1
+339.125 RX [QA_ACK] id=C0060 op=PRESS begin=127284 end=127984 a=350 b=350
+340.172 RX [QA_SAMPLE] ms=128175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+341.500 RX [QA_FRAME] ms=128436 temp=24.0 mode=1 lower=20.0 upper=25.0
+341.500 RX Mode changed to: SET UPPER
+341.547 RX [QA_MODE] ms=128437 mode=2
+342.641 RX [QA_ACK] id=C0061 op=PRESS begin=128284 end=128984 a=350 b=350
+343.266 RX [QA_SAMPLE] ms=129170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+344.735 RX [QA_FRAME] ms=129431 temp=24.0 mode=2 lower=20.0 upper=25.0
+344.735 RX Mode changed to: VIEW
+344.735 RX [QA_MODE] ms=129432 mode=0
+346.016 RX [QA_ACK] id=C0062 op=PRESS begin=129284 end=129984 a=350 b=350
+346.875 RX [QA_SAMPLE] ms=130175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+347.891 RX [QA_FRAME] ms=130394 temp=24.0 mode=0 lower=20.0 upper=25.0
+347.906 RX Mode changed to: SET LOWER
+347.906 RX [QA_MODE] ms=130395 mode=1
+349.047 RX [QA_ACK] id=C0063 op=PRESS begin=130284 end=130984 a=350 b=350
+349.672 RX [QA_SAMPLE] ms=131170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+350.766 RX [QA_FRAME] ms=131431 temp=24.0 mode=1 lower=20.0 upper=25.0
+350.766 RX Mode changed to: SET UPPER
+350.766 RX [QA_MODE] ms=131432 mode=2
+352.016 RX [QA_ACK] id=C0064 op=PRESS begin=131284 end=131984 a=350 b=350
+353.110 RX [QA_SAMPLE] ms=132175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+354.297 RX [QA_FRAME] ms=132436 temp=24.0 mode=2 lower=20.0 upper=25.0
+354.297 RX Mode changed to: VIEW
+354.360 RX [QA_MODE] ms=132437 mode=0
+355.375 RX [QA_ACK] id=C0065 op=PRESS begin=132284 end=132984 a=350 b=350
+355.969 RX [QA_SAMPLE] ms=133170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+356.969 RX [QA_FRAME] ms=133388 temp=24.0 mode=0 lower=20.0 upper=25.0
+356.985 RX Mode changed to: SET LOWER
+356.985 RX [QA_MODE] ms=133389 mode=1
+358.172 RX [QA_ACK] id=C0066 op=PRESS begin=133284 end=133984 a=350 b=350
+358.875 RX [QA_SAMPLE] ms=134175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+359.985 RX [QA_FRAME] ms=134436 temp=24.0 mode=1 lower=20.0 upper=25.0
+359.985 RX Mode changed to: SET UPPER
+360.031 RX [QA_MODE] ms=134437 mode=2
+361.156 RX [QA_ACK] id=C0067 op=PRESS begin=134284 end=134984 a=350 b=350
+361.875 RX [QA_SAMPLE] ms=135170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+362.953 RX [QA_FRAME] ms=135431 temp=24.0 mode=2 lower=20.0 upper=25.0
+362.953 RX Mode changed to: VIEW
+362.953 RX [QA_MODE] ms=135432 mode=0
+364.016 RX [QA_ACK] id=C0068 op=PRESS begin=135283 end=135983 a=350 b=350
+364.828 RX [QA_SAMPLE] ms=136175 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+365.797 RX [QA_ACK] id=C0069 op=RESET begin=136282 end=136282
+366.172 RX ets Jul 29 2019 12:21:46
+366.172 RX 
+366.172 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+366.172 RX configsip: 0, SPIWP:0xee
+366.188 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+366.188 RX mode:DIO, clock div:2
+366.188 RX load:0x3fff0030,len:1156
+366.188 RX load:0x40078000,len:11456
+366.188 RX ho 0 tail 12 room 4
+366.188 RX load:0x40080400,len:2972
+366.219 RX entry 0x400805dc
+367.063 RX [QA_BOOT] phase=early ms=136946 pin=0 no=1 nc=0
+367.078 RX [QA_BOOT] phase=output_init ms=136949 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+372.063 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+372.313 RX [QA_SAMPLE] ms=140006 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+373.281 RX [QA_ACK] id=C0070 op=PRESS begin=140116 end=140216 a=30 b=70
+373.281 RX [QA_FRAME] ms=140225 temp=24.0 mode=0 lower=20.0 upper=25.0
+373.531 RX Mode changed to: SET LOWER
+373.531 RX [QA_MODE] ms=140316 mode=1
+373.766 RX [QA_ACK] id=C0071 op=PRESS begin=140316 end=140416 a=30 b=70
+373.969 RX Mode changed to: SET UPPER
+373.969 RX [QA_MODE] ms=140517 mode=2
+374.156 RX [QA_ACK] id=C0072 op=PRESS begin=140516 end=140616 a=30 b=70
+374.360 RX Mode changed to: VIEW
+374.360 RX [QA_MODE] ms=140718 mode=0
+374.563 RX [QA_ACK] id=C0073 op=PRESS begin=140716 end=140816 a=30 b=70
+374.797 RX Mode changed to: SET LOWER
+374.797 RX [QA_MODE] ms=140919 mode=1
+375.219 RX [QA_SAMPLE] ms=141000 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+375.219 RX [QA_ACK] id=C0074 op=PRESS begin=140916 end=141016 a=30 b=70
+376.219 RX [QA_ACK] id=C0075 op=PRESS begin=141116 end=141216 a=30 b=70
+376.313 RX [QA_FRAME] ms=141259 temp=24.0 mode=1 lower=20.0 upper=25.0
+376.453 RX Mode changed to: SET UPPER
+376.453 RX [QA_MODE] ms=141316 mode=2
+376.625 RX [QA_ACK] id=C0076 op=PRESS begin=141316 end=141416 a=30 b=70
+376.828 RX Mode changed to: VIEW
+376.828 RX [QA_MODE] ms=141517 mode=0
+377.016 RX [QA_ACK] id=C0077 op=PRESS begin=141516 end=141616 a=30 b=70
+377.235 RX Mode changed to: SET LOWER
+377.235 RX [QA_MODE] ms=141718 mode=1
+377.453 RX [QA_ACK] id=C0078 op=PRESS begin=141716 end=141816 a=30 b=70
+377.703 RX Mode changed to: SET UPPER
+377.703 RX [QA_MODE] ms=141919 mode=2
+378.250 RX [QA_SAMPLE] ms=142005 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+378.250 RX [QA_ACK] id=C0079 op=PRESS begin=141916 end=142016 a=30 b=70
+379.375 RX [QA_ACK] id=C0080 op=PRESS begin=142116 end=142216 a=30 b=70
+379.485 RX [QA_FRAME] ms=142265 temp=24.0 mode=2 lower=20.0 upper=25.0
+379.656 RX Mode changed to: VIEW
+379.656 RX [QA_MODE] ms=142316 mode=0
+379.875 RX [QA_ACK] id=C0081 op=PRESS begin=142316 end=142416 a=30 b=70
+380.172 RX Mode changed to: SET LOWER
+380.172 RX [QA_MODE] ms=142517 mode=1
+380.406 RX [QA_ACK] id=C0082 op=PRESS begin=142516 end=142616 a=30 b=70
+380.672 RX Mode changed to: SET UPPER
+380.672 RX [QA_MODE] ms=142718 mode=2
+380.860 RX [QA_ACK] id=C0083 op=PRESS begin=142716 end=142816 a=30 b=70
+381.063 RX Mode changed to: VIEW
+381.063 RX [QA_MODE] ms=142919 mode=0
+381.531 RX [QA_SAMPLE] ms=143000 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+381.531 RX [QA_ACK] id=C0084 op=PRESS begin=142916 end=143016 a=30 b=70
+382.500 RX [QA_ACK] id=C0085 op=PRESS begin=143116 end=143216 a=30 b=70
+382.500 RX [QA_FRAME] ms=143219 temp=24.0 mode=0 lower=20.0 upper=25.0
+382.797 RX Mode changed to: SET LOWER
+382.797 RX [QA_MODE] ms=143316 mode=1
+383.000 RX [QA_ACK] id=C0086 op=PRESS begin=143316 end=143416 a=30 b=70
+383.219 RX Mode changed to: SET UPPER
+383.219 RX [QA_MODE] ms=143517 mode=2
+383.422 RX [QA_ACK] id=C0087 op=PRESS begin=143516 end=143616 a=30 b=70
+383.641 RX Mode changed to: VIEW
+383.641 RX [QA_MODE] ms=143718 mode=0
+383.844 RX [QA_ACK] id=C0088 op=PRESS begin=143716 end=143816 a=30 b=70
+384.125 RX Mode changed to: SET LOWER
+384.141 RX [QA_MODE] ms=143919 mode=1
+384.703 RX [QA_SAMPLE] ms=144005 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+384.703 RX [QA_ACK] id=C0089 op=PRESS begin=143916 end=144016 a=30 b=70
+386.047 RX [QA_FRAME] ms=144262 temp=24.0 mode=1 lower=20.0 upper=25.0
+388.016 RX [QA_SAMPLE] ms=145000 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+388.688 RX [QA_ACK] id=C0090 op=RESET begin=145116 end=145116
+388.985 RX ets Jul 29 2019 12:21:46
+388.985 RX 
+388.985 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+388.985 RX configsip: 0, SPIWP:0xee
+388.985 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+388.985 RX mode:DIO, clock div:2
+389.000 RX load:0x3fff0030,len:1156
+389.000 RX load:0x40078000,len:11456
+389.000 RX ho 0 tail 12 room 4
+389.031 RX load:0x40080400,len:2972
+389.031 RX entry 0x400805dc
+389.781 RX [QA_BOOT] phase=early ms=145780 pin=0 no=1 nc=0
+389.781 RX [QA_BOOT] phase=output_init ms=145783 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+394.703 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+394.922 RX [QA_SAMPLE] ms=148841 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+395.563 RX [QA_ACK] id=C0091 op=TEMP begin=148948 end=148948 a=250 b=0
+395.922 RX [QA_FRAME] ms=149054 temp=24.0 mode=0 lower=20.0 upper=25.0
+397.906 RX [QA_SAMPLE] ms=149835 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+398.875 RX [QA_FRAME] ms=150050 temp=24.0 mode=0 lower=20.0 upper=25.0
+400.860 RX [QA_SAMPLE] ms=150840 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+401.516 RX [QA_ACK] id=C0092 op=RESET begin=150948 end=150948
+401.797 RX ets Jul 29 2019 12:21:46
+401.797 RX 
+401.797 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+401.797 RX configsip: 0, SPIWP:0xee
+401.813 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+401.813 RX mode:DIO, clock div:2
+401.813 RX load:0x3fff0030,len:1156
+401.813 RX load:0x40078000,len:11456
+401.813 RX ho 0 tail 12 room 4
+401.844 RX load:0x40080400,len:2972
+401.844 RX entry 0x400805dc
+402.610 RX [QA_BOOT] phase=early ms=151612 pin=0 no=1 nc=0
+402.610 RX [QA_BOOT] phase=output_init ms=151614 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+407.438 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+407.672 RX [QA_SAMPLE] ms=154672 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+408.344 RX [QA_ACK] id=C0093 op=RESET begin=154781 end=154781
+408.625 RX ets Jul 29 2019 12:21:46
+408.625 RX 
+408.625 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+408.625 RX configsip: 0, SPIWP:0xee
+408.625 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+408.625 RX mode:DIO, clock div:2
+408.625 RX load:0x3fff0030,len:1156
+408.641 RX load:0x40078000,len:11456
+408.641 RX ho 0 tail 12 room 4
+408.656 RX load:0x40080400,len:2972
+408.656 RX entry 0x400805dc
+409.438 RX [QA_BOOT] phase=early ms=155444 pin=0 no=1 nc=0
+409.453 RX [QA_BOOT] phase=output_init ms=155447 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+414.313 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+414.563 RX [QA_SAMPLE] ms=158505 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+415.203 RX [QA_ACK] id=C0094 op=TEMP begin=158614 end=158614 a=190 b=0
+415.594 RX [QA_FRAME] ms=158718 temp=24.0 mode=0 lower=20.0 upper=25.0
+417.563 RX [QA_SAMPLE] ms=159499 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+418.531 RX [QA_FRAME] ms=159714 temp=24.0 mode=0 lower=20.0 upper=25.0
+420.313 RX Relay Activated.
+420.547 RX [QA_SAMPLE] ms=160504 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+421.406 RX [QA_ACK] id=C0095 op=RESET begin=160613 end=160613
+421.766 RX ets Jul 29 2019 12:21:46
+421.766 RX 
+421.781 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+421.781 RX configsip: 0, SPIWP:0xee
+421.781 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+421.781 RX mode:DIO, clock div:2
+421.781 RX load:0x3fff0030,len:1156
+421.781 RX load:0x40078000,len:11456
+421.781 RX ho 0 tail 12 room 4
+421.781 RX load:0x40080400,len:2972
+421.813 RX entry 0x400805dc
+422.766 RX [QA_BOOT] phase=early ms=161277 pin=1 no=0 nc=1
+422.766 RX [QA_BOOT] phase=output_init ms=161280 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=0 nc=1
+427.906 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+428.125 RX [QA_SAMPLE] ms=164337 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+428.766 RX [QA_ACK] id=C0096 op=RESET begin=164447 end=164447
+429.078 RX ets Jul 29 2019 12:21:46
+429.078 RX 
+429.078 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+429.078 RX configsip: 0, SPIWP:0xee
+429.078 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+429.078 RX mode:DIO, clock div:2
+429.078 RX load:0x3fff0030,len:1156
+429.078 RX load:0x40078000,len:11456
+429.094 RX ho 0 tail 12 room 4
+429.110 RX load:0x40080400,len:2972
+429.110 RX entry 0x400805dc
+429.813 RX [QA_BOOT] phase=early ms=165110 pin=0 no=1 nc=0
+429.813 RX [QA_BOOT] phase=output_init ms=165113 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+434.563 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+434.844 RX [QA_SAMPLE] ms=168171 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+435.860 RX [QA_FRAME] ms=168386 temp=24.0 mode=0 lower=20.0 upper=25.0
+437.703 RX [QA_SAMPLE] ms=169165 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+438.625 RX [QA_FRAME] ms=169383 temp=24.0 mode=0 lower=20.0 upper=25.0
+438.641 RX Mode changed to: SET LOWER
+438.641 RX [QA_MODE] ms=169384 mode=1
+439.735 RX [QA_ACK] id=C0097 op=PRESS begin=169280 end=169980 a=350 b=350
+440.469 RX [QA_SAMPLE] ms=170170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+441.203 RX [QA_ACK] id=C0098 op=TURN begin=170279 end=170299 a=1 b=-1
+441.735 RX [QA_FRAME] ms=170425 temp=24.0 mode=1 lower=20.0 upper=25.0
+441.735 RX Lower Threshold: 20.50
+443.063 RX [QA_FRAME] ms=170679 temp=24.0 mode=1 lower=20.5 upper=25.0
+444.375 RX [QA_SAMPLE] ms=171165 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.5 upper=25.0 enc=4 edges=0 high_edges=0
+445.438 RX [QA_FRAME] ms=171420 temp=24.0 mode=1 lower=20.5 upper=25.0
+447.563 RX [QA_SAMPLE] ms=172170 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.5 upper=25.0 enc=4 edges=0 high_edges=0
+448.250 RX [QA_ACK] id=C0099 op=RESET begin=172279 end=172279
+448.578 RX ets Jul 29 2019 12:21:46
+448.578 RX 
+448.578 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+448.578 RX configsip: 0, SPIWP:0xee
+448.578 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+448.594 RX mode:DIO, clock div:2
+448.594 RX load:0x3fff0030,len:1156
+448.594 RX load:0x40078000,len:11456
+448.594 RX ho 0 tail 12 room 4
+448.625 RX load:0x40080400,len:2972
+448.625 RX entry 0x400805dc
+449.391 RX [QA_BOOT] phase=early ms=172943 pin=0 no=1 nc=0
+449.391 RX [QA_BOOT] phase=output_init ms=172946 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+454.563 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+454.813 RX [QA_SAMPLE] ms=176003 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+455.500 RX [QA_ACK] id=C0100 op=RESET begin=176112 end=176112
+455.813 RX ets Jul 29 2019 12:21:46
+455.813 RX 
+455.813 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+455.813 RX configsip: 0, SPIWP:0xee
+455.828 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+455.828 RX mode:DIO, clock div:2
+455.828 RX load:0x3fff0030,len:1156
+455.828 RX load:0x40078000,len:11456
+455.828 RX ho 0 tail 12 room 4
+455.828 RX load:0x40080400,len:2972
+455.860 RX entry 0x400805dc
+456.750 RX [QA_BOOT] phase=early ms=176775 pin=0 no=1 nc=0
+456.750 RX [QA_BOOT] phase=output_init ms=176778 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+461.578 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+461.844 RX [QA_SAMPLE] ms=179836 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+462.813 RX [QA_FRAME] ms=180051 temp=24.0 mode=0 lower=20.0 upper=25.0
+464.688 RX [QA_SAMPLE] ms=180830 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+465.688 RX [QA_FRAME] ms=181050 temp=24.0 mode=0 lower=20.0 upper=25.0
+465.688 RX Mode changed to: SET LOWER
+465.703 RX [QA_MODE] ms=181052 mode=1
+466.766 RX [QA_ACK] id=C0101 op=PRESS begin=180913 end=181613 a=350 b=350
+467.641 RX [QA_SAMPLE] ms=181835 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+468.766 RX [QA_FRAME] ms=182096 temp=24.0 mode=1 lower=20.0 upper=25.0
+468.766 RX Mode changed to: SET UPPER
+468.766 RX [QA_MODE] ms=182097 mode=2
+469.891 RX [QA_ACK] id=C0102 op=PRESS begin=181946 end=182646 a=350 b=350
+470.485 RX [QA_SAMPLE] ms=182830 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+471.188 RX [QA_ACK] id=C0103 op=TURN begin=182944 end=182964 a=1 b=-1
+471.688 RX [QA_FRAME] ms=183085 temp=24.0 mode=2 lower=20.0 upper=25.0
+471.688 RX Upper Threshold: 25.50
+472.985 RX [QA_FRAME] ms=183340 temp=24.0 mode=2 lower=20.0 upper=25.5
+474.313 RX [QA_SAMPLE] ms=183835 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.5 enc=4 edges=0 high_edges=0
+475.375 RX [QA_FRAME] ms=184091 temp=24.0 mode=2 lower=20.0 upper=25.5
+477.172 RX [QA_SAMPLE] ms=184830 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.0 upper=25.5 enc=4 edges=0 high_edges=0
+478.078 RX [QA_ACK] id=C0104 op=RESET begin=184945 end=184945
+478.360 RX ets Jul 29 2019 12:21:46
+478.360 RX 
+478.360 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+478.360 RX configsip: 0, SPIWP:0xee
+478.375 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+478.375 RX mode:DIO, clock div:2
+478.375 RX load:0x3fff0030,len:1156
+478.375 RX load:0x40078000,len:11456
+478.375 RX ho 0 tail 12 room 4
+478.422 RX load:0x40080400,len:2972
+478.422 RX entry 0x400805dc
+479.172 RX [QA_BOOT] phase=early ms=185609 pin=0 no=1 nc=0
+479.188 RX [QA_BOOT] phase=output_init ms=185612 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+484.094 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+484.328 RX [QA_SAMPLE] ms=188669 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+484.922 RX [QA_ACK] id=C0105 op=RESET begin=188778 end=188778
+485.375 RX ets Jul 29 2019 12:21:46
+485.375 RX 
+485.375 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+485.375 RX configsip: 0, SPIWP:0xee
+485.375 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+485.391 RX mode:DIO, clock div:2
+485.391 RX load:0x3fff0030,len:1156
+485.391 RX load:0x40078000,len:11456
+485.391 RX ho 0 tail 12 room 4
+485.391 RX load:0x40080400,len:2972
+485.422 RX entry 0x400805dc
+486.297 RX [QA_BOOT] phase=early ms=189441 pin=0 no=1 nc=0
+486.313 RX [QA_BOOT] phase=output_init ms=189444 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+491.188 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+491.516 RX [QA_SAMPLE] ms=192502 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+492.344 RX [QA_ACK] id=C0106 op=TEMP begin=192612 end=192612 a=190 b=0
+492.672 RX [QA_FRAME] ms=192715 temp=24.0 mode=0 lower=20.0 upper=25.0
+494.719 RX [QA_SAMPLE] ms=193496 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+495.703 RX [QA_FRAME] ms=193711 temp=24.0 mode=0 lower=20.0 upper=25.0
+497.625 RX Relay Activated.
+497.813 RX [QA_SAMPLE] ms=194501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+498.485 RX [QA_ACK] id=C0107 op=TEMP begin=194612 end=194612 a=220 b=0
+498.828 RX [QA_FRAME] ms=194715 temp=19.0 mode=0 lower=20.0 upper=25.0
+500.781 RX [QA_SAMPLE] ms=195496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+501.860 RX [QA_FRAME] ms=195711 temp=19.0 mode=0 lower=20.0 upper=25.0
+504.078 RX [QA_SAMPLE] ms=196501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+504.719 RX [QA_ACK] id=C0108 op=TEMP begin=196612 end=196612 a=250 b=0
+505.016 RX [QA_FRAME] ms=196715 temp=22.0 mode=0 lower=20.0 upper=25.0
+506.953 RX [QA_SAMPLE] ms=197496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+507.938 RX [QA_FRAME] ms=197711 temp=22.0 mode=0 lower=20.0 upper=25.0
+509.750 RX Relay Deactivated.
+509.953 RX [QA_SAMPLE] ms=198501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+510.672 RX [QA_ACK] id=C0109 op=TEMP begin=198612 end=198612 a=220 b=0
+510.985 RX [QA_FRAME] ms=198715 temp=25.0 mode=0 lower=20.0 upper=25.0
+512.969 RX [QA_SAMPLE] ms=199496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+513.922 RX [QA_FRAME] ms=199711 temp=25.0 mode=0 lower=20.0 upper=25.0
+516.110 RX [QA_SAMPLE] ms=200501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+516.750 RX [QA_ACK] id=C0110 op=TEMP begin=200612 end=200612 a=190 b=0
+517.125 RX [QA_FRAME] ms=200715 temp=22.0 mode=0 lower=20.0 upper=25.0
+519.047 RX [QA_SAMPLE] ms=201496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+520.094 RX [QA_FRAME] ms=201711 temp=22.0 mode=0 lower=20.0 upper=25.0
+521.891 RX Relay Activated.
+522.172 RX [QA_SAMPLE] ms=202501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=3 high_edges=2
+522.828 RX [QA_ACK] id=C0111 op=TEMP begin=202612 end=202612 a=220 b=0
+523.141 RX [QA_FRAME] ms=202715 temp=19.0 mode=0 lower=20.0 upper=25.0
+525.031 RX [QA_SAMPLE] ms=203496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=3 high_edges=2
+525.985 RX [QA_FRAME] ms=203711 temp=19.0 mode=0 lower=20.0 upper=25.0
+528.078 RX [QA_SAMPLE] ms=204501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=3 high_edges=2
+528.844 RX [QA_ACK] id=C0112 op=TEMP begin=204612 end=204612 a=250 b=0
+529.172 RX [QA_FRAME] ms=204715 temp=22.0 mode=0 lower=20.0 upper=25.0
+531.110 RX [QA_SAMPLE] ms=205496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=3 high_edges=2
+532.250 RX [QA_FRAME] ms=205711 temp=22.0 mode=0 lower=20.0 upper=25.0
+534.641 RX Relay Deactivated.
+534.891 RX [QA_SAMPLE] ms=206501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=4 high_edges=2
+535.578 RX [QA_ACK] id=C0113 op=TEMP begin=206612 end=206612 a=220 b=0
+535.891 RX [QA_FRAME] ms=206715 temp=25.0 mode=0 lower=20.0 upper=25.0
+537.906 RX [QA_SAMPLE] ms=207496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=4 high_edges=2
+538.828 RX [QA_FRAME] ms=207711 temp=25.0 mode=0 lower=20.0 upper=25.0
+540.844 RX [QA_SAMPLE] ms=208501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=4 high_edges=2
+541.578 RX [QA_ACK] id=C0114 op=TEMP begin=208612 end=208612 a=190 b=0
+542.016 RX [QA_FRAME] ms=208715 temp=22.0 mode=0 lower=20.0 upper=25.0
+544.360 RX [QA_SAMPLE] ms=209496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=4 high_edges=2
+545.563 RX [QA_FRAME] ms=209711 temp=22.0 mode=0 lower=20.0 upper=25.0
+547.735 RX Relay Activated.
+547.938 RX [QA_SAMPLE] ms=210501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=5 high_edges=3
+548.656 RX [QA_ACK] id=C0115 op=TEMP begin=210612 end=210612 a=220 b=0
+548.969 RX [QA_FRAME] ms=210715 temp=19.0 mode=0 lower=20.0 upper=25.0
+550.969 RX [QA_SAMPLE] ms=211496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=5 high_edges=3
+551.938 RX [QA_FRAME] ms=211711 temp=19.0 mode=0 lower=20.0 upper=25.0
+554.047 RX [QA_SAMPLE] ms=212501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=5 high_edges=3
+554.735 RX [QA_ACK] id=C0116 op=TEMP begin=212612 end=212612 a=250 b=0
+555.094 RX [QA_FRAME] ms=212715 temp=22.0 mode=0 lower=20.0 upper=25.0
+556.906 RX [QA_SAMPLE] ms=213496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=5 high_edges=3
+558.047 RX [QA_FRAME] ms=213711 temp=22.0 mode=0 lower=20.0 upper=25.0
+559.953 RX Relay Deactivated.
+560.235 RX [QA_SAMPLE] ms=214501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=6 high_edges=3
+560.906 RX [QA_ACK] id=C0117 op=TEMP begin=214612 end=214612 a=220 b=0
+561.219 RX [QA_FRAME] ms=214715 temp=25.0 mode=0 lower=20.0 upper=25.0
+563.235 RX [QA_SAMPLE] ms=215496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=6 high_edges=3
+564.266 RX [QA_FRAME] ms=215711 temp=25.0 mode=0 lower=20.0 upper=25.0
+566.297 RX [QA_SAMPLE] ms=216501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=6 high_edges=3
+567.031 RX [QA_ACK] id=C0118 op=TEMP begin=216612 end=216612 a=190 b=0
+567.360 RX [QA_FRAME] ms=216715 temp=22.0 mode=0 lower=20.0 upper=25.0
+569.297 RX [QA_SAMPLE] ms=217496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=6 high_edges=3
+570.313 RX [QA_FRAME] ms=217711 temp=22.0 mode=0 lower=20.0 upper=25.0
+572.313 RX Relay Activated.
+572.563 RX [QA_SAMPLE] ms=218501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=7 high_edges=4
+573.235 RX [QA_ACK] id=C0119 op=TEMP begin=218612 end=218612 a=220 b=0
+573.594 RX [QA_FRAME] ms=218715 temp=19.0 mode=0 lower=20.0 upper=25.0
+575.547 RX [QA_SAMPLE] ms=219496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=7 high_edges=4
+576.563 RX [QA_FRAME] ms=219711 temp=19.0 mode=0 lower=20.0 upper=25.0
+578.641 RX [QA_SAMPLE] ms=220501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=7 high_edges=4
+579.313 RX [QA_ACK] id=C0120 op=TEMP begin=220612 end=220612 a=250 b=0
+579.625 RX [QA_FRAME] ms=220715 temp=22.0 mode=0 lower=20.0 upper=25.0
+581.594 RX [QA_SAMPLE] ms=221496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=7 high_edges=4
+582.735 RX [QA_FRAME] ms=221711 temp=22.0 mode=0 lower=20.0 upper=25.0
+584.766 RX Relay Deactivated.
+584.969 RX [QA_SAMPLE] ms=222501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=8 high_edges=4
+585.688 RX [QA_ACK] id=C0121 op=TEMP begin=222612 end=222612 a=220 b=0
+586.000 RX [QA_FRAME] ms=222715 temp=25.0 mode=0 lower=20.0 upper=25.0
+587.938 RX [QA_SAMPLE] ms=223496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=8 high_edges=4
+588.860 RX [QA_FRAME] ms=223711 temp=25.0 mode=0 lower=20.0 upper=25.0
+590.985 RX [QA_SAMPLE] ms=224501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=8 high_edges=4
+591.719 RX [QA_ACK] id=C0122 op=TEMP begin=224612 end=224612 a=190 b=0
+592.094 RX [QA_FRAME] ms=224715 temp=22.0 mode=0 lower=20.0 upper=25.0
+594.203 RX [QA_SAMPLE] ms=225496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=8 high_edges=4
+595.438 RX [QA_FRAME] ms=225711 temp=22.0 mode=0 lower=20.0 upper=25.0
+597.813 RX Relay Activated.
+598.078 RX [QA_SAMPLE] ms=226501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=9 high_edges=5
+598.828 RX [QA_ACK] id=C0123 op=TEMP begin=226612 end=226612 a=220 b=0
+599.141 RX [QA_FRAME] ms=226715 temp=19.0 mode=0 lower=20.0 upper=25.0
+601.344 RX [QA_SAMPLE] ms=227496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=9 high_edges=5
+602.281 RX [QA_FRAME] ms=227711 temp=19.0 mode=0 lower=20.0 upper=25.0
+604.297 RX [QA_SAMPLE] ms=228501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=9 high_edges=5
+604.985 RX [QA_ACK] id=C0124 op=TEMP begin=228612 end=228612 a=250 b=0
+605.297 RX [QA_FRAME] ms=228715 temp=22.0 mode=0 lower=20.0 upper=25.0
+607.219 RX [QA_SAMPLE] ms=229496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=9 high_edges=5
+608.235 RX [QA_FRAME] ms=229711 temp=22.0 mode=0 lower=20.0 upper=25.0
+610.063 RX Relay Deactivated.
+610.297 RX [QA_SAMPLE] ms=230501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=10 high_edges=5
+610.906 RX [QA_ACK] id=C0125 op=TEMP begin=230612 end=230612 a=220 b=0
+611.219 RX [QA_FRAME] ms=230715 temp=25.0 mode=0 lower=20.0 upper=25.0
+613.328 RX [QA_SAMPLE] ms=231496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=10 high_edges=5
+614.391 RX [QA_FRAME] ms=231711 temp=25.0 mode=0 lower=20.0 upper=25.0
+616.735 RX [QA_SAMPLE] ms=232501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=10 high_edges=5
+617.406 RX [QA_ACK] id=C0126 op=TEMP begin=232612 end=232612 a=190 b=0
+617.719 RX [QA_FRAME] ms=232715 temp=22.0 mode=0 lower=20.0 upper=25.0
+619.719 RX [QA_SAMPLE] ms=233496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=10 high_edges=5
+620.735 RX [QA_FRAME] ms=233711 temp=22.0 mode=0 lower=20.0 upper=25.0
+622.656 RX Relay Activated.
+622.860 RX [QA_SAMPLE] ms=234501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=11 high_edges=6
+623.656 RX [QA_ACK] id=C0127 op=TEMP begin=234612 end=234612 a=220 b=0
+624.047 RX [QA_FRAME] ms=234714 temp=19.0 mode=0 lower=20.0 upper=25.0
+626.250 RX [QA_SAMPLE] ms=235496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=11 high_edges=6
+627.250 RX [QA_FRAME] ms=235711 temp=19.0 mode=0 lower=20.0 upper=25.0
+629.297 RX [QA_SAMPLE] ms=236501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=11 high_edges=6
+629.985 RX [QA_ACK] id=C0128 op=TEMP begin=236612 end=236612 a=250 b=0
+630.313 RX [QA_FRAME] ms=236715 temp=22.0 mode=0 lower=20.0 upper=25.0
+632.203 RX [QA_SAMPLE] ms=237496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=11 high_edges=6
+633.344 RX [QA_FRAME] ms=237711 temp=22.0 mode=0 lower=20.0 upper=25.0
+635.641 RX Relay Deactivated.
+635.860 RX [QA_SAMPLE] ms=238501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=12 high_edges=6
+636.547 RX [QA_ACK] id=C0129 op=TEMP begin=238612 end=238612 a=220 b=0
+636.906 RX [QA_FRAME] ms=238715 temp=25.0 mode=0 lower=20.0 upper=25.0
+639.016 RX [QA_SAMPLE] ms=239496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=12 high_edges=6
+640.235 RX [QA_FRAME] ms=239711 temp=25.0 mode=0 lower=20.0 upper=25.0
+643.235 RX [QA_SAMPLE] ms=240501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=12 high_edges=6
+644.156 RX [QA_ACK] id=C0130 op=TEMP begin=240612 end=240612 a=190 b=0
+644.578 RX [QA_FRAME] ms=240715 temp=22.0 mode=0 lower=20.0 upper=25.0
+646.906 RX [QA_SAMPLE] ms=241496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=12 high_edges=6
+647.922 RX [QA_FRAME] ms=241711 temp=22.0 mode=0 lower=20.0 upper=25.0
+649.641 RX Relay Activated.
+649.860 RX [QA_SAMPLE] ms=242501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=13 high_edges=7
+650.516 RX [QA_ACK] id=C0131 op=TEMP begin=242612 end=242612 a=220 b=0
+650.781 RX [QA_FRAME] ms=242715 temp=19.0 mode=0 lower=20.0 upper=25.0
+652.531 RX [QA_SAMPLE] ms=243496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=13 high_edges=7
+653.406 RX [QA_FRAME] ms=243711 temp=19.0 mode=0 lower=20.0 upper=25.0
+655.656 RX [QA_SAMPLE] ms=244501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=13 high_edges=7
+656.656 RX [QA_ACK] id=C0132 op=TEMP begin=244612 end=244612 a=250 b=0
+657.219 RX [QA_FRAME] ms=244715 temp=22.0 mode=0 lower=20.0 upper=25.0
+660.156 RX [QA_SAMPLE] ms=245496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=13 high_edges=7
+661.344 RX [QA_FRAME] ms=245711 temp=22.0 mode=0 lower=20.0 upper=25.0
+663.703 RX Relay Deactivated.
+663.938 RX [QA_SAMPLE] ms=246501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=14 high_edges=7
+664.781 RX [QA_ACK] id=C0133 op=TEMP begin=246612 end=246612 a=220 b=0
+665.250 RX [QA_FRAME] ms=246715 temp=25.0 mode=0 lower=20.0 upper=25.0
+667.375 RX [QA_SAMPLE] ms=247496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=14 high_edges=7
+668.375 RX [QA_FRAME] ms=247711 temp=25.0 mode=0 lower=20.0 upper=25.0
+670.516 RX [QA_SAMPLE] ms=248501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=14 high_edges=7
+671.219 RX [QA_ACK] id=C0134 op=TEMP begin=248612 end=248612 a=190 b=0
+671.500 RX [QA_FRAME] ms=248715 temp=22.0 mode=0 lower=20.0 upper=25.0
+673.406 RX [QA_SAMPLE] ms=249496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=14 high_edges=7
+674.344 RX [QA_FRAME] ms=249711 temp=22.0 mode=0 lower=20.0 upper=25.0
+676.219 RX Relay Activated.
+676.438 RX [QA_SAMPLE] ms=250501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=15 high_edges=8
+677.016 RX [QA_ACK] id=C0135 op=TEMP begin=250612 end=250612 a=220 b=0
+677.281 RX [QA_FRAME] ms=250715 temp=19.0 mode=0 lower=20.0 upper=25.0
+679.141 RX [QA_SAMPLE] ms=251496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=15 high_edges=8
+680.063 RX [QA_FRAME] ms=251711 temp=19.0 mode=0 lower=20.0 upper=25.0
+682.203 RX [QA_SAMPLE] ms=252501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=15 high_edges=8
+682.906 RX [QA_ACK] id=C0136 op=TEMP begin=252612 end=252612 a=250 b=0
+683.188 RX [QA_FRAME] ms=252715 temp=22.0 mode=0 lower=20.0 upper=25.0
+685.156 RX [QA_SAMPLE] ms=253496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=15 high_edges=8
+686.125 RX [QA_FRAME] ms=253711 temp=22.0 mode=0 lower=20.0 upper=25.0
+687.875 RX Relay Deactivated.
+688.141 RX [QA_SAMPLE] ms=254501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=16 high_edges=8
+688.813 RX [QA_ACK] id=C0137 op=TEMP begin=254612 end=254612 a=220 b=0
+689.172 RX [QA_FRAME] ms=254715 temp=25.0 mode=0 lower=20.0 upper=25.0
+691.047 RX [QA_SAMPLE] ms=255496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=16 high_edges=8
+691.985 RX [QA_FRAME] ms=255711 temp=25.0 mode=0 lower=20.0 upper=25.0
+694.016 RX [QA_SAMPLE] ms=256501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=16 high_edges=8
+694.703 RX [QA_ACK] id=C0138 op=TEMP begin=256612 end=256612 a=190 b=0
+694.953 RX [QA_FRAME] ms=256715 temp=22.0 mode=0 lower=20.0 upper=25.0
+696.750 RX [QA_SAMPLE] ms=257496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=16 high_edges=8
+697.750 RX [QA_FRAME] ms=257711 temp=22.0 mode=0 lower=20.0 upper=25.0
+699.531 RX Relay Activated.
+699.781 RX [QA_SAMPLE] ms=258501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=17 high_edges=9
+700.406 RX [QA_ACK] id=C0139 op=TEMP begin=258612 end=258612 a=220 b=0
+700.672 RX [QA_FRAME] ms=258715 temp=19.0 mode=0 lower=20.0 upper=25.0
+702.610 RX [QA_SAMPLE] ms=259496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=17 high_edges=9
+703.516 RX [QA_FRAME] ms=259711 temp=19.0 mode=0 lower=20.0 upper=25.0
+705.469 RX [QA_SAMPLE] ms=260501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=17 high_edges=9
+706.156 RX [QA_ACK] id=C0140 op=TEMP begin=260612 end=260612 a=250 b=0
+706.485 RX [QA_FRAME] ms=260715 temp=22.0 mode=0 lower=20.0 upper=25.0
+708.360 RX [QA_SAMPLE] ms=261496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=17 high_edges=9
+709.406 RX [QA_FRAME] ms=261711 temp=22.0 mode=0 lower=20.0 upper=25.0
+711.266 RX Relay Deactivated.
+711.547 RX [QA_SAMPLE] ms=262501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=18 high_edges=9
+712.172 RX [QA_ACK] id=C0141 op=TEMP begin=262612 end=262612 a=220 b=0
+712.469 RX [QA_FRAME] ms=262715 temp=25.0 mode=0 lower=20.0 upper=25.0
+714.328 RX [QA_SAMPLE] ms=263496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=18 high_edges=9
+715.313 RX [QA_FRAME] ms=263711 temp=25.0 mode=0 lower=20.0 upper=25.0
+717.235 RX [QA_SAMPLE] ms=264501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=18 high_edges=9
+717.860 RX [QA_ACK] id=C0142 op=TEMP begin=264612 end=264612 a=190 b=0
+718.219 RX [QA_FRAME] ms=264715 temp=22.0 mode=0 lower=20.0 upper=25.0
+720.125 RX [QA_SAMPLE] ms=265496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=18 high_edges=9
+721.078 RX [QA_FRAME] ms=265711 temp=22.0 mode=0 lower=20.0 upper=25.0
+722.828 RX Relay Activated.
+723.047 RX [QA_SAMPLE] ms=266501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=19 high_edges=10
+723.703 RX [QA_ACK] id=C0143 op=TEMP begin=266612 end=266612 a=220 b=0
+723.985 RX [QA_FRAME] ms=266715 temp=19.0 mode=0 lower=20.0 upper=25.0
+725.891 RX [QA_SAMPLE] ms=267496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=19 high_edges=10
+726.860 RX [QA_FRAME] ms=267711 temp=19.0 mode=0 lower=20.0 upper=25.0
+728.969 RX [QA_SAMPLE] ms=268501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=19 high_edges=10
+729.656 RX [QA_ACK] id=C0144 op=TEMP begin=268612 end=268612 a=250 b=0
+729.985 RX [QA_FRAME] ms=268715 temp=22.0 mode=0 lower=20.0 upper=25.0
+731.813 RX [QA_SAMPLE] ms=269496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=19 high_edges=10
+732.781 RX [QA_FRAME] ms=269711 temp=22.0 mode=0 lower=20.0 upper=25.0
+734.563 RX Relay Deactivated.
+734.828 RX [QA_SAMPLE] ms=270501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=20 high_edges=10
+735.531 RX [QA_ACK] id=C0145 op=TEMP begin=270612 end=270612 a=220 b=0
+735.844 RX [QA_FRAME] ms=270715 temp=25.0 mode=0 lower=20.0 upper=25.0
+737.813 RX [QA_SAMPLE] ms=271496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=20 high_edges=10
+738.703 RX [QA_FRAME] ms=271711 temp=25.0 mode=0 lower=20.0 upper=25.0
+740.844 RX [QA_SAMPLE] ms=272501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=20 high_edges=10
+741.703 RX [QA_ACK] id=C0146 op=TEMP begin=272612 end=272612 a=190 b=0
+742.110 RX [QA_FRAME] ms=272715 temp=22.0 mode=0 lower=20.0 upper=25.0
+744.625 RX [QA_SAMPLE] ms=273496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=20 high_edges=10
+745.891 RX [QA_FRAME] ms=273711 temp=22.0 mode=0 lower=20.0 upper=25.0
+747.860 RX Relay Activated.
+748.156 RX [QA_SAMPLE] ms=274501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=21 high_edges=11
+748.797 RX [QA_ACK] id=C0147 op=TEMP begin=274612 end=274612 a=220 b=0
+749.203 RX [QA_FRAME] ms=274714 temp=19.0 mode=0 lower=20.0 upper=25.0
+751.266 RX [QA_SAMPLE] ms=275496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=21 high_edges=11
+752.516 RX [QA_FRAME] ms=275711 temp=19.0 mode=0 lower=20.0 upper=25.0
+754.688 RX [QA_SAMPLE] ms=276501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=21 high_edges=11
+755.328 RX [QA_ACK] id=C0148 op=TEMP begin=276612 end=276612 a=250 b=0
+755.641 RX [QA_FRAME] ms=276715 temp=22.0 mode=0 lower=20.0 upper=25.0
+758.078 RX [QA_SAMPLE] ms=277496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=21 high_edges=11
+759.078 RX [QA_FRAME] ms=277711 temp=22.0 mode=0 lower=20.0 upper=25.0
+760.875 RX Relay Deactivated.
+761.125 RX [QA_SAMPLE] ms=278501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=22 high_edges=11
+761.766 RX [QA_ACK] id=C0149 op=TEMP begin=278612 end=278612 a=220 b=0
+762.172 RX [QA_FRAME] ms=278715 temp=25.0 mode=0 lower=20.0 upper=25.0
+764.235 RX [QA_SAMPLE] ms=279496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=22 high_edges=11
+765.406 RX [QA_FRAME] ms=279711 temp=25.0 mode=0 lower=20.0 upper=25.0
+767.906 RX [QA_SAMPLE] ms=280501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=22 high_edges=11
+768.688 RX [QA_ACK] id=C0150 op=TEMP begin=280612 end=280612 a=190 b=0
+769.141 RX [QA_FRAME] ms=280715 temp=22.0 mode=0 lower=20.0 upper=25.0
+771.422 RX [QA_SAMPLE] ms=281496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=22 high_edges=11
+772.672 RX [QA_FRAME] ms=281711 temp=22.0 mode=0 lower=20.0 upper=25.0
+774.891 RX Relay Activated.
+775.156 RX [QA_SAMPLE] ms=282501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=23 high_edges=12
+775.969 RX [QA_ACK] id=C0151 op=TEMP begin=282612 end=282612 a=220 b=0
+776.360 RX [QA_FRAME] ms=282715 temp=19.0 mode=0 lower=20.0 upper=25.0
+778.891 RX [QA_SAMPLE] ms=283496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=23 high_edges=12
+779.922 RX [QA_FRAME] ms=283711 temp=19.0 mode=0 lower=20.0 upper=25.0
+782.016 RX [QA_SAMPLE] ms=284501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=23 high_edges=12
+782.672 RX [QA_ACK] id=C0152 op=TEMP begin=284612 end=284612 a=250 b=0
+782.953 RX [QA_FRAME] ms=284715 temp=22.0 mode=0 lower=20.0 upper=25.0
+784.813 RX [QA_SAMPLE] ms=285496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=23 high_edges=12
+785.688 RX [QA_FRAME] ms=285711 temp=22.0 mode=0 lower=20.0 upper=25.0
+787.610 RX Relay Deactivated.
+787.844 RX [QA_SAMPLE] ms=286501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=24 high_edges=12
+788.641 RX [QA_ACK] id=C0153 op=TEMP begin=286612 end=286612 a=220 b=0
+789.000 RX [QA_FRAME] ms=286715 temp=25.0 mode=0 lower=20.0 upper=25.0
+790.875 RX [QA_SAMPLE] ms=287496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=24 high_edges=12
+791.688 RX [QA_FRAME] ms=287711 temp=25.0 mode=0 lower=20.0 upper=25.0
+793.250 RX [QA_SAMPLE] ms=288501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=24 high_edges=12
+793.875 RX [QA_ACK] id=C0154 op=TEMP begin=288612 end=288612 a=190 b=0
+794.156 RX [QA_FRAME] ms=288715 temp=22.0 mode=0 lower=20.0 upper=25.0
+795.578 RX [QA_SAMPLE] ms=289496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=24 high_edges=12
+796.360 RX [QA_FRAME] ms=289711 temp=22.0 mode=0 lower=20.0 upper=25.0
+798.188 RX Relay Activated.
+798.375 RX [QA_SAMPLE] ms=290501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=25 high_edges=13
+798.922 RX [QA_ACK] id=C0155 op=TEMP begin=290612 end=290612 a=220 b=0
+799.172 RX [QA_FRAME] ms=290715 temp=19.0 mode=0 lower=20.0 upper=25.0
+800.656 RX [QA_SAMPLE] ms=291496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=25 high_edges=13
+801.453 RX [QA_FRAME] ms=291711 temp=19.0 mode=0 lower=20.0 upper=25.0
+803.047 RX [QA_SAMPLE] ms=292501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=25 high_edges=13
+803.578 RX [QA_ACK] id=C0156 op=TEMP begin=292612 end=292612 a=250 b=0
+803.828 RX [QA_FRAME] ms=292715 temp=22.0 mode=0 lower=20.0 upper=25.0
+805.297 RX [QA_SAMPLE] ms=293496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=25 high_edges=13
+806.125 RX [QA_FRAME] ms=293711 temp=22.0 mode=0 lower=20.0 upper=25.0
+807.469 RX Relay Deactivated.
+807.625 RX [QA_SAMPLE] ms=294501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=26 high_edges=13
+808.156 RX [QA_ACK] id=C0157 op=TEMP begin=294612 end=294612 a=220 b=0
+808.422 RX [QA_FRAME] ms=294715 temp=25.0 mode=0 lower=20.0 upper=25.0
+809.860 RX [QA_SAMPLE] ms=295496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=26 high_edges=13
+810.688 RX [QA_FRAME] ms=295711 temp=25.0 mode=0 lower=20.0 upper=25.0
+812.281 RX [QA_SAMPLE] ms=296501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=26 high_edges=13
+812.797 RX [QA_ACK] id=C0158 op=TEMP begin=296611 end=296611 a=190 b=0
+813.047 RX [QA_FRAME] ms=296715 temp=22.0 mode=0 lower=20.0 upper=25.0
+814.485 RX [QA_SAMPLE] ms=297496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=26 high_edges=13
+815.219 RX [QA_FRAME] ms=297711 temp=22.0 mode=0 lower=20.0 upper=25.0
+816.610 RX Relay Activated.
+816.828 RX [QA_SAMPLE] ms=298501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=27 high_edges=14
+817.406 RX [QA_ACK] id=C0159 op=TEMP begin=298611 end=298611 a=220 b=0
+817.688 RX [QA_FRAME] ms=298715 temp=19.0 mode=0 lower=20.0 upper=25.0
+819.250 RX [QA_SAMPLE] ms=299496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=27 high_edges=14
+820.141 RX [QA_FRAME] ms=299711 temp=19.0 mode=0 lower=20.0 upper=25.0
+821.906 RX [QA_SAMPLE] ms=300501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=27 high_edges=14
+822.485 RX [QA_ACK] id=C0160 op=TEMP begin=300611 end=300611 a=250 b=0
+822.781 RX [QA_FRAME] ms=300715 temp=22.0 mode=0 lower=20.0 upper=25.0
+824.344 RX [QA_SAMPLE] ms=301496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=27 high_edges=14
+825.188 RX [QA_FRAME] ms=301711 temp=22.0 mode=0 lower=20.0 upper=25.0
+826.672 RX Relay Deactivated.
+826.860 RX [QA_SAMPLE] ms=302501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=28 high_edges=14
+827.375 RX [QA_ACK] id=C0161 op=TEMP begin=302611 end=302611 a=220 b=0
+827.625 RX [QA_FRAME] ms=302715 temp=25.0 mode=0 lower=20.0 upper=25.0
+829.375 RX [QA_SAMPLE] ms=303496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=28 high_edges=14
+830.141 RX [QA_FRAME] ms=303711 temp=25.0 mode=0 lower=20.0 upper=25.0
+831.860 RX [QA_SAMPLE] ms=304501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=28 high_edges=14
+832.438 RX [QA_ACK] id=C0162 op=TEMP begin=304611 end=304611 a=190 b=0
+832.703 RX [QA_FRAME] ms=304715 temp=22.0 mode=0 lower=20.0 upper=25.0
+834.188 RX [QA_SAMPLE] ms=305496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=28 high_edges=14
+835.063 RX [QA_FRAME] ms=305711 temp=22.0 mode=0 lower=20.0 upper=25.0
+836.563 RX Relay Activated.
+836.766 RX [QA_SAMPLE] ms=306501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=29 high_edges=15
+837.344 RX [QA_ACK] id=C0163 op=TEMP begin=306611 end=306611 a=220 b=0
+837.625 RX [QA_FRAME] ms=306715 temp=19.0 mode=0 lower=20.0 upper=25.0
+839.203 RX [QA_SAMPLE] ms=307496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=29 high_edges=15
+840.453 RX [QA_FRAME] ms=307711 temp=19.0 mode=0 lower=20.0 upper=25.0
+842.625 RX [QA_SAMPLE] ms=308501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=29 high_edges=15
+843.328 RX [QA_ACK] id=C0164 op=TEMP begin=308611 end=308611 a=250 b=0
+843.641 RX [QA_FRAME] ms=308715 temp=22.0 mode=0 lower=20.0 upper=25.0
+845.563 RX [QA_SAMPLE] ms=309496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=29 high_edges=15
+846.516 RX [QA_FRAME] ms=309711 temp=22.0 mode=0 lower=20.0 upper=25.0
+848.344 RX Relay Deactivated.
+848.578 RX [QA_SAMPLE] ms=310501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=30 high_edges=15
+849.219 RX [QA_ACK] id=C0165 op=TEMP begin=310611 end=310611 a=220 b=0
+849.485 RX [QA_FRAME] ms=310715 temp=25.0 mode=0 lower=20.0 upper=25.0
+851.219 RX [QA_SAMPLE] ms=311496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=30 high_edges=15
+852.110 RX [QA_FRAME] ms=311711 temp=25.0 mode=0 lower=20.0 upper=25.0
+854.313 RX [QA_SAMPLE] ms=312501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=30 high_edges=15
+855.000 RX [QA_ACK] id=C0166 op=TEMP begin=312611 end=312611 a=190 b=0
+855.297 RX [QA_FRAME] ms=312715 temp=22.0 mode=0 lower=20.0 upper=25.0
+857.110 RX [QA_SAMPLE] ms=313496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=30 high_edges=15
+858.031 RX [QA_FRAME] ms=313711 temp=22.0 mode=0 lower=20.0 upper=25.0
+859.641 RX Relay Activated.
+859.844 RX [QA_SAMPLE] ms=314501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=31 high_edges=16
+860.469 RX [QA_ACK] id=C0167 op=TEMP begin=314611 end=314611 a=220 b=0
+860.891 RX [QA_FRAME] ms=314715 temp=19.0 mode=0 lower=20.0 upper=25.0
+863.141 RX [QA_SAMPLE] ms=315496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=31 high_edges=16
+864.344 RX [QA_FRAME] ms=315711 temp=19.0 mode=0 lower=20.0 upper=25.0
+866.719 RX [QA_SAMPLE] ms=316501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=31 high_edges=16
+867.406 RX [QA_ACK] id=C0168 op=TEMP begin=316611 end=316611 a=250 b=0
+867.719 RX [QA_FRAME] ms=316715 temp=22.0 mode=0 lower=20.0 upper=25.0
+869.860 RX [QA_SAMPLE] ms=317496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=31 high_edges=16
+871.031 RX [QA_FRAME] ms=317711 temp=22.0 mode=0 lower=20.0 upper=25.0
+873.328 RX Relay Deactivated.
+873.563 RX [QA_SAMPLE] ms=318501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=32 high_edges=16
+874.453 RX [QA_ACK] id=C0169 op=TEMP begin=318611 end=318611 a=220 b=0
+874.953 RX [QA_FRAME] ms=318715 temp=25.0 mode=0 lower=20.0 upper=25.0
+877.500 RX [QA_SAMPLE] ms=319496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=32 high_edges=16
+878.688 RX [QA_FRAME] ms=319711 temp=25.0 mode=0 lower=20.0 upper=25.0
+880.656 RX [QA_SAMPLE] ms=320501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=32 high_edges=16
+881.281 RX [QA_ACK] id=C0170 op=TEMP begin=320611 end=320611 a=190 b=0
+881.594 RX [QA_FRAME] ms=320715 temp=22.0 mode=0 lower=20.0 upper=25.0
+883.328 RX [QA_SAMPLE] ms=321496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=32 high_edges=16
+884.360 RX [QA_FRAME] ms=321711 temp=22.0 mode=0 lower=20.0 upper=25.0
+886.391 RX Relay Activated.
+886.594 RX [QA_SAMPLE] ms=322501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=33 high_edges=17
+887.344 RX [QA_ACK] id=C0171 op=TEMP begin=322611 end=322611 a=220 b=0
+887.672 RX [QA_FRAME] ms=322715 temp=19.0 mode=0 lower=20.0 upper=25.0
+889.594 RX [QA_SAMPLE] ms=323496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=33 high_edges=17
+890.531 RX [QA_FRAME] ms=323711 temp=19.0 mode=0 lower=20.0 upper=25.0
+892.766 RX [QA_SAMPLE] ms=324501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=33 high_edges=17
+893.563 RX [QA_ACK] id=C0172 op=TEMP begin=324611 end=324611 a=250 b=0
+893.922 RX [QA_FRAME] ms=324715 temp=22.0 mode=0 lower=20.0 upper=25.0
+896.203 RX [QA_SAMPLE] ms=325496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=33 high_edges=17
+897.735 RX [QA_FRAME] ms=325711 temp=22.0 mode=0 lower=20.0 upper=25.0
+900.141 RX Relay Deactivated.
+900.438 RX [QA_SAMPLE] ms=326501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=34 high_edges=17
+901.266 RX [QA_ACK] id=C0173 op=TEMP begin=326611 end=326611 a=220 b=0
+901.641 RX [QA_FRAME] ms=326715 temp=25.0 mode=0 lower=20.0 upper=25.0
+903.703 RX [QA_SAMPLE] ms=327496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=34 high_edges=17
+904.735 RX [QA_FRAME] ms=327711 temp=25.0 mode=0 lower=20.0 upper=25.0
+907.266 RX [QA_SAMPLE] ms=328501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=34 high_edges=17
+908.094 RX [QA_ACK] id=C0174 op=TEMP begin=328611 end=328611 a=190 b=0
+908.469 RX [QA_FRAME] ms=328715 temp=22.0 mode=0 lower=20.0 upper=25.0
+910.672 RX [QA_SAMPLE] ms=329496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=34 high_edges=17
+911.672 RX [QA_FRAME] ms=329711 temp=22.0 mode=0 lower=20.0 upper=25.0
+913.531 RX Relay Activated.
+913.766 RX [QA_SAMPLE] ms=330501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=35 high_edges=18
+914.406 RX [QA_ACK] id=C0175 op=TEMP begin=330611 end=330611 a=220 b=0
+914.719 RX [QA_FRAME] ms=330715 temp=19.0 mode=0 lower=20.0 upper=25.0
+916.625 RX [QA_SAMPLE] ms=331496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=35 high_edges=18
+917.672 RX [QA_FRAME] ms=331711 temp=19.0 mode=0 lower=20.0 upper=25.0
+920.235 RX [QA_SAMPLE] ms=332501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=35 high_edges=18
+921.110 RX [QA_ACK] id=C0176 op=TEMP begin=332611 end=332611 a=250 b=0
+921.547 RX [QA_FRAME] ms=332715 temp=22.0 mode=0 lower=20.0 upper=25.0
+923.875 RX [QA_SAMPLE] ms=333496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=35 high_edges=18
+925.141 RX [QA_FRAME] ms=333711 temp=22.0 mode=0 lower=20.0 upper=25.0
+927.297 RX Relay Deactivated.
+927.625 RX [QA_SAMPLE] ms=334501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=36 high_edges=18
+928.281 RX [QA_ACK] id=C0177 op=TEMP begin=334611 end=334611 a=220 b=0
+928.625 RX [QA_FRAME] ms=334715 temp=25.0 mode=0 lower=20.0 upper=25.0
+930.547 RX [QA_SAMPLE] ms=335496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=36 high_edges=18
+931.422 RX [QA_FRAME] ms=335711 temp=25.0 mode=0 lower=20.0 upper=25.0
+933.375 RX [QA_SAMPLE] ms=336501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=36 high_edges=18
+934.141 RX [QA_ACK] id=C0178 op=TEMP begin=336611 end=336611 a=190 b=0
+934.500 RX [QA_FRAME] ms=336715 temp=22.0 mode=0 lower=20.0 upper=25.0
+936.828 RX [QA_SAMPLE] ms=337496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=36 high_edges=18
+938.047 RX [QA_FRAME] ms=337711 temp=22.0 mode=0 lower=20.0 upper=25.0
+939.938 RX Relay Activated.
+940.156 RX [QA_SAMPLE] ms=338501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=37 high_edges=19
+940.797 RX [QA_ACK] id=C0179 op=TEMP begin=338611 end=338611 a=220 b=0
+941.172 RX [QA_FRAME] ms=338714 temp=19.0 mode=0 lower=20.0 upper=25.0
+943.594 RX [QA_SAMPLE] ms=339496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=37 high_edges=19
+944.891 RX [QA_FRAME] ms=339711 temp=19.0 mode=0 lower=20.0 upper=25.0
+947.453 RX [QA_SAMPLE] ms=340501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=37 high_edges=19
+948.250 RX [QA_ACK] id=C0180 op=TEMP begin=340611 end=340611 a=250 b=0
+948.672 RX [QA_FRAME] ms=340715 temp=22.0 mode=0 lower=20.0 upper=25.0
+950.985 RX [QA_SAMPLE] ms=341496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=37 high_edges=19
+951.969 RX [QA_FRAME] ms=341711 temp=22.0 mode=0 lower=20.0 upper=25.0
+953.750 RX Relay Deactivated.
+953.985 RX [QA_SAMPLE] ms=342501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=38 high_edges=19
+954.625 RX [QA_ACK] id=C0181 op=TEMP begin=342611 end=342611 a=220 b=0
+954.938 RX [QA_FRAME] ms=342715 temp=25.0 mode=0 lower=20.0 upper=25.0
+956.860 RX [QA_SAMPLE] ms=343496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=38 high_edges=19
+957.828 RX [QA_FRAME] ms=343711 temp=25.0 mode=0 lower=20.0 upper=25.0
+959.828 RX [QA_SAMPLE] ms=344501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=38 high_edges=19
+960.500 RX [QA_ACK] id=C0182 op=TEMP begin=344611 end=344611 a=190 b=0
+960.906 RX [QA_FRAME] ms=344715 temp=22.0 mode=0 lower=20.0 upper=25.0
+962.844 RX [QA_SAMPLE] ms=345496 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=38 high_edges=19
+963.875 RX [QA_FRAME] ms=345711 temp=22.0 mode=0 lower=20.0 upper=25.0
+965.797 RX Relay Activated.
+966.016 RX [QA_SAMPLE] ms=346501 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=39 high_edges=20
+966.672 RX [QA_ACK] id=C0183 op=TEMP begin=346611 end=346611 a=220 b=0
+966.953 RX [QA_FRAME] ms=346715 temp=19.0 mode=0 lower=20.0 upper=25.0
+968.844 RX [QA_SAMPLE] ms=347496 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=39 high_edges=20
+969.797 RX [QA_FRAME] ms=347711 temp=19.0 mode=0 lower=20.0 upper=25.0
+971.938 RX [QA_SAMPLE] ms=348501 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=39 high_edges=20
+972.610 RX [QA_ACK] id=C0184 op=TEMP begin=348611 end=348611 a=250 b=0
+972.953 RX [QA_FRAME] ms=348715 temp=22.0 mode=0 lower=20.0 upper=25.0
+974.828 RX [QA_SAMPLE] ms=349496 valid=1 temp=22.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=39 high_edges=20
+975.797 RX [QA_FRAME] ms=349711 temp=22.0 mode=0 lower=20.0 upper=25.0
+977.875 RX Relay Deactivated.
+978.141 RX [QA_SAMPLE] ms=350501 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=40 high_edges=20
+979.000 RX [QA_ACK] id=C0185 op=TEMP begin=350611 end=350611 a=220 b=0
+979.344 RX [QA_FRAME] ms=350715 temp=25.0 mode=0 lower=20.0 upper=25.0
+981.203 RX [QA_SAMPLE] ms=351496 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=40 high_edges=20
+982.188 RX [QA_FRAME] ms=351711 temp=25.0 mode=0 lower=20.0 upper=25.0
+984.328 RX [QA_SAMPLE] ms=352501 valid=1 temp=22.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=40 high_edges=20
+985.031 RX [QA_ACK] id=C0186 op=RESET begin=352611 end=352611
+985.438 RX ets Jul 29 2019 12:21:46
+985.438 RX 
+985.438 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+985.438 RX configsip: 0, SPIWP:0xee
+985.438 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+985.438 RX mode:DIO, clock div:2
+985.453 RX load:0x3fff0030,len:1156
+985.453 RX load:0x40078000,len:11456
+985.453 RX ho 0 tail 12 room 4
+985.453 RX load:0x40080400,len:2972
+985.485 RX entry 0x400805dc
+986.344 RX [QA_BOOT] phase=early ms=353274 pin=0 no=1 nc=0
+986.360 RX [QA_BOOT] phase=output_init ms=353277 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+991.172 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+991.406 RX [QA_SAMPLE] ms=356335 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+992.031 RX [QA_ACK] id=C0187 op=TEMP begin=356444 end=356444 a=250 b=0
+992.360 RX [QA_FRAME] ms=356548 temp=24.0 mode=0 lower=20.0 upper=25.0
+994.266 RX [QA_SAMPLE] ms=357329 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+995.235 RX [QA_FRAME] ms=357544 temp=24.0 mode=0 lower=20.0 upper=25.0
+997.172 RX [QA_SAMPLE] ms=358334 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+998.078 RX [QA_FRAME] ms=358550 temp=25.0 mode=0 lower=20.0 upper=25.0
+1000.141 RX [QA_SAMPLE] ms=359329 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1000.828 RX [QA_ACK] id=C0188 op=TEMP begin=359444 end=359444 a=190 b=0
+1001.125 RX [QA_FRAME] ms=359542 temp=25.0 mode=0 lower=20.0 upper=25.0
+1002.938 RX Relay Activated.
+1003.125 RX [QA_SAMPLE] ms=360334 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+1004.125 RX [QA_FRAME] ms=360549 temp=19.0 mode=0 lower=20.0 upper=25.0
+1006.063 RX [QA_SAMPLE] ms=361329 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+1006.766 RX [QA_ACK] id=C0189 op=RESET begin=361444 end=361444
+1007.016 RX ets Jul 29 2019 12:21:46
+1007.016 RX 
+1007.031 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+1007.031 RX configsip: 0, SPIWP:0xee
+1007.031 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+1007.031 RX mode:DIO, clock div:2
+1007.031 RX load:0x3fff0030,len:1156
+1007.031 RX load:0x40078000,len:11456
+1007.031 RX ho 0 tail 12 room 4
+1007.063 RX load:0x40080400,len:2972
+1007.063 RX entry 0x400805dc
+1007.844 RX [QA_BOOT] phase=early ms=362107 pin=1 no=0 nc=1
+1007.844 RX [QA_BOOT] phase=output_init ms=362110 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=0 nc=1
+1012.688 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+1012.906 RX [QA_SAMPLE] ms=365168 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+1013.547 RX [QA_ACK] id=C0190 op=TEMP begin=365277 end=365277 a=190 b=0
+1013.891 RX [QA_FRAME] ms=365382 temp=24.0 mode=0 lower=20.0 upper=25.0
+1015.750 RX [QA_SAMPLE] ms=366162 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+1016.766 RX [QA_FRAME] ms=366377 temp=24.0 mode=0 lower=20.0 upper=25.0
+1018.578 RX Relay Activated.
+1018.828 RX [QA_SAMPLE] ms=367168 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1019.500 RX [QA_ACK] id=C0191 op=FAULT begin=367277 end=367277 a=1 b=0
+1019.813 RX [QA_FRAME] ms=367381 temp=19.0 mode=0 lower=20.0 upper=25.0
+1021.750 RX [QA_SAMPLE] ms=368162 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1022.703 RX [QA_FRAME] ms=368377 temp=19.0 mode=0 lower=20.0 upper=25.0
+1024.985 RX Failed to read from DHT sensor!
+1024.985 RX [QA_SAMPLE] ms=369180 valid=0 temp=0.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1025.781 RX [QA_ACK] id=C0192 op=TEMP begin=369277 end=369277 a=190 b=0
+1026.313 RX [QA_ACK] id=C0193 op=FAULT begin=369377 end=369377 a=0 b=0
+1026.313 RX [QA_FRAME] ms=369390 temp=0.0 mode=0 lower=20.0 upper=25.0
+1028.391 RX Failed to read from DHT sensor!
+1028.688 RX [QA_SAMPLE] ms=370162 valid=0 temp=0.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1029.750 RX [QA_FRAME] ms=370376 temp=0.0 mode=0 lower=20.0 upper=25.0
+1032.203 RX [QA_SAMPLE] ms=371167 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1032.953 RX [QA_ACK] id=C0194 op=RESET begin=371277 end=371277
+1033.250 RX ets Jul 29 2019 12:21:46
+1033.250 RX 
+1033.250 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+1033.250 RX configsip: 0, SPIWP:0xee
+1033.266 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+1033.266 RX mode:DIO, clock div:2
+1033.266 RX load:0x3fff0030,len:1156
+1033.266 RX load:0x40078000,len:11456
+1033.266 RX ho 0 tail 12 room 4
+1033.281 RX load:0x40080400,len:2972
+1033.297 RX entry 0x400805dc
+1034.047 RX [QA_BOOT] phase=early ms=371940 pin=1 no=0 nc=1
+1034.047 RX [QA_BOOT] phase=output_init ms=371943 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=0 nc=1
+1038.906 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+1039.156 RX [QA_SAMPLE] ms=375001 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+1039.844 RX [QA_ACK] id=C0195 op=TEMP begin=375109 end=375109 a=190 b=0
+1040.156 RX [QA_FRAME] ms=375214 temp=24.0 mode=0 lower=20.0 upper=25.0
+1042.172 RX [QA_SAMPLE] ms=375995 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+1043.156 RX [QA_FRAME] ms=376210 temp=24.0 mode=0 lower=20.0 upper=25.0
+1044.953 RX Relay Activated.
+1045.156 RX [QA_SAMPLE] ms=377000 valid=1 temp=19.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1045.781 RX [QA_ACK] id=C0196 op=FAULT begin=377109 end=377109 a=1 b=0
+1046.125 RX [QA_FRAME] ms=377213 temp=19.0 mode=0 lower=20.0 upper=25.0
+1048.063 RX [QA_SAMPLE] ms=377995 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1049.110 RX [QA_FRAME] ms=378209 temp=19.0 mode=0 lower=20.0 upper=25.0
+1051.485 RX Failed to read from DHT sensor!
+1051.500 RX [QA_SAMPLE] ms=379013 valid=0 temp=0.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1052.141 RX [QA_ACK] id=C0197 op=TEMP begin=379109 end=379109 a=250 b=0
+1052.500 RX [QA_ACK] id=C0198 op=FAULT begin=379209 end=379209 a=0 b=0
+1052.500 RX [QA_FRAME] ms=379222 temp=0.0 mode=0 lower=20.0 upper=25.0
+1054.000 RX Failed to read from DHT sensor!
+1054.203 RX [QA_SAMPLE] ms=379995 valid=0 temp=0.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1055.141 RX [QA_FRAME] ms=380209 temp=0.0 mode=0 lower=20.0 upper=25.0
+1056.891 RX Relay Deactivated.
+1057.141 RX [QA_SAMPLE] ms=381000 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=3 high_edges=1
+1057.813 RX [QA_ACK] id=C0199 op=RESET begin=381109 end=381109
+1058.094 RX ets Jul 29 2019 12:21:46
+1058.094 RX 
+1058.094 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+1058.094 RX configsip: 0, SPIWP:0xee
+1058.110 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+1058.110 RX mode:DIO, clock div:2
+1058.110 RX load:0x3fff0030,len:1156
+1058.110 RX load:0x40078000,len:11456
+1058.110 RX ho 0 tail 12 room 4
+1058.141 RX load:0x40080400,len:2972
+1058.141 RX entry 0x400805dc
+1058.906 RX [QA_BOOT] phase=early ms=381772 pin=0 no=1 nc=0
+1058.906 RX [QA_BOOT] phase=output_init ms=381775 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+1063.735 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+1063.953 RX [QA_SAMPLE] ms=384833 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1064.563 RX [QA_ACK] id=C0200 op=TEMP begin=384942 end=384942 a=250 b=0
+1064.969 RX [QA_FRAME] ms=385047 temp=24.0 mode=0 lower=20.0 upper=25.0
+1066.891 RX [QA_SAMPLE] ms=385827 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1067.906 RX [QA_FRAME] ms=386042 temp=24.0 mode=0 lower=20.0 upper=25.0
+1069.860 RX [QA_SAMPLE] ms=386832 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1070.672 RX [QA_ACK] id=C0201 op=FAULT begin=386942 end=386942 a=1 b=0
+1071.047 RX [QA_FRAME] ms=387046 temp=25.0 mode=0 lower=20.0 upper=25.0
+1073.266 RX [QA_SAMPLE] ms=387827 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1074.313 RX [QA_FRAME] ms=388042 temp=25.0 mode=0 lower=20.0 upper=25.0
+1076.610 RX Failed to read from DHT sensor!
+1076.610 RX Relay Activated.
+1076.610 RX [QA_SAMPLE] ms=388846 valid=0 temp=0.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+1077.266 RX [QA_ACK] id=C0202 op=TEMP begin=388942 end=388942 a=190 b=0
+1077.813 RX [QA_ACK] id=C0203 op=FAULT begin=389042 end=389042 a=0 b=0
+1077.828 RX [QA_FRAME] ms=389065 temp=0.0 mode=0 lower=20.0 upper=25.0
+1079.828 RX Failed to read from DHT sensor!
+1080.063 RX [QA_SAMPLE] ms=389827 valid=0 temp=0.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+1081.047 RX [QA_FRAME] ms=390041 temp=0.0 mode=0 lower=20.0 upper=25.0
+1083.375 RX [QA_SAMPLE] ms=390832 valid=1 temp=19.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+1084.360 RX [QA_ACK] id=C0204 op=RESET begin=391009 end=391009
+1084.453 RX [QA_FRAME] ms=391047 temp=19.0 mode=0 lower=20.0 upper=25.0
+1084.563 RX ets Jul 29 2019 12:21:46
+1084.563 RX 
+1084.563 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+1084.563 RX configsip: 0, SPIWP:0xee
+1084.563 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+1084.563 RX mode:DIO, clock div:2
+1084.578 RX load:0x3fff0030,len:1156
+1084.578 RX load:0x40078000,len:11456
+1084.578 RX ho 0 tail 12 room 4
+1084.594 RX load:0x40080400,len:2972
+1084.594 RX entry 0x400805dc
+1085.328 RX [QA_BOOT] phase=early ms=391672 pin=1 no=0 nc=1
+1085.344 RX [QA_BOOT] phase=output_init ms=391675 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=0 nc=1
+1089.953 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+1090.172 RX [QA_SAMPLE] ms=394733 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+1090.860 RX [QA_ACK] id=C0205 op=TEMP begin=394841 end=394841 a=250 b=0
+1091.188 RX [QA_FRAME] ms=394946 temp=24.0 mode=0 lower=20.0 upper=25.0
+1093.063 RX [QA_SAMPLE] ms=395727 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+1094.031 RX [QA_FRAME] ms=395942 temp=24.0 mode=0 lower=20.0 upper=25.0
+1096.094 RX [QA_SAMPLE] ms=396732 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+1096.688 RX [QA_ACK] id=C0206 op=FAULT begin=396841 end=396841 a=1 b=0
+1097.016 RX [QA_FRAME] ms=396946 temp=25.0 mode=0 lower=20.0 upper=25.0
+1099.078 RX [QA_SAMPLE] ms=397727 valid=1 temp=25.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=0
+1100.078 RX [QA_FRAME] ms=397942 temp=25.0 mode=0 lower=20.0 upper=25.0
+1102.266 RX Failed to read from DHT sensor!
+1102.266 RX Relay Activated.
+1102.266 RX [QA_SAMPLE] ms=398745 valid=0 temp=0.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1102.985 RX [QA_ACK] id=C0207 op=TEMP begin=398841 end=398841 a=250 b=0
+1103.422 RX [QA_ACK] id=C0208 op=FAULT begin=398941 end=398941 a=0 b=0
+1103.422 RX [QA_FRAME] ms=398965 temp=0.0 mode=0 lower=20.0 upper=25.0
+1105.125 RX Failed to read from DHT sensor!
+1105.406 RX [QA_SAMPLE] ms=399727 valid=0 temp=0.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=2 high_edges=1
+1106.547 RX [QA_FRAME] ms=399941 temp=0.0 mode=0 lower=20.0 upper=25.0
+1108.625 RX Relay Deactivated.
+1108.906 RX [QA_SAMPLE] ms=400732 valid=1 temp=25.0 req=0 pin=0 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=3 high_edges=1
+1109.610 RX [QA_ACK] id=C0209 op=RESET begin=400841 end=400841
+1109.891 RX ets Jul 29 2019 12:21:46
+1109.891 RX 
+1109.891 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+1109.891 RX configsip: 0, SPIWP:0xee
+1109.906 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+1109.906 RX mode:DIO, clock div:2
+1109.906 RX load:0x3fff0030,len:1156
+1109.906 RX load:0x40078000,len:11456
+1109.906 RX ho 0 tail 12 room 4
+1109.906 RX load:0x40080400,len:2972
+1109.938 RX entry 0x400805dc
+1110.797 RX [QA_BOOT] phase=early ms=401505 pin=0 no=1 nc=0
+1110.797 RX [QA_BOOT] phase=output_init ms=401507 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+1115.641 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+1115.891 RX [QA_SAMPLE] ms=404565 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1116.922 RX [QA_FRAME] ms=404781 temp=24.0 mode=0 lower=20.0 upper=25.0
+1118.625 RX [QA_SAMPLE] ms=405559 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1119.625 RX [QA_FRAME] ms=405774 temp=24.0 mode=0 lower=20.0 upper=25.0
+1121.625 RX [QA_SAMPLE] ms=406564 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1122.531 RX [QA_FRAME] ms=406783 temp=24.0 mode=0 lower=20.0 upper=25.0
+1122.531 RX Mode changed to: SET LOWER
+1122.531 RX [QA_MODE] ms=406784 mode=1
+1123.610 RX [QA_ACK] id=C0210 op=PRESS begin=406675 end=407375 a=350 b=350
+1124.360 RX [QA_SAMPLE] ms=407559 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1125.047 RX [QA_ACK] id=C0211 op=TURN begin=407674 end=407694 a=1 b=-1
+1125.688 RX [QA_FRAME] ms=407814 temp=24.0 mode=1 lower=20.0 upper=25.0
+1125.688 RX Lower Threshold: 20.50
+1127.063 RX [QA_FRAME] ms=408068 temp=24.0 mode=1 lower=20.5 upper=25.0
+1128.656 RX [QA_SAMPLE] ms=408564 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.5 upper=25.0 enc=4 edges=0 high_edges=0
+1129.953 RX [QA_FRAME] ms=408820 temp=24.0 mode=1 lower=20.5 upper=25.0
+1132.094 RX [QA_SAMPLE] ms=409559 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.5 upper=25.0 enc=4 edges=0 high_edges=0
+1133.469 RX [QA_FRAME] ms=409814 temp=24.0 mode=1 lower=20.5 upper=25.0
+1135.875 RX [QA_SAMPLE] ms=410564 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=1 lower=20.5 upper=25.0 enc=4 edges=0 high_edges=0
+1137.125 RX [QA_FRAME] ms=410825 temp=24.0 mode=1 lower=20.5 upper=25.0
+1137.125 RX Mode changed to: SET UPPER
+1137.125 RX [QA_MODE] ms=410827 mode=2
+1138.297 RX [QA_ACK] id=C0212 op=PRESS begin=410675 end=411375 a=350 b=350
+1139.188 RX [QA_SAMPLE] ms=411559 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.5 upper=25.0 enc=4 edges=0 high_edges=0
+1139.938 RX [QA_ACK] id=C0213 op=TURN begin=411673 end=411693 a=1 b=-1
+1140.422 RX [QA_FRAME] ms=411814 temp=24.0 mode=2 lower=20.5 upper=25.0
+1140.422 RX Upper Threshold: 25.50
+1141.672 RX [QA_FRAME] ms=412068 temp=24.0 mode=2 lower=20.5 upper=25.5
+1143.047 RX [QA_SAMPLE] ms=412564 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.5 upper=25.5 enc=8 edges=0 high_edges=0
+1144.281 RX [QA_FRAME] ms=412820 temp=24.0 mode=2 lower=20.5 upper=25.5
+1146.360 RX [QA_SAMPLE] ms=413559 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=2 lower=20.5 upper=25.5 enc=8 edges=0 high_edges=0
+1147.750 RX [QA_FRAME] ms=413814 temp=24.0 mode=2 lower=20.5 upper=25.5
+1148.031 RX [QA_ACK] id=C0214 op=RESET begin=413908 end=413908
+1148.266 RX ets Jul 29 2019 12:21:46
+1148.266 RX 
+1148.266 RX rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+1148.266 RX configsip: 0, SPIWP:0xee
+1148.266 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+1148.266 RX mode:DIO, clock div:2
+1148.266 RX load:0x3fff0030,len:1156
+1148.281 RX load:0x40078000,len:11456
+1148.281 RX ho 0 tail 12 room 4
+1148.313 RX load:0x40080400,len:2972
+1148.313 RX entry 0x400805dc
+1149.219 RX [QA_BOOT] phase=early ms=414571 pin=0 no=1 nc=0
+1149.219 RX [QA_BOOT] phase=output_init ms=414574 mode=0 lower=20.0 upper=25.0 req=0 pin=0 no=1 nc=0
+1154.313 RX [QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32
+1154.531 RX [QA_SAMPLE] ms=417632 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1155.188 RX [QA_ACK] id=C0215 op=TEMP begin=417740 end=417740 a=0 b=0
+1155.516 RX [QA_FRAME] ms=417846 temp=24.0 mode=0 lower=20.0 upper=25.0
+1157.328 RX [QA_SAMPLE] ms=418626 valid=1 temp=24.0 req=0 pin=0 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=0 high_edges=0
+1158.250 RX [QA_FRAME] ms=418841 temp=24.0 mode=0 lower=20.0 upper=25.0
+1159.985 RX Relay Activated.
+1160.235 RX [QA_SAMPLE] ms=419631 valid=1 temp=0.0 req=1 pin=1 no=1 nc=0 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+1160.953 RX [QA_ACK] id=C0216 op=TEMP begin=419741 end=419741 a=-100 b=0
+1161.297 RX [QA_FRAME] ms=419843 temp=0.0 mode=0 lower=20.0 upper=25.0
+1163.125 RX [QA_SAMPLE] ms=420626 valid=1 temp=0.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1
+1164.000 RX [QA_FRAME] ms=420840 temp=0.0 mode=0 lower=20.0 upper=25.0
+1165.985 RX [QA_SAMPLE] ms=421631 valid=1 temp=-10.0 req=1 pin=1 no=0 nc=1 mode=0 lower=20.0 upper=25.0 enc=0 edges=1 high_edges=1

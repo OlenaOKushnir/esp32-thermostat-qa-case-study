@@ -1,0 +1,113 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Thermostat: Build (Windows PlatformIO)",
+      "type": "process",
+      "command": "${env:USERPROFILE}\\.platformio\\penv\\Scripts\\platformio.exe",
+      "args": [
+        "run",
+        "-e",
+        "esp32dev"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Thermostat: Verify portfolio integrity",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "scripts/verify_portfolio.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Thermostat: Evaluate recorded acceptance evidence",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Thermostat: Build device validation",
+      "type": "process",
+      "command": "${env:USERPROFILE}\\.platformio\\penv\\Scripts\\platformio.exe",
+      "args": [
+        "run",
+        "-d",
+        "validation/device"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Thermostat: Build sensor validation",
+      "type": "process",
+      "command": "${env:USERPROFILE}\\.platformio\\penv\\Scripts\\platformio.exe",
+      "args": [
+        "run",
+        "-d",
+        "validation/sensor"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Thermostat: Build complete campaign",
+      "type": "process",
+      "command": "${env:USERPROFILE}\\.platformio\\penv\\Scripts\\platformio.exe",
+      "args": [
+        "run",
+        "-d",
+        "validation/campaign"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Thermostat: Build all images",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Thermostat: Build (Windows PlatformIO)",
+        "Thermostat: Build device validation",
+        "Thermostat: Build sensor validation",
+        "Thermostat: Build complete campaign"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

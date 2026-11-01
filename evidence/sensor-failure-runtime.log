@@ -1,0 +1,65 @@
+Host monotonic elapsed seconds; RX only; no commands injected.
+2.062 RX Failed to read from DHT sensor!
+3.922 RX Failed to read from DHT sensor!
+6.406 RX Failed to read from DHT sensor!
+8.422 RX Failed to read from DHT sensor!
+11.015 RX Failed to read from DHT sensor!
+13.125 RX Failed to read from DHT sensor!
+15.968 RX Failed to read from DHT sensor!
+18.343 RX Failed to read from DHT sensor!
+22.297 RX Failed to read from DHT sensor!
+24.515 RX Failed to read from DHT sensor!
+27.265 RX Failed to read from DHT sensor!
+29.328 RX ets Jul 29 2019 12:21:46
+29.328 RX 
+29.328 RX rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+29.328 RX configsip: 0, SPIWP:0xee
+29.343 RX clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+29.343 RX mode:DIO, clock div:2
+29.343 RX load:0x3fff0030,len:1156
+29.343 RX load:0x40078000,len:11456
+29.343 RX ho 0 tail 12 room 4
+29.343 RX load:0x40080400,len:2972
+29.359 RX entry 0x400805dc
+35.125 RX Failed to read from DHT sensor!
+35.140 RX Relay Activated.
+37.218 RX Failed to read from DHT sensor!
+40.797 RX Failed to read from DHT sensor!
+43.906 RX Failed to read from DHT sensor!
+47.718 RX Failed to read from DHT sensor!
+51.390 RX Failed to read from DHT sensor!
+55.437 RX Failed to read from DHT sensor!
+59.078 RX Failed to read from DHT sensor!
+63.250 RX Failed to read from DHT sensor!
+66.359 RX Failed to read from DHT sensor!
+70.500 RX Failed to read from DHT sensor!
+73.828 RX Failed to read from DHT sensor!
+79.140 RX Failed to read from DHT sensor!
+85.093 RX Failed to read from DHT sensor!
+91.031 RX Failed to read from DHT sensor!
+93.703 RX Failed to read from DHT sensor!
+97.218 RX Failed to read from DHT sensor!
+99.968 RX Failed to read from DHT sensor!
+103.672 RX Failed to read from DHT sensor!
+106.531 RX Failed to read from DHT sensor!
+110.281 RX Failed to read from DHT sensor!
+113.015 RX Failed to read from DHT sensor!
+116.562 RX Failed to read from DHT sensor!
+119.187 RX Failed to read from DHT sensor!
+122.828 RX Failed to read from DHT sensor!
+125.547 RX Failed to read from DHT sensor!
+129.250 RX Failed to read from DHT sensor!
+132.125 RX Failed to read from DHT sensor!
+135.843 RX Failed to read from DHT sensor!
+139.297 RX Failed to read from DHT sensor!
+143.031 RX Failed to read from DHT sensor!
+145.922 RX Failed to read from DHT sensor!
+149.734 RX Failed to read from DHT sensor!
+152.515 RX Failed to read from DHT sensor!
+156.406 RX Failed to read from DHT sensor!
+159.203 RX Failed to read from DHT sensor!
+163.109 RX Failed to read from DHT sensor!
+166.203 RX Failed to read from DHT sensor!
+170.140 RX Failed to read from DHT sensor!
+173.500 RX Failed to read from DHT sensor!
+178.937 RX Failed to read from DHT sensor!

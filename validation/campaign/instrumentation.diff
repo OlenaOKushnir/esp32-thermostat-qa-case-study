@@ -1,0 +1,191 @@
+--- src/main.cpp
++++ validation/campaign/src/main.cpp
+@@ -12,6 +12,9 @@
+ void handleEncoder();
+ void toggleMode();
+ 
++void qaInitEarly(); void qaInitOutput(); void qaStart(); void qaSample(float); void qaFrame(float); void qaMode();
++extern volatile bool qaReadValid;
++
+ #define DHTTYPE DHT22
+ #define DHTPIN 16
+ 
+@@ -47,12 +50,14 @@
+ 
+ void setup() {
+   Serial.begin(115200);
++  qaInitEarly();
+ 
+   static Encoder encoder(ENCODER_CLK, ENCODER_DT);
+   myEnc = &encoder;
+ 
+   pinMode(RELAY_PIN, OUTPUT);
+   digitalWrite(RELAY_PIN, LOW);
++  qaInitOutput();
+ 
+   tft.begin();
+   tft.setRotation(1);
+@@ -66,6 +71,7 @@
+   pinMode(SW_PIN, INPUT_PULLUP);
+ 
+   delay(2000);
++  qaStart();
+ }
+ 
+ void loop() {
+@@ -77,6 +83,7 @@
+     float temperature = readTemperature();
+ 
+     updateRelay(temperature);
++    qaSample(temperature);
+ 
+     updateDisplay(temperature);
+   }
+@@ -88,6 +95,7 @@
+   float temperature = 0.0;
+ 
+   temperature = dht.readTemperature();
++  qaReadValid = !isnan(temperature);
+   if (isnan(temperature)) {
+     Serial.println("Failed to read from DHT sensor!");
+     temperature = 0.0;
+@@ -153,6 +161,7 @@
+     tft.setCursor(10, 130);
+     tft.print("Rotate to adjust, Press to confirm.");
+   }
++  qaFrame(currentTemp);
+ }
+ 
+ void handleEncoder() {
+@@ -194,6 +203,7 @@
+ }
+ 
+ void toggleMode() {
++
+   switch (currentMode) {
+     case VIEW:
+       currentMode = SET_LOWER;
+@@ -218,4 +228,122 @@
+       Serial.println("SET UPPER");
+       break;
+   }
+-}
++  qaMode();
++}
++
++#include <driver/gpio.h>
++const int QA_CLK=13, QA_DT=12, QA_SW=32, QA_DHT=33;
++const int QA_NO=34, QA_NC=35, QA_REQ=36;
++volatile bool qaReady=false, qaFault=false, qaReadValid=false;
++volatile int16_t qaTemperature=240;
++volatile uint32_t qaLowAt=0;
++volatile bool qaSending=false;
++volatile uint32_t qaEdges=0, qaHighEdges=0;
++volatile uint32_t qaFrameMs=0, qaAcceptedMs=0;
++volatile int qaFrameMode=-1;
++
++void IRAM_ATTR qaRequestEdge() {
++  qaEdges++;
++  if (gpio_get_level((gpio_num_t)QA_REQ)) qaHighEdges++;
++}
++void IRAM_ATTR qaDhtEdge() {
++  if (qaSending) return;
++  int level=gpio_get_level((gpio_num_t)QA_DHT);
++  if (!level) { qaLowAt=micros(); return; }
++  uint32_t began=qaLowAt; qaLowAt=0;
++  if (!began || (uint32_t)(micros()-began)<900 || qaFault) return;
++  qaSending=true;
++  int16_t temperature=qaTemperature;
++  uint16_t raw=temperature<0 ? (uint16_t)(-temperature)|0x8000 : (uint16_t)temperature;
++  uint8_t bytes[5]={1,144,(uint8_t)(raw>>8),(uint8_t)raw,0};
++  bytes[4]=(uint8_t)(bytes[0]+bytes[1]+bytes[2]+bytes[3]);
++  delayMicroseconds(20);
++  gpio_set_level((gpio_num_t)QA_DHT,0); delayMicroseconds(80);
++  gpio_set_level((gpio_num_t)QA_DHT,1); delayMicroseconds(80);
++  for(int b=0;b<5;b++) for(int bit=7;bit>=0;bit--) {
++    gpio_set_level((gpio_num_t)QA_DHT,0); delayMicroseconds(50);
++    gpio_set_level((gpio_num_t)QA_DHT,1); delayMicroseconds((bytes[b]&(1<<bit))?70:26);
++  }
++  gpio_set_level((gpio_num_t)QA_DHT,0); delayMicroseconds(50);
++  gpio_set_level((gpio_num_t)QA_DHT,1);
++  qaLowAt=0;qaSending=false;
++}
++void qaInitEarly() {
++  pinMode(QA_NO,INPUT);pinMode(QA_NC,INPUT);pinMode(QA_REQ,INPUT);
++  attachInterrupt(digitalPinToInterrupt(QA_REQ),qaRequestEdge,CHANGE);
++  Serial.printf("[QA_BOOT] phase=early ms=%lu pin=%d no=%d nc=%d\n",millis(),digitalRead(QA_REQ),digitalRead(QA_NO),digitalRead(QA_NC));
++}
++void qaInitOutput() {
++  Serial.printf("[QA_BOOT] phase=output_init ms=%lu mode=%d lower=%.1f upper=%.1f req=%d pin=%d no=%d nc=%d\n",millis(),(int)currentMode,LOWER_THRESHOLD,UPPER_THRESHOLD,(int)relayState,digitalRead(QA_REQ),digitalRead(QA_NO),digitalRead(QA_NC));
++}
++void qaSample(float temperature) {
++  Serial.printf("[QA_SAMPLE] ms=%lu valid=%d temp=%.1f req=%d pin=%d no=%d nc=%d mode=%d lower=%.1f upper=%.1f enc=%ld edges=%lu high_edges=%lu\n",
++    millis(),(int)qaReadValid,temperature,(int)relayState,digitalRead(QA_REQ),digitalRead(QA_NO),digitalRead(QA_NC),(int)currentMode,LOWER_THRESHOLD,UPPER_THRESHOLD,myEnc->read(),qaEdges,qaHighEdges);
++}
++void qaFrame(float temperature) {
++  qaFrameMs=millis();qaFrameMode=(int)currentMode;
++  Serial.printf("[QA_FRAME] ms=%lu temp=%.1f mode=%d lower=%.1f upper=%.1f\n",qaFrameMs,temperature,(int)currentMode,LOWER_THRESHOLD,UPPER_THRESHOLD);
++}
++void qaMode() {
++  qaAcceptedMs=millis();
++  Serial.printf("[QA_MODE] ms=%lu mode=%d\n",qaAcceptedMs,(int)currentMode);
++}
++void qaServiceDht() {
++  if(!gpio_get_level((gpio_num_t)QA_DHT)) {
++    uint32_t began=micros();
++    while(!gpio_get_level((gpio_num_t)QA_DHT) && (uint32_t)(micros()-began)<2000) {}
++    if(gpio_get_level((gpio_num_t)QA_DHT)) { qaLowAt=micros()-1100;qaDhtEdge(); }
++  }
++}
++void qaWait(uint32_t ms) {
++  uint32_t began=millis();
++  do { qaServiceDht();vTaskDelay(1); } while((uint32_t)(millis()-began)<ms);
++}
++void qaTurn(int count,int direction) {
++  const uint8_t sequence[2][4]={{1,0,2,3},{2,0,1,3}};
++  for(int i=0;i<count;i++) for(int j=0;j<4;j++) {
++    uint8_t value=sequence[direction<0?1:0][j];
++    digitalWrite(QA_CLK,(value&2)?HIGH:LOW);digitalWrite(QA_DT,(value&1)?HIGH:LOW);
++    qaWait(5);
++  }
++}
++void qaTask(void*) {
++  pinMode(QA_CLK,OUTPUT);pinMode(QA_DT,OUTPUT);pinMode(QA_SW,OUTPUT);
++  digitalWrite(QA_CLK,HIGH);digitalWrite(QA_DT,HIGH);digitalWrite(QA_SW,HIGH);
++  gpio_set_direction((gpio_num_t)QA_DHT,GPIO_MODE_INPUT_OUTPUT_OD);
++  gpio_set_pull_mode((gpio_num_t)QA_DHT,GPIO_PULLUP_ONLY);
++  gpio_set_level((gpio_num_t)QA_DHT,1);
++  disableCore0WDT();
++  qaReady=true;
++  Serial.println("[QA_READY] protocol=DHT22 source=GPIO33 clk=13 dt=12 sw=32");
++  char buffer[96];int used=0;
++  for(;;) {
++    while(Serial.available()) {
++      char c=(char)Serial.read();
++      if(c=='\r')continue;
++      if(c=='\n') {
++        buffer[used]=0;used=0;char id[20]={0},op[20]={0};int a=0,b=0;
++        if(sscanf(buffer,"%19s %19s %d %d",id,op,&a,&b)<2)continue;
++        uint32_t began=millis();
++        if(!strcmp(op,"TEMP"))qaTemperature=(int16_t)a;
++        else if(!strcmp(op,"FAULT"))qaFault=a!=0;
++        else if(!strcmp(op,"TURN"))qaTurn(a,b);
++        else if(!strcmp(op,"PRESS")) { digitalWrite(QA_SW,LOW);qaWait(a);digitalWrite(QA_SW,HIGH);qaWait(b); }
++        else if(!strcmp(op,"BOUNCE")) {
++          digitalWrite(QA_SW,LOW);qaWait(1100);digitalWrite(QA_SW,HIGH);qaWait(5);
++          digitalWrite(QA_SW,LOW);qaWait(20);digitalWrite(QA_SW,HIGH);qaWait(250);
++        }
++        else if(!strcmp(op,"RESET")) {
++          Serial.printf("[QA_ACK] id=%s op=RESET begin=%lu end=%lu\n",id,began,millis());qaWait(100);ESP.restart();
++        }
++        else if(strcmp(op,"PING")) { Serial.printf("[QA_ERROR] id=%s op=%s\n",id,op);continue; }
++        Serial.printf("[QA_ACK] id=%s op=%s begin=%lu end=%lu a=%d b=%d\n",id,op,began,millis(),a,b);
++      } else if(used<(int)sizeof(buffer)-1)buffer[used++]=c;
++    }
++    qaWait(1);
++  }
++}
++void qaStart() {
++  xTaskCreatePinnedToCore(qaTask,"qa-controller",6144,nullptr,1,nullptr,0);
++  while(!qaReady)delay(1);
++}

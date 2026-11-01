@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-01",
+  "level": "host component harness, unchanged C-compatible function bodies with hardware doubles",
+  "limitations": [
+    "Exact fake-clock component boundary only; no ESP32 scheduler or optical timing claim."
+  ],
+  "source_sha256": "988fa33fc33eb1d6171f5954f3a124198ab8fe3e319e97ac67f9c4041ff58774",
+  "function_sha256": {
+    "float readTemperature()": "2761af1f3e81728a4e3e089c535926a623931bf60d44b3d8da63b3ee77db32de",
+    "void updateRelay(float temperature)": "f5636b5dcda57e534aa477df1ae4bc60468b4a303754317ca4e7994925645a7c",
+    "void updateDisplay(float currentTemp)": "3e5f90f2b047c658a8aa10389803f0f3c479ba50bcd628ae55d049165c063185",
+    "void handleEncoder()": "7cc9d5a6a948b3e2e1937e1fda06343b3ce50623151168786837326d66f4ea82",
+    "void toggleMode()": "571007aa8362d7f08d153f4227700c47aaa59f0430414d7b6ce7527b257655b9",
+    "void loop()": "ddd248a30547fecae496635dab6bde506495550461454abb8b8679b08ae6d504"
+  },
+  "compiler": "TinyCC 0.9.27 libtcc Windows x64 API",
+  "compiler_dll_sha256": "e08569d34baf5c546c9a19c5e6d0b5993f196f41e5eaebb10e54c71b591092bc",
+  "compiler_source": "https://download.savannah.gnu.org/releases/tinycc/tcc-0.9.27-win64-bin.zip",
+  "python": "3.12.10",
+  "scenarios": {
+    "press_interval_199": {
+      "interval_ms": 199,
+      "actual_mode": 1,
+      "expected_mode": 1
+    },
+    "press_interval_200": {
+      "interval_ms": 200,
+      "actual_mode": 1,
+      "expected_mode": 1
+    },
+    "press_interval_201": {
+      "interval_ms": 201,
+      "actual_mode": 2,
+      "expected_mode": 2
+    }
+  },
+  "harness_sha256": "82ba30d3465ba154f3595a7edfbe7600419ffe332957955b2d164d2fde7f870b",
+  "doubles_sha256": "1bf08cadcc559855d2c8b073cc29124637afea291b709e8fd1ff26bab3ef9b28",
+  "executed_utc": "2026-11-01T16:11:18.765589+00:00",
+  "orchestrator_sha256": "39fd6bd5583e6c510e875ca2617ac407c03c5da66e0d625c3ae4c8db809511e8"
+}

@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = '.pio/build/sensor_validation/firmware.bin'
+elf = '.pio/build/sensor_validation/firmware.elf'
+rfc2217ServerPort = 4002

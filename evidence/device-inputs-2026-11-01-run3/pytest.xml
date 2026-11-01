@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="3" time="32.747" timestamp="2026-11-01T11:13:09.465674+01:00" hostname="Olena"><testcase classname="live_tests.test_device_inputs" name="test_clean_long_press" time="32.124" /><testcase classname="live_tests.test_device_inputs" name="test_release_bounce_is_one_action" time="0.001"><failure message="AssertionError: BUG-T04: release bounce accepted as another press&#10;assert 2 == 1">live_run = {'T04_BOUNCE': {'actual_mode': 2, 'bounce_ms': 10898, 'expected_mode': 1, 'pass': 0, ...}, 'T04_CLEAN': {'actual_mode'...pected_mode': 1, 'pass': 1}, 'T05': {'accepted_ms': 3793, 'actual_mode': 1, 'budget_ms': 500, 'elapsed_ms': 1024, ...}}
+
+    def test_release_bounce_is_one_action(live_run):
+&gt;       assert live_run['T04_BOUNCE']['actual_mode']==1, 'BUG-T04: release bounce accepted as another press'
+E       AssertionError: BUG-T04: release bounce accepted as another press
+E       assert 2 == 1
+
+outputs\thermostat-vscode\live_tests\test_device_inputs.py:57: AssertionError</failure></testcase><testcase classname="live_tests.test_device_inputs" name="test_mode_feedback_meets_proposed_500ms" time="0.001"><failure message="AssertionError: BUG-T05: completed mode frame exceeds proposed 500 ms budget&#10;assert 1024 &lt;= 500">live_run = {'T04_BOUNCE': {'actual_mode': 2, 'bounce_ms': 10898, 'expected_mode': 1, 'pass': 0, ...}, 'T04_CLEAN': {'actual_mode'...pected_mode': 1, 'pass': 1}, 'T05': {'accepted_ms': 3793, 'actual_mode': 1, 'budget_ms': 500, 'elapsed_ms': 1024, ...}}
+
+    def test_mode_feedback_meets_proposed_500ms(live_run):
+        result=live_run['T05']
+        assert result['frame_mode']==result['actual_mode']
+&gt;       assert result['elapsed_ms']&lt;=500, 'BUG-T05: completed mode frame exceeds proposed 500 ms budget'
+E       AssertionError: BUG-T05: completed mode frame exceeds proposed 500 ms budget
+E       assert 1024 &lt;= 500
+
+outputs\thermostat-vscode\live_tests\test_device_inputs.py:62: AssertionError</failure></testcase></testsuite></testsuites>

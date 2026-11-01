@@ -1,0 +1,180 @@
+{
+  "date": "2026-11-01",
+  "level": "host component harness, unchanged C-compatible function bodies with hardware doubles",
+  "limitations": [
+    "Not a full Arduino C++ build",
+    "No ESP32 interrupt, sensor-library or TFT drawing timing validation",
+    "Fake millis and electrical inputs; Wokwi confirmation pending for new findings",
+    "500 ms mode-feedback criterion is the existing proposed RTH-12 budget"
+  ],
+  "source_sha256": "74fe8a4d18c30fc8d99c7e7bed1fad70ca89a333d0eced333503e7aadd89e4f7",
+  "function_sha256": {
+    "float readTemperature()": "c43bbd03e92d795e51b19d566cb7a7a240dadbf5ee8dc43a7f009e872d239570",
+    "void updateRelay(float temperature)": "a0405766f95986c7a7dd689a2039a428e6efd426b007367f46862cf1707981be",
+    "void updateDisplay(float currentTemp)": "314fa42ca1d58a7c48c8b6d859d3bce7c3c5b283e964a0d86fe2d17cf6b62167",
+    "void handleEncoder()": "4eec68f57c758e01a4ecc64c79a0ac1fcb35f2768bd1ab189bf0299c971f1e4e",
+    "void toggleMode()": "bd0c827e9f029a2a33d22d87bae0d8879c622a37c1071451a1355002b556719e",
+    "void loop()": "c05f9e27a32c393b109a96b57f7e1a01ee1014d24716601cb30ad259234d6a49"
+  },
+  "compiler": "TinyCC 0.9.27 libtcc Windows x64 API",
+  "compiler_dll_sha256": "e08569d34baf5c546c9a19c5e6d0b5993f196f41e5eaebb10e54c71b591092bc",
+  "compiler_source": "https://download.savannah.gnu.org/releases/tinycc/tcc-0.9.27-win64-bin.zip",
+  "python": "3.12.10",
+  "scenarios": {
+    "long_press_without_bounce": {
+      "actual_mode": 1,
+      "expected_mode": 1
+    },
+    "short_bounce_after_press": {
+      "actual_mode": 1,
+      "expected_mode": 1
+    },
+    "long_press_release_bounce": {
+      "actual_mode": 2,
+      "expected_mode": 1,
+      "release_bounce_ms": 1
+    },
+    "mode_feedback_510ms": {
+      "actual_mode": 1,
+      "displayed_mode": 0,
+      "elapsed_since_press_ms": 510,
+      "budget_ms": 500
+    },
+    "mode_feedback_after_refresh": {
+      "actual_mode": 1,
+      "displayed_mode": 1
+    },
+    "hysteresis_control": {
+      "expected_sequence_matches": true
+    },
+    "lower_below_minimum": {
+      "actual_lower": -50.0,
+      "expected_lower": -50.0
+    },
+    "upper_above_maximum": {
+      "actual_upper": 100.0,
+      "expected_upper": 100.0
+    },
+    "lower_crosses_upper": {
+      "actual_lower": 24.5,
+      "upper": 25.0,
+      "expected_gap": 0.5
+    },
+    "boundary_19.9_prior_0": {
+      "actual_output": 1,
+      "expected_output": 1,
+      "temperature": 19.9,
+      "prior_output": 0
+    },
+    "boundary_20.0_prior_0": {
+      "actual_output": 0,
+      "expected_output": 0,
+      "temperature": 20.0,
+      "prior_output": 0
+    },
+    "boundary_20.1_prior_0": {
+      "actual_output": 0,
+      "expected_output": 0,
+      "temperature": 20.1,
+      "prior_output": 0
+    },
+    "boundary_24.9_prior_0": {
+      "actual_output": 0,
+      "expected_output": 0,
+      "temperature": 24.9,
+      "prior_output": 0
+    },
+    "boundary_25.0_prior_0": {
+      "actual_output": 0,
+      "expected_output": 0,
+      "temperature": 25.0,
+      "prior_output": 0
+    },
+    "boundary_25.1_prior_0": {
+      "actual_output": 0,
+      "expected_output": 0,
+      "temperature": 25.1,
+      "prior_output": 0
+    },
+    "valid_zero_prior_0": {
+      "actual_output": 1,
+      "expected_output": 1,
+      "reading": 0.0
+    },
+    "recovery_prior_0_restored_19": {
+      "actual_output": 1,
+      "expected_output": 1,
+      "fault_output": 1,
+      "fault_reading": 0.0,
+      "restored_temperature": 19.0
+    },
+    "recovery_prior_0_restored_25": {
+      "actual_output": 0,
+      "expected_output": 0,
+      "fault_output": 1,
+      "fault_reading": 0.0,
+      "restored_temperature": 25.0
+    },
+    "boundary_19.9_prior_1": {
+      "actual_output": 1,
+      "expected_output": 1,
+      "temperature": 19.9,
+      "prior_output": 1
+    },
+    "boundary_20.0_prior_1": {
+      "actual_output": 1,
+      "expected_output": 1,
+      "temperature": 20.0,
+      "prior_output": 1
+    },
+    "boundary_20.1_prior_1": {
+      "actual_output": 1,
+      "expected_output": 1,
+      "temperature": 20.1,
+      "prior_output": 1
+    },
+    "boundary_24.9_prior_1": {
+      "actual_output": 1,
+      "expected_output": 1,
+      "temperature": 24.9,
+      "prior_output": 1
+    },
+    "boundary_25.0_prior_1": {
+      "actual_output": 0,
+      "expected_output": 0,
+      "temperature": 25.0,
+      "prior_output": 1
+    },
+    "boundary_25.1_prior_1": {
+      "actual_output": 0,
+      "expected_output": 0,
+      "temperature": 25.1,
+      "prior_output": 1
+    },
+    "valid_zero_prior_1": {
+      "actual_output": 1,
+      "expected_output": 1,
+      "reading": 0.0
+    },
+    "recovery_prior_1_restored_19": {
+      "actual_output": 1,
+      "expected_output": 1,
+      "fault_output": 1,
+      "fault_reading": 0.0,
+      "restored_temperature": 19.0
+    },
+    "recovery_prior_1_restored_25": {
+      "actual_output": 0,
+      "expected_output": 0,
+      "fault_output": 1,
+      "fault_reading": 0.0,
+      "restored_temperature": 25.0
+    }
+  },
+  "harness_sha256": "82ba30d3465ba154f3595a7edfbe7600419ffe332957955b2d164d2fde7f870b",
+  "doubles_sha256": "1bf08cadcc559855d2c8b073cc29124637afea291b709e8fd1ff26bab3ef9b28",
+  "executed_utc": "2026-11-01T10:10:33.696184+00:00",
+  "orchestrator_sha256": "40ef309755f90d8e47309970d2e10e2dc811d454270dd0d9e4aa15dc1e93d660",
+  "extra_scenarios_sha256": "0bf7243391b15cd3e18486783e9a8f869339e875197a2ebbe0c6681c51812a8e",
+  "result_scope": "New component execution only; not a Wokwi/device test or acceptance approval."
+}
