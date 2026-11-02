@@ -1,4 +1,4 @@
-# Embedded QA Case Study — ESP32 Thermostat
+# Embedded QA Case Study - ESP32 Thermostat
 
 An ESP32 thermostat tested in **Wokwi for VS Code**, with a DHT22 sensor, ILI9341 display, KY-040 encoder and relay. Defaults: VIEW, lower 20 C, upper 25 C. Testing was done in simulation; physical hardware was not tested.
 
