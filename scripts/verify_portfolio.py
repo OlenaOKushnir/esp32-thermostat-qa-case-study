@@ -94,11 +94,7 @@ for initial in [190,250]:
     for restored in [190,250]:assert f'recovery_{initial}_{restored}' in campaign_observations
 for name in ['BUG-T03.md','BUG-T04.md','BUG-T05.md']:
     assert (ROOT/'bug-reports'/name).is_file()
-print(f'PASS: 17 MTP sections, 12 criteria, 8 risks, {links} local links, {len(rows)} evidence hashes and recorded build/component identity.')
-print('Recorded baseline: 17 passed/3 failures (T03/T04/T05). Integrity PASS is not product acceptance.')
-print('Additional reports: extended components 19/0; sensor captures 18/1; live inputs 1/2. Separate instrumented images verified; three independent open findings.')
 
-print("Complete live campaign: 19 passed/2 T03 failures; 20 cycles, encoder, reset, contact and recovery records verified.")
 
 extra_root=ROOT/'evidence/runs/inputs'
 extra_cases=ET.parse(extra_root/'pytest.xml').findall('.//testcase')
@@ -119,7 +115,6 @@ assert len(debounce_components['scenarios'])==3
 assert all(x['actual_mode']==x['expected_mode'] for x in debounce_components['scenarios'].values())
 assert hashlib.sha256((ROOT/'src/main.cpp').read_bytes()).hexdigest()==debounce_components['source_sha256']
 assert hashlib.sha256((ROOT/'scripts/run_debounce_components.py').read_bytes()).hexdigest()==debounce_components['orchestrator_sha256']
-print('Additional debounce-boundary and settled-fault/reset controls: 4 passed; total live campaign 23 passed/2 T03 failures.')
 
 from source_identity import verify
 verify()
@@ -136,3 +131,6 @@ matrix=(ROOT/"test-matrix.md").read_text(encoding="utf-8")
 assert "| ID | Priority |" in matrix
 assert len(re.findall(r"^\| TT-\d{2} \| P[01] \|",matrix,re.M))==13
 assert {p.name for p in (ROOT/"bug-reports").glob("*.md")}=={"BUG-T03.md","BUG-T04.md","BUG-T05.md"}
+
+print(f'PASS: project structure, {links} links and recorded evidence are consistent.')
+print('Known bugs remain open: T03, T04 and T05.')

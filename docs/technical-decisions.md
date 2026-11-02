@@ -1,19 +1,15 @@
-# Three Technical Decisions
+# Test Design Decisions
 
-## 1. Defer encoder construction until setup
+## Initialize the encoder in setup
 
-The global Encoder constructor installed interrupts before the scheduler was ready. A function-static instance in `setup()` removes that blocker. Captured reboot and GPIO encoder boundary/reversal checks pass. The tradeoff is a small integration adaptation; upstream source remains available.
+The global Encoder constructor installed interrupts before the scheduler was ready. Moving construction into `setup()` removed that startup problem without changing temperature control. Reboot and encoder boundary/reversal tests pass. [Results](../evidence/runs/campaign/README.md).
 
-Interview point: clean boot alone is insufficient; input regression must pass. [Evidence](../evidence/runs/campaign/README.md).
+## Check both hysteresis histories
 
-## 2. Test hysteresis with state history
+At 20/25 C limits, 19→22→25→22 should produce ON→ON→OFF→OFF. The same 22 C must keep ON after a cold reading and OFF after a warm reading. Testing both histories caught the state dependency; twenty cycles then checked repeatability. [Results](../evidence/runs/campaign/README.md).
 
-At 20/25 C thresholds, 19→22→25→22 must produce ON→ON→OFF→OFF. The same 22 C has two correct outputs depending on history. Exact boundaries and 20 cycles produced 80 correct states and 40 request edges. This is short repetition coverage, not lifetime endurance.
+## Inject faults at the sensor connection
 
-Interview point: stateful behavior needs both histories, equality cases and transition counts. [Evidence](../evidence/runs/campaign/README.md).
+Disconnect the DHT data line while keeping its pull-up. This exercises the sensor-error path without assigning a fake product temperature or relay state. Separate test images log GPIO and display events.
 
-## 3. Separate stimulus, measurement and policy
-
-Disconnect DHT data while retaining its pull-up. Separate identified variants provide GPIO/frame observations. Device clocks support response timing; host receipt times and post-Serial mode logs have different meanings. Exact debounce boundaries use a controlled component clock.
-
-The invalid reading and false-zero display share T03's root cause. Critical risk remains open despite passing controls, so release is NO-GO. Simulation establishes modeled contacts, not real heater safety. [Fault](../bug-reports/BUG-T03.md) · [Timing](../evidence/bugs/input-feedback/README.md).
+Use device clocks for response timing. Mode logs written after Serial output cannot establish the exact debounce boundary, so that boundary is checked with a controlled component clock. [Sensor fault](../bug-reports/BUG-T03.md) · [Input/timing results](../evidence/bugs/input-feedback/README.md).

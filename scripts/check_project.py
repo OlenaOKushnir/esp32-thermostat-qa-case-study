@@ -2,7 +2,7 @@
 from pathlib import Path
 import argparse,json,tomllib,hashlib
 parser=argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--refresh-inventory',action='store_true',help='Explicitly regenerate the source inventory after reviewed package edits')
+parser.add_argument('--refresh-inventory',action='store_true',help='Update the source inventory after intentional project changes')
 args=parser.parse_args()
 r=Path(__file__).resolve().parents[1]
 d=json.loads((r/'diagram.json').read_text(encoding='utf-8'))
@@ -32,6 +32,6 @@ inventory=r/'evidence/support/source-hashes.json'
 if args.refresh_inventory:
  inventory.write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
 else:
- assert json.loads(inventory.read_text(encoding='utf-8'))==manifest,'Package inventory changed; review edits, then explicitly use --refresh-inventory'
-print('PASS: config, diagram connections, pin mapping, original logic preserved.')
-print('Static checks only. Build and manual runtime results are recorded in docs/validation.md.')
+ assert json.loads(inventory.read_text(encoding='utf-8'))==manifest,'Project files changed; check the edits and run --refresh-inventory to update the inventory'
+print('PASS: wiring, configuration and source checks.')
+print('Build and runtime results: docs/validation.md')

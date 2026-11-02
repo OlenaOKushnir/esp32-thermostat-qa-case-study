@@ -15,10 +15,10 @@ All planned simulation tests have been executed. The matrix links each test to i
 | TT-09 | P1 | T05; RTH-08 | System/UI; consistency | Compare TFT temperature/mode/thresholds with actual input and Serial; normal/edit/fault states | FAIL: T03 false-zero fault display; T05 completed matching mode frame after 1024 device ms on instrumented variant versus proposed 500 ms. Orientation fixed; [device input evidence](evidence/bugs/input-feedback/README.md) |
 | TT-10 | P1 | T07; RTH-01 | System; reset/recovery | Restart while ON/OFF/SET LOWER/SET UPPER; verify defaults and safe boot. Persistence policy first clarified | PASS: warm reset from ON/OFF/SET LOWER/SET UPPER restores defaults and configured GPIO LOW. [live campaign](evidence/runs/campaign/README.md) |
 | TT-11 | P0 | T08; RTH-10 | Interface/hardware; polarity/protocol | Capture GPIO5 and inspect relay COM/NO/NC for LOW/HIGH, boot, fault | PASS for settled simulated GPIO/contact polarity; boot/fault levels recorded. Pre-initialization GPIO and physical load safety are separate limitations. [live campaign](evidence/runs/campaign/README.md) |
-| TT-12 | P1 | T01/T02/T06; RTH-07/09 | Host; recorded-evidence regression | Run tests/test_recorded_evidence.py on saved logs + source/binary manifest | 17 passed/3 failed when checking recorded evidence. |
+| TT-12 | P1 | T01/T02/T06; RTH-07/09 | Host; recorded-evidence regression | Run offline Pytest checks against saved logs and build records | 54 passed/4 failed assertions about T03/T04/T05. [Offline report](evidence/support/offline.xml) |
 | TT-13 | P1 | T03/T04/T05; RTH-04/05/06/08/12 | Component; boundary/negative | Clamp/gap, input and feedback controls; exact 199/200/201 ms decision boundary | 25 controls PASS; T04/T05 FAIL; three clock controls PASS. [Fresh results](evidence/components/current/README.md) |
 
-Risk references T01–T08 abbreviate RISK-Txx. Requirements and exact oracles: [Acceptance Criteria](acceptance-criteria.md). No protocol CLI suite from the previous IoT project applies here: this firmware has no PING/STATUS/RESET command API.
+T01–T08 are risk suffixes. Expected results are defined in [Acceptance Criteria](acceptance-criteria.md).
 
 
 ## Priority and execution

@@ -1,8 +1,8 @@
 # Embedded QA Case Study — ESP32 Thermostat
 
-Risk-based QA of an ESP32/DHT22 thermostat with an ILI9341 display, KY-040 encoder and relay in **Wokwi for VS Code**. Defaults: VIEW, lower 20 C, upper 25 C. This is a simulated real-device design; no physical board or heater was tested.
+An ESP32 thermostat tested in **Wokwi for VS Code**, with a DHT22 sensor, ILI9341 display, KY-040 encoder and relay. Defaults: VIEW, lower 20 C, upper 25 C. Testing was done in simulation; physical hardware was not tested.
 
-**Release: NO-GO.** Three open bugs concern sensor-fault heating, release bounce and delayed mode feedback. The live campaign has **25 cases: 23 passed, 2 T03 failures, no errors or skips**. Separate live input tests reproduce T04/T05. [Conclusion](qa-conclusion.md) · [Release Decision](release-decision.md).
+**Status: NO-GO.** Three bugs remain: heating after sensor failure, release bounce and slow mode feedback. See the [conclusion](qa-conclusion.md) and [release decision](release-decision.md).
 
 ## Enable and run
 
@@ -42,7 +42,7 @@ Set **19 → 22 → 25 → 22 C**, waiting for each reading. Expected: **ON → 
 
 ## Python checks
 
-Use Python 3.11+ with one consistent interpreter:
+Use Python 3.11+ from the project root:
 
 ```powershell
 python -m venv .venv
@@ -55,9 +55,9 @@ python -m venv .venv
 | Check | Result / purpose |
 |---|---|
 | Default `pytest` | All offline checks: 54 passed / 4 known-bug assertions |
-| Integrity scripts | Exit 0: wiring, source correspondence, links, hashes and report consistency |
+| Integrity scripts | Check wiring, source files, links, hashes and recorded reports |
 
-Offline tests are grouped under `tests/`; live Wokwi tests are under `validation/tests/`. The default command runs all offline checks. Offline tests evaluate saved evidence. They do not control Wokwi or validate a later fix. Preserve failed captures and record fresh evidence after behavior changes.
+`pytest` checks saved results in `tests/`; four assertions fail on the known bugs. Live Wokwi tests are in `validation/tests/`. After changing firmware behavior, record a new run.
 
 For live Wokwi tests and component checks, see the [test guide](docs/validation.md).
 
