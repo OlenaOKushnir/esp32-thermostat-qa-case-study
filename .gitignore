@@ -43,4 +43,4 @@ __pycache__/
 *.vcd
 .env
 .venv/
-runs/
+/runs/

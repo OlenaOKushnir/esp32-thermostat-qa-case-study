@@ -1,20 +1,25 @@
-# Evidence Package
+# Evidence
 
-[Manifest](../evidence-manifest.csv) records sizes/SHA-256; [source inventory](source-hashes.json) covers maintained project files. Raw Serial and input events are preserved. Captured source snapshots retain the exact source/debug identities of supplied images; cleaned working sources are checked separately.
+Start with the three bugs and the full test run:
 
-| Evidence | Purpose / result |
+| What to check | Evidence |
 |---|---|
-| [Main build identity](tested-build.json), [variant identities](validation-builds.json) | Source/config/firmware provenance |
-| [Earlier hysteresis](hysteresis-runtime.log), [earlier sensor fault](sensor-failure-runtime.log) | Evidence from preceding thermostat practice; host-time limitations apply |
-| [Main-image fault](live-2026-11-01/README.md) | T03 after reboot |
-| [Extended components](extended-components/README.md) | Boundary/zero/recovery controls; 19 offline assertions PASS |
-| [Device input/timing](device-inputs-2026-11-01-run3/README.md) | Clean hold PASS; bounce FAIL; completed frame 1024 ms versus proposed 500 ms FAIL |
-| [DHT model inputs](sensor-live-2026-11-01/README.md), [recovery](sensor-recovery-2026-11-01/README.md) | Exact boundaries, zero and dynamic fault/reconnect histories |
-| [Full campaign](campaign-live-2026-11-01/README.md) | 19 passed/2 T03 failures; 20 cycles, 80 states, 40 edges, max response 1890 device ms |
-| [Short pulses/fault reset](campaign-debounce-2026-11-01/README.md) | Four passing electrical/state controls; combined live campaign 23 passed/2 failures |
-| [Cleaned-source builds/regression](component-current/README.md) | Four builds with identical loadable sections; 27 component outcomes unchanged |
-| [Combined offline JUnit](combined-offline.xml) | 54 passed/4 assertions failing on the same three known bugs |
+| T03: failed sensor requests heat | [Sensor-fault capture](bugs/sensor-fault/README.md) |
+| T04: release bounce advances twice | [Input test results and raw log](bugs/input-feedback/README.md) |
+| T05: mode feedback takes 1024 ms | [The same input/timing run](bugs/input-feedback/README.md) |
+| Control, limits, reset and recovery | [Full campaign](runs/campaign/README.md), [short-pulse/fault-reset follow-up](runs/inputs/README.md) |
 
-Commands are in the [README](../README.md). Offline replay, fresh live input and component-clock execution are different test levels. Repeated T03 assertions do not create new bugs. Integrity PASS does not override product failures.
+## Folder guide
 
-Record fixture, initial state, stimulus, device/host time basis, expected/actual and source/binary identity for every new run. Host receipt time cannot establish device latency. No physical heater or approved industrial SLA is claimed.
+- **bugs/** — direct evidence for the three bug reports.
+- **runs/** — campaign, sensor-boundary and recovery records. Each sensor run keeps its cases together in `cases.json`.
+- **components/** — controlled-clock tests and cleaned-source build checks.
+- **support/** — build identities, captured sources, earlier-practice logs and the combined offline report.
+
+## Results
+
+The live campaign and follow-up total **23 passed / 2 failed**; both failures reproduce T03. The separate input run has **1 passed / 2 failed**, reproducing T04/T05. [Offline assertions](support/offline.xml): **54 passed / 4 failed**, including two checks of T03. Several assertions check the same bug.
+
+Each run includes Serial logs, input events, results and build details. [File hashes](../evidence-manifest.csv) verify the recorded files. Host timestamps are receipt times; device timing and component clocks are identified separately. Simulation does not validate a physical heater.
+
+[Run instructions](../README.md) · [Test Matrix](../test-matrix.md) · [Release Decision](../release-decision.md)

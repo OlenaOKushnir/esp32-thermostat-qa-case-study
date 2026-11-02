@@ -11,7 +11,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('fixture', choices=['normal', 'fault'])
     args = parser.parse_args()
-    manifest = json.loads((ROOT / 'evidence/tested-build.json').read_text())
+    manifest = json.loads((ROOT / 'evidence/support/tested-build.json').read_text())
     paths = {'normal': 'diagram.normal.json', 'fault': 'diagram.sensor-fault.json'}
     expected = {
         'normal': manifest['files']['diagram.json']['sha256'],

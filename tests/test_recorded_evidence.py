@@ -6,7 +6,7 @@ import re
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = json.loads((ROOT / 'evidence/tested-build.json').read_text(encoding='utf-8'))
+MANIFEST = json.loads((ROOT / 'evidence/support/tested-build.json').read_text(encoding='utf-8'))
 
 def fault_log():
     return (ROOT / MANIFEST['runtime_evidence']).read_text(encoding='utf-8-sig')
@@ -37,7 +37,7 @@ def test_recorded_reboot_has_no_previous_interrupt_errors():
 
 def test_recorded_hysteresis_output_transition_order():
     """TT-03 partial evidence: manual input changes are described separately."""
-    text = (ROOT / 'evidence/hysteresis-runtime.log').read_text(encoding='utf-8-sig')
+    text = (ROOT / 'evidence/support/previous-hysteresis.log').read_text(encoding='utf-8-sig')
     transitions = re.findall(r'RX (Relay (?:Activated|Deactivated)\.)', text)
     assert transitions == ['Relay Activated.', 'Relay Deactivated.']
 
@@ -53,6 +53,6 @@ def test_sensor_failure_must_not_request_heating():
     after_error = reboot.split(error, 1)[1]
     assert 'Relay Activated.' not in after_error, (
         'BUG-T03 / RTH-07: heating was requested after a missing-sensor read; '
-        'see evidence/live-2026-11-01/live-serial.log. This is recorded evidence, '
+        'see evidence/bugs/sensor-fault/live-serial.log. This is recorded evidence, '
         'not a new live test execution.'
     )

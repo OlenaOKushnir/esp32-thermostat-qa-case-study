@@ -26,7 +26,7 @@ for row in rows:
     data=(ROOT/row['path']).read_bytes()
     assert len(data)==int(row['bytes']),row['path']
     assert hashlib.sha256(data).hexdigest()==row['sha256'],row['path']
-manifest=json.loads((ROOT/'evidence/tested-build.json').read_text(encoding='utf-8'))
+manifest=json.loads((ROOT/'evidence/support/tested-build.json').read_text(encoding='utf-8'))
 for name,identity in manifest['files'].items():
     p=ROOT/name
     assert p.is_file(),f'Missing recorded build artifact: {name}; see README'
@@ -36,43 +36,43 @@ for name,identity in manifest['auxiliary_artifacts'].items():
     data=(ROOT/name).read_bytes()
     assert len(data)==identity['bytes'] and hashlib.sha256(data).hexdigest()==identity['sha256'],name
 expected={'test_sensor_failure_must_not_request_heating','test_long_press_release_bounce_must_not_advance_mode_twice','test_display_mode_must_meet_proposed_feedback_budget'}
-fresh=ET.parse(ROOT/'evidence/live-2026-11-01/pytest-current.xml').findall('.//testcase')
+fresh=ET.parse(ROOT/'evidence/bugs/sensor-fault/pytest-current.xml').findall('.//testcase')
 assert len(fresh)==20
 assert {c.get('name') for c in fresh if c.find('failure') is not None}==expected
 assert not any(c.find('error') is not None or c.find('skipped') is not None for c in fresh)
 raw=(ROOT/manifest['runtime_evidence']).read_text(encoding='utf-8')
 reboot=raw.split('rst:0x1 (POWERON_RESET)',1)[1]
 assert reboot.index('Failed to read from DHT sensor!')<reboot.index('Relay Activated.')
-component=json.loads((ROOT/'evidence/extended-components/results.json').read_text(encoding='utf-8'))
-assert hashlib.sha256((ROOT/'evidence/sources/main.cpp').read_bytes()).hexdigest()==component['source_sha256']
+component=json.loads((ROOT/'evidence/components/baseline/results.json').read_text(encoding='utf-8'))
+assert hashlib.sha256((ROOT/'evidence/support/sources/main.cpp').read_bytes()).hexdigest()==component['source_sha256']
 assert hashlib.sha256((ROOT/'scripts/run_negative_harness.py').read_bytes()).hexdigest()==component['harness_sha256']
 assert hashlib.sha256((ROOT/'tests/component/hardware_doubles.c').read_bytes()).hexdigest()==component['doubles_sha256']
 assert len(component['scenarios'])==27
 for relative,counts,failure_names in [
- ('evidence/extended-components/pytest.xml',19,set()),
- ('evidence/sensor-recovery-2026-11-01/pytest.xml',19,{'test_disconnect_from_off_must_not_start_heating'}),
- ('evidence/device-inputs-2026-11-01-run3/pytest.xml',3,{'test_release_bounce_is_one_action','test_mode_feedback_meets_proposed_500ms'}),
- ('evidence/combined-offline.xml',58,{'test_disconnect_from_off_must_not_start_heating',
+ ('evidence/components/baseline/pytest.xml',19,set()),
+ ('evidence/runs/recovery/pytest.xml',19,{'test_disconnect_from_off_must_not_start_heating'}),
+ ('evidence/bugs/input-feedback/pytest.xml',3,{'test_release_bounce_is_one_action','test_mode_feedback_meets_proposed_500ms'}),
+ ('evidence/support/offline.xml',58,{'test_disconnect_from_off_must_not_start_heating',
     'test_sensor_failure_must_not_request_heating','test_long_press_release_bounce_must_not_advance_mode_twice',
     'test_display_mode_must_meet_proposed_feedback_budget'})]:
     records=ET.parse(ROOT/relative).findall('.//testcase')
     assert len(records)==counts,relative
     assert {c.get('name') for c in records if c.find('failure') is not None}==failure_names,relative
     assert not any(c.find('error') is not None or c.find('skipped') is not None for c in records),relative
-for relative in ['evidence/device-inputs-2026-11-01-run3/identity.json','evidence/sensor-live-2026-11-01/identity.json']:
+for relative in ['evidence/bugs/input-feedback/identity.json','evidence/runs/sensor/identity.json']:
     record=json.loads((ROOT/relative).read_text())
     for name,expected_identity in record['files'].items():
         data=(ROOT/name).read_bytes()
         assert len(data)==expected_identity['bytes'] and hashlib.sha256(data).hexdigest()==expected_identity['sha256'],name
-extended=json.loads((ROOT/'evidence/extended-components/results.json').read_text())
+extended=json.loads((ROOT/'evidence/components/baseline/results.json').read_text())
 assert len(extended['scenarios'])==27
 assert hashlib.sha256((ROOT/'scripts/run_component_checks.py').read_bytes()).hexdigest()==extended['orchestrator_sha256']
 assert hashlib.sha256((ROOT/'scripts/component_extra_cases.py').read_bytes()).hexdigest()==extended['extra_scenarios_sha256']
-validation_builds=json.loads((ROOT/'evidence/validation-builds.json').read_text())
+validation_builds=json.loads((ROOT/'evidence/support/validation-builds.json').read_text())
 for relative,identity in validation_builds['files'].items():
     data=(ROOT/relative).read_bytes()
     assert len(data)==identity['bytes'] and hashlib.sha256(data).hexdigest()==identity['sha256'],relative
-campaign_root=ROOT/'evidence/campaign-live-2026-11-01'
+campaign_root=ROOT/'evidence/runs/campaign'
 campaign_cases=ET.parse(campaign_root/'pytest.xml').findall('.//testcase')
 assert len(campaign_cases)==21
 assert not any(c.find('error') is not None or c.find('skipped') is not None for c in campaign_cases)
@@ -100,7 +100,7 @@ print('Additional reports: extended components 19/0; sensor captures 18/1; live 
 
 print("Complete live campaign: 19 passed/2 T03 failures; 20 cycles, encoder, reset, contact and recovery records verified.")
 
-extra_root=ROOT/'evidence/campaign-debounce-2026-11-01'
+extra_root=ROOT/'evidence/runs/inputs'
 extra_cases=ET.parse(extra_root/'pytest.xml').findall('.//testcase')
 assert len(extra_cases)==4 and not any(c.find(tag) is not None for c in extra_cases for tag in ['failure','error','skipped'])
 for relative,identity in json.loads((extra_root/'identity.json').read_text())['files'].items():
@@ -114,7 +114,7 @@ for period in [199,200,201]:
     assert len(record['actual_within_group_intervals_ms'])==8
     assert all(period<=gap<=period+15 for gap in record['actual_within_group_intervals_ms'])
 assert 'settled_fault_contacts_and_reset' in extra_observations
-debounce_components=json.loads((ROOT/'evidence/component-current/debounce.json').read_text())
+debounce_components=json.loads((ROOT/'evidence/components/current/debounce.json').read_text())
 assert len(debounce_components['scenarios'])==3
 assert all(x['actual_mode']==x['expected_mode'] for x in debounce_components['scenarios'].values())
 assert hashlib.sha256((ROOT/'src/main.cpp').read_bytes()).hexdigest()==debounce_components['source_sha256']
@@ -123,12 +123,12 @@ print('Additional debounce-boundary and settled-fault/reset controls: 4 passed; 
 
 from source_identity import verify
 verify()
-fresh_components=json.loads((ROOT/'evidence/component-current/results.json').read_text())
+fresh_components=json.loads((ROOT/'evidence/components/current/results.json').read_text())
 assert fresh_components['scenarios']==extended['scenarios']
 assert hashlib.sha256((ROOT/'src/main.cpp').read_bytes()).hexdigest()==fresh_components['source_sha256']
 
 from compare_images import section_hashes
-for build in json.loads((ROOT/"evidence/component-current/builds.json").read_text())["images"]:
+for build in json.loads((ROOT/"evidence/components/current/builds.json").read_text())["images"]:
     assert section_hashes(ROOT/build["captured_elf"])==build["loadable_sections"]
     assert hashlib.sha256((ROOT/build["working_source"]).read_bytes()).hexdigest()==build["source_sha256"]
 

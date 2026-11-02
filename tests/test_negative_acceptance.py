@@ -3,11 +3,11 @@ from pathlib import Path
 import hashlib,json
 import pytest
 ROOT=Path(__file__).resolve().parents[1]
-REPORT=json.loads((ROOT/'evidence/extended-components/results.json').read_text(encoding='utf-8'))
+REPORT=json.loads((ROOT/'evidence/components/baseline/results.json').read_text(encoding='utf-8'))
 CASES=REPORT['scenarios']
 
 def test_component_evidence_matches_current_firmware():
-    assert hashlib.sha256((ROOT/'evidence/sources/main.cpp').read_bytes()).hexdigest()==REPORT['source_sha256']
+    assert hashlib.sha256((ROOT/'evidence/support/sources/main.cpp').read_bytes()).hexdigest()==REPORT['source_sha256']
     assert hashlib.sha256((ROOT/'scripts/run_negative_harness.py').read_bytes()).hexdigest()==REPORT['harness_sha256']
     assert hashlib.sha256((ROOT/'tests/component/hardware_doubles.c').read_bytes()).hexdigest()==REPORT['doubles_sha256']
 

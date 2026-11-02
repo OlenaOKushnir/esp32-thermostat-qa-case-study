@@ -1,8 +1,8 @@
 # Complete acceptance campaign
 
-This separate ESP32 image preserves production functions and adds GPIO stimulus and measurements. Main firmware is unchanged. The final adapter build succeeded in VS Code on 2026-11-01 in 14.33 seconds.
+This test image adds GPIO stimulus and measurements while preserving the thermostat control functions.
 
-**Execution status: COMPLETE.** 19 passed/2 failures, no errors or skips. Both failures reproduce T03. [Raw evidence and verdicts](../../evidence/campaign-live-2026-11-01/README.md).
+**Execution status: COMPLETE.** 19 passed/2 failures, no errors or skips. Both failures reproduce T03. [Raw evidence and verdicts](../../evidence/runs/campaign/README.md).
 
 ## Run
 
@@ -12,7 +12,7 @@ This separate ESP32 image preserves production functions and adds GPIO stimulus 
 
 ```powershell
 python -m pip install -r requirements-test.txt -r requirements-live.txt
-python -m pytest campaign_tests -v -s --campaign-output runs/campaign-001 --junitxml runs/campaign-001.xml
+python -m pytest validation/tests/campaign -v -s --campaign-output runs/campaign-001 --junitxml runs/campaign-001.xml
 ```
 
 Use a new output directory each time. The client saves raw Serial, commands, observations and source/config/binary hashes. Default transport: `rfc2217://localhost:4003`. A timeout or incomplete capture is an execution blocker, not a product verdict.
@@ -27,6 +27,6 @@ GPIO36 independently observes GPIO5. Grounded COM and pulled-up GPIO34/35 observ
 
 Fault injection suppresses DHT responses, unlike the normal fixture's data switch. Retain fixture identity and source differences with eventual results. Policy/timing criteria remain proposed case-study oracles.
 
-[Instrumentation difference](instrumentation.diff) · [Live suite](../../campaign_tests/test_acceptance_campaign.py) · [Existing evidence](../../evidence/README.md)
+[Instrumentation difference](instrumentation.diff) · [Live suite](../tests/campaign/test_acceptance_campaign.py) · [Existing evidence](../../evidence/README.md)
 
-[Debounce-boundary/fault-contact follow-up](../../evidence/campaign-debounce-2026-11-01/README.md): 4 passed; requested 199/200/201 ms short-pulse trains and settled fault/reset contacts executed. Combined live campaign: 25 cases, 23 passed/2 T03 failures, no errors or skips.
+[Debounce-boundary/fault-contact follow-up](../../evidence/runs/inputs/README.md): 4 passed; requested 199/200/201 ms short-pulse trains and settled fault/reset contacts executed. Combined live campaign: 25 cases, 23 passed/2 T03 failures, no errors or skips.

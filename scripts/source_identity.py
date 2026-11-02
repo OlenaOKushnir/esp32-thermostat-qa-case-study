@@ -21,7 +21,7 @@ def clean(source):
     return re.sub(r'\n\s*\n(?:\s*\n)+','\n\n','\n'.join(result)).strip()+'\n'
 
 def captured(relative='src/main.cpp'):
-    return ROOT/'evidence/sources'/SOURCES[relative]
+    return ROOT/'evidence/support/sources'/SOURCES[relative]
 
 def verify():
     for relative in SOURCES:

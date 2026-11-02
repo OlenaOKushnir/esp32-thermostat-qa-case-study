@@ -1,0 +1,46 @@
+{
+  "files": {
+    "evidence/support/sources/campaign.cpp": {
+      "bytes": 13976,
+      "sha256": "b4790e0107c263051fd6fc3edbf3ae95348f7c3e44c7fec0a68039c0f267a732"
+    },
+    "validation/campaign/platformio.ini": {
+      "bytes": 171,
+      "sha256": "3e049391331848e4245db6d4064fe455b4cb1b63a7e08a2e375213e20d37a93a"
+    },
+    "validation/campaign/wokwi.toml": {
+      "bytes": 137,
+      "sha256": "a42a465fe18b7cca7a94ebd4abd2a2d2093a87aa0a07f29bef8345339545c74f"
+    },
+    "validation/campaign/diagram.json": {
+      "bytes": 3613,
+      "sha256": "787ead45e61449f2f04d58058539d13c65672b1da9b11f2c67757ae3b328e39f"
+    },
+    "evidence/support/sources/campaign.diff": {
+      "bytes": 7599,
+      "sha256": "c16355808c52feba3ae75ec3d7f5a29f7dc11e72d6fa8b6e6cf63708647388e6"
+    },
+    "validation/campaign/.pio/build/campaign/firmware.bin": {
+      "bytes": 323280,
+      "sha256": "5aada6508c506446d693dcd4b3c03b5c1b39b052d4146b59dd76acf74e26012f"
+    },
+    "validation/campaign/.pio/build/campaign/firmware.elf": {
+      "bytes": 7020704,
+      "sha256": "4838007b4eb41af36187a2cc6db214ffcf859bccdaf5e87308acf8d3ff2d44da"
+    },
+    "scripts/campaign_client.py": {
+      "bytes": 4317,
+      "sha256": "2c867255b479bac7b90a7bb1820812c42e01172fa02fec16abe080b8244fc669"
+    },
+    "evidence/support/sources/test_debounce_boundaries.py": {
+      "bytes": 3172,
+      "sha256": "2c17b1988f6894366a801523ddedf828a50fefdb391c1ba87a614a4e3e2818f2"
+    },
+    "evidence/support/sources/campaign_conftest.py": {
+      "bytes": 1128,
+      "sha256": "48438e267a2a625f60f657d6f6016fcb0c056633f0c9ed069400aeeebaa3b4ba"
+    }
+  },
+  "level": "ESP32 GPIO-wire campaign variant",
+  "source_note": "Captured source snapshots are retained; working sources remove inactive code/comments. scripts/source_identity.py verifies the exact cleanup."
+}

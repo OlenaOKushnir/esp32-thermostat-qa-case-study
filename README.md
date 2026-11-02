@@ -9,7 +9,7 @@ Risk-based QA of an ESP32/DHT22 thermostat with an ILI9341 display, KY-040 encod
 1. Extract/open **thermostat-vscode** in VS Code—the folder containing `platformio.ini` and `wokwi.toml`.
 2. Install/enable **PlatformIO IDE** and **Wokwi Simulator** from workspace recommendations. Wait for initialization.
 3. Use **F1 → Wokwi: Request a new License** and complete activation with your Wokwi account. [Activation guide](https://docs.wokwi.com/vscode/getting-started).
-4. Select root `wokwi.toml` with **F1 → Wokwi: Select Config File**, then **Wokwi: Start Simulator**. Identified firmware is included; no board upload/COM port is needed.
+4. Select root `wokwi.toml` with **F1 → Wokwi: Select Config File**, then **Wokwi: Start Simulator**. Firmware is included. No physical board or COM port is needed.
 5. Wait for the thermostat screen and normal 24 C reading; inspect the Wokwi Terminal. Stop/close the simulator before changing fixtures.
 
 After source edits, save, build successfully and reopen Wokwi. Simulation executes the selected binary, not the source file directly.
@@ -24,7 +24,7 @@ PowerShell fallback from the project root:
 & "$env:USERPROFILE\.platformio\penv\Scripts\platformio.exe" run -e esp32dev
 ```
 
-The first build may download the pinned toolchain; application libraries are vendored. If `pio` is unrecognized, use the full path or PlatformIO's terminal. Ctrl+Alt+B may have competing bindings. Custom installations should use PlatformIO Project Tasks.
+The first build may download the pinned toolchain; library sources are included in `lib/`. If `pio` is unrecognized, use the full path or PlatformIO's terminal. Ctrl+Alt+B may have competing bindings. Custom installations should use PlatformIO Project Tasks.
 
 ## Controls and smoke test
 
@@ -54,33 +54,12 @@ python -m venv .venv
 
 | Check | Result / purpose |
 |---|---|
-| Default `pytest` | 17 passed / 3 ordinary T03/T04/T05 acceptance failures |
-| `pytest tests component_checks sensor_checks` | 54 passed / 4 failures; T03 has startup and dynamic assertions |
+| Default `pytest` | All offline checks: 54 passed / 4 known-bug assertions |
 | Integrity scripts | Exit 0: wiring, source correspondence, links, hashes and report consistency |
 
-Offline tests evaluate saved evidence. They do not control Wokwi or validate a later fix. Preserve failed captures and record fresh evidence after behavior changes.
+Offline tests are grouped under `tests/`; live Wokwi tests are under `validation/tests/`. The default command runs all offline checks. Offline tests evaluate saved evidence. They do not control Wokwi or validate a later fix. Preserve failed captures and record fresh evidence after behavior changes.
 
-## Live tests
-
-Install both requirements, start the intended configuration and use a **new output directory** for each run. Keep the simulator tab visible and desktop available.
-
-| Configuration / port | Command / procedure |
-|---|---|
-| Root / 4000 | `python scripts/capture_serial.py --output runs/new-main/serial.log --seconds 60`; restart after connection to capture boot |
-| `validation/device/wokwi.toml` / 4001 | `python -m pytest live_tests -v -s --run-dir runs/new-input`; after LIVE CAPTURE CONNECTED, restart. Baseline: 1 passed/2 T04/T05 failures |
-| `validation/sensor/wokwi.toml` / 4002 | Manual DHT/switch inputs with sample observer; [procedure](validation/sensor/README.md) |
-| `validation/campaign/wokwi.toml` / 4003 | Wait for QA_READY and valid 24 C, then `python -m pytest campaign_tests -v -s --campaign-output runs/new-campaign --junitxml runs/new-campaign.xml` |
-
-The campaign covers encoder limits, deliberate/rapid inputs, reset, 20 cycles, contacts, fault/recovery, display fields and short-pulse follow-up. Baseline: 23 passed/2 T03 failures. [Fixture and limits](validation/campaign/README.md). Stop/close validation and reselect root `wokwi.toml` for normal use.
-
-Optional component execution requires a local TinyCC x64 installation:
-
-```powershell
-python scripts/run_component_checks.py --extended --tcc-root C:\Tools\tcc --output runs/new-components/results.json
-python scripts/run_debounce_components.py --tcc-root C:\Tools\tcc --output runs/new-debounce/results.json
-```
-
-The 27-scenario run has 25 passing controls/two known findings; three exact 199/200/201 ms checks pass. Component clocks do not measure ESP32/TFT timing.
+For live Wokwi tests and component checks, see the [test guide](docs/validation.md).
 
 ## Troubleshooting
 
@@ -94,12 +73,11 @@ The 27-scenario run has 25 passing controls/two known findings; three exact 199/
 | Fault remains after restoration | Stop/close Wokwi, restore normal fixture and start again |
 | Hash changes after rebuilding | Record a new identity/run; do not relabel old captures |
 
-## Deliverables and provenance
+## Project documents
 
 [Master Test Plan](master-test-plan.md) · [Acceptance Criteria](acceptance-criteria.md) · [Risk Matrix](risk-matrix.md) · [Test Matrix](test-matrix.md) · [Evidence](evidence/README.md) · [Technical Decisions](docs/technical-decisions.md) · [Assignment Checklist](docs/submission-checklist.md).
 
 Three reports: [T03 sensor fault](bug-reports/BUG-T03.md), [T04 release bounce](bug-reports/BUG-T04.md), [T05 stale feedback](bug-reports/BUG-T05.md).
 
-Working sources remove inactive code/comments. Exact captured sources remain in `evidence/sources/`; `source_identity.py` verifies the cleanup. All four cleaned builds have byte-identical loadable sections. Supplied baseline binaries/ELFs preserve captured identities. [Source and attribution](docs/source-and-changes.md).
+Source attribution, dependencies and build details are documented in [Source and attribution](docs/source-and-changes.md).
 
-Create/upload the GitHub repository yourself. Preserve hidden configuration and allowed firmware artifacts; omit caches and local `runs/`. The assignment's literal physical-device requirement needs hardware evidence beyond this simulation scope.

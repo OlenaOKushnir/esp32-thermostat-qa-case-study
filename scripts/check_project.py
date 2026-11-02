@@ -28,7 +28,7 @@ assert 'platformio.platformio-ide' in recommendations and 'wokwi.wokwi-vscode' i
 for p in sorted(r.rglob('*')):
  if p.is_file() and p.relative_to(r).as_posix() not in generated_editor_files and not any(x in p.relative_to(r).parts for x in ['.pio','__pycache__','.pytest_cache','.git','.venv','runs']) and 'evidence' not in p.relative_to(r).parts:
   manifest[p.relative_to(r).as_posix()]=hashlib.sha256(p.read_bytes()).hexdigest()
-inventory=r/'evidence/source-hashes.json'
+inventory=r/'evidence/support/source-hashes.json'
 if args.refresh_inventory:
  inventory.write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
 else:
