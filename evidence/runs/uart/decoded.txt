@@ -1,0 +1,12 @@
+UART_TX: 115200 baud, 8N1; seconds from simulation start; boot before 1 s excluded.
+3.581534149  Failed to read from DHT sensor!
+3.584398549  Relay Activated.
+4.562078945  Failed to read from DHT sensor!
+5.580534151  Failed to read from DHT sensor!
+6.562080277  Failed to read from DHT sensor!
+7.580534150  Failed to read from DHT sensor!
+
+HEAT_REQUEST (GPIO5):
+0.000000000  1
+0.512426521  0
+3.581639333  1

@@ -41,6 +41,7 @@ validation/campaign/.pio/build/campaign/*
 __pycache__/
 .pytest_cache/
 *.vcd
+!evidence/runs/uart/*.vcd
 .env
 .venv/
 /runs/

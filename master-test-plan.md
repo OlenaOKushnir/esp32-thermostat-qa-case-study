@@ -1,4 +1,4 @@
-# Master Test Plan — ESP32 Thermostat
+# Master Test Plan â€” ESP32 Thermostat
 
 Owner: Olena | Release recommendation: **NO-GO**
 
@@ -23,7 +23,7 @@ The test circuit includes a switch in the sensor data line. Additional test imag
 
 ## 3. Quality Objectives
 
-Check correct temperature control, valid setpoint limits, reliable input handling, clear display feedback and recovery after faults or resets. A sensor failure must not create a new heat request. [Acceptance Criteria](acceptance-criteria.md) defines the expected results, including the proposed 5 s control/recovery and 500 ms feedback limits.
+Check correct temperature control, valid setpoint limits, reliable input handling, clear display feedback and recovery after faults or resets. A sensor failure must not create a new heat request. [Acceptance Criteria](requirements.md) defines the expected results, including the proposed 5 s control/recovery and 500 ms feedback limits.
 
 ## 4. Scope
 
@@ -59,7 +59,7 @@ Functional, boundary, negative, state-transition, input repetition, fault inject
 
 VS Code, Wokwi 4.1.0, PlatformIO IDE 3.3.4 and espressif32 7.1.3. Python tests use Pytest and pyserial. Library versions are in [dependencies](docs/dependencies.json); build details are in the [evidence records](evidence/README.md).
 
-RFC2217 runs at 115200 baud: port 4000 for the main image, 4001 for input tests, 4002 for sensor observation and 4003 for the full campaign. Wiring and commands for test images are in the [test guide](docs/validation.md).
+RFC2217 runs at 115200 baud: port 4000 for the main image, 4001 for input tests, 4002 for sensor observation and 4003 for the full campaign. Wiring and commands for test images are in the [test guide](automation/README.md).
 
 ## 11. Entry Criteria
 
@@ -95,7 +95,7 @@ Save new results after fixes and keep the original failure evidence.
 
 ## 14. Evidence Strategy
 
-Keep Serial logs, input events, expected/actual results and build details for each run. Use device timestamps for timing checks. The [evidence index](evidence/README.md) links each bug and test run; file hashes check that recorded files have not changed.
+Keep Serial logs, the [UART waveform](evidence/runs/uart/README.md), input events, expected/actual results and build details for each run. Use device timestamps for timing checks. The [evidence index](evidence/README.md) links each bug and test run; file hashes check that recorded files have not changed.
 
 ## 15. Defect Management
 
@@ -107,4 +107,4 @@ The three bugs, pre-setup GPIO behavior and differences between simulation and h
 
 ## 17. Release Recommendation
 
-**NO-GO.** Sensor failure can create a heat request, and input/UI failures remain. Fix the bugs and rerun regression before reconsidering release. [Release Decision](release-decision.md) · [QA Conclusion](qa-conclusion.md).
+**NO-GO.** Sensor failure can create a heat request, and input/UI failures remain. Fix the bugs and rerun regression before reconsidering release. [Release Decision](release-decision.md) Â· [QA Conclusion](qa-conclusion.md).

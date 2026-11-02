@@ -3,18 +3,19 @@ from pathlib import Path
 import csv,hashlib,json,re
 import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
-required=['README.md','master-test-plan.md','acceptance-criteria.md','risk-matrix.md',
+required=['README.md','master-test-plan.md','requirements.md','risk-matrix.md',
           'test-matrix.md','release-decision.md','qa-conclusion.md','requirements-test.txt',
-          'pytest.ini','tests/test_recorded_evidence.py','evidence/README.md']
+          'pytest.ini','automation/test_recorded_evidence.py','evidence/README.md','automation/README.md','resume/README.md',
+          'evidence/runs/uart/sensor-fault.vcd','automation/decode_uart.py']
 for name in required: assert (ROOT/name).is_file(),name
 mtp=(ROOT/'master-test-plan.md').read_text(encoding='utf-8-sig')
 assert re.findall(r'^## (\d+)\.',mtp,re.M)==[str(i) for i in range(1,18)]
 for i in range(1,13):
-    assert f'RTH-{i:02}' in (ROOT/'acceptance-criteria.md').read_text(encoding='utf-8-sig')
+    assert f'RTH-{i:02}' in (ROOT/'requirements.md').read_text(encoding='utf-8-sig')
 for i in range(1,9):
     assert f'RISK-T{i:02}' in (ROOT/'risk-matrix.md').read_text(encoding='utf-8-sig')
 links=0
-files=[*ROOT.glob('*.md'),*ROOT.glob('docs/*.md'),*ROOT.glob('bug-reports/*.md'),*ROOT.glob('evidence/**/*.md'),*ROOT.glob('validation/**/*.md')]
+files=[*ROOT.glob('*.md'),*ROOT.glob('docs/*.md'),*ROOT.glob('automation/*.md'),*ROOT.glob('resume/*.md'),*ROOT.glob('bug-reports/*.md'),*ROOT.glob('evidence/**/*.md'),*ROOT.glob('validation/**/*.md')]
 for p in files:
     for target in re.findall(r'\]\(([^)]+)\)',p.read_text(encoding='utf-8-sig')):
         if '://' in target or target.startswith('#'):continue

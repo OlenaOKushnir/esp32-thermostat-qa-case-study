@@ -1,4 +1,4 @@
-# Test Runs
+# Automation and Test Runs
 
 | Execution | Result | Evidence |
 |---|---|---|
@@ -11,6 +11,10 @@
 | Cleaned sources | Four successful builds, identical loadable sections; 27 component values unchanged; three clock checks PASS | [Correspondence](../evidence/components/current/README.md) |
 
 All planned simulation categories have executed results. T03/T04/T05 remain open. See the [evidence index](../evidence/README.md) for logs and supporting records.
+
+## Offline checks
+
+Run `python -m pytest -q` from the project root. It checks the recorded evidence: 54 passed, four assertions fail on the three known bugs. [Example](test_recorded_evidence.py): the sensor-fault assertion requires no heat request after a failed read. These checks replay saved results; they do not control Wokwi.
 
 ## Run live and component tests
 
@@ -36,3 +40,11 @@ python scripts/run_debounce_components.py --tcc-root C:\Tools\tcc --output runs/
 
 The 27-scenario run has 25 passing controls/two known findings; three exact 199/200/201 ms checks pass. Component clocks do not measure ESP32/TFT timing.
 
+
+## UART trace
+
+[Captured waveform and procedure](../evidence/runs/uart/README.md). Decode the application UART and GPIO5 edges with:
+
+```powershell
+python automation/decode_uart.py evidence/runs/uart/sensor-fault.vcd
+```

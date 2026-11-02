@@ -1,4 +1,4 @@
-# Acceptance Criteria — Thermostat
+# Requirements and Acceptance Criteria — Thermostat
 
 Acceptance criteria for the ESP32 thermostat simulation.
 

@@ -34,4 +34,4 @@ if args.refresh_inventory:
 else:
  assert json.loads(inventory.read_text(encoding='utf-8'))==manifest,'Project files changed; check the edits and run --refresh-inventory to update the inventory'
 print('PASS: wiring, configuration and source checks.')
-print('Build and runtime results: docs/validation.md')
+print('Build and runtime results: automation/README.md')

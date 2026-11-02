@@ -18,7 +18,7 @@ All planned simulation tests have been executed. The matrix links each test to i
 | TT-12 | P1 | T01/T02/T06; RTH-07/09 | Host; recorded-evidence regression | Run offline Pytest checks against saved logs and build records | 54 passed/4 failed assertions about T03/T04/T05. [Offline report](evidence/support/offline.xml) |
 | TT-13 | P1 | T03/T04/T05; RTH-04/05/06/08/12 | Component; boundary/negative | Clamp/gap, input and feedback controls; exact 199/200/201 ms decision boundary | 25 controls PASS; T04/T05 FAIL; three clock controls PASS. [Fresh results](evidence/components/current/README.md) |
 
-T01–T08 are risk suffixes. Expected results are defined in [Acceptance Criteria](acceptance-criteria.md).
+T01–T08 are risk suffixes. Expected results are defined in [Acceptance Criteria](requirements.md).
 
 
 ## Priority and execution
