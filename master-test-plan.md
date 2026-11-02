@@ -1,4 +1,4 @@
-# Master Test Plan â€” ESP32 Thermostat
+# Master Test Plan - ESP32 Thermostat
 
 Owner: Olena | Release recommendation: **NO-GO**
 
@@ -107,4 +107,4 @@ The three bugs, pre-setup GPIO behavior and differences between simulation and h
 
 ## 17. Release Recommendation
 
-**NO-GO.** Sensor failure can create a heat request, and input/UI failures remain. Fix the bugs and rerun regression before reconsidering release. [Release Decision](release-decision.md) Â· [QA Conclusion](qa-conclusion.md).
+**NO-GO.** Sensor failure can create a heat request, and input/UI failures remain. Fix the bugs and rerun regression before reconsidering release. [Release Decision](release-decision.md) / [QA Conclusion](qa-conclusion.md).

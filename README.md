@@ -12,7 +12,7 @@ Component checks isolate logic and clock boundaries; Wokwi tests exercise GPIO a
 
 ## Enable and run
 
-1. Extract/open **thermostat-vscode** in VS Codeâ€”the folder containing `platformio.ini` and `wokwi.toml`.
+1. Extract/open **thermostat-vscode** in VS Code - the folder containing `platformio.ini` and `wokwi.toml`.
 2. Install/enable **PlatformIO IDE** and **Wokwi Simulator** from workspace recommendations. Wait for initialization.
 3. Use **F1 â†’ Wokwi: Request a new License** and complete activation with your Wokwi account. [Activation guide](https://docs.wokwi.com/vscode/getting-started).
 4. Select root `wokwi.toml` with **F1 â†’ Wokwi: Select Config File**, then **Wokwi: Start Simulator**. Firmware is included. No physical board or COM port is needed.
@@ -85,7 +85,7 @@ For live Wokwi tests and component checks, see the [test guide](automation/READM
 
 ## Project documents
 
-[Master Test Plan](master-test-plan.md) Â· [Requirements and Acceptance Criteria](requirements.md) Â· [Risk Matrix](risk-matrix.md) Â· [Test Matrix](test-matrix.md) Â· [Evidence](evidence/README.md) Â· [Technical Decisions](docs/technical-decisions.md) Â· [Assignment Checklist](docs/submission-checklist.md).
+[Master Test Plan](master-test-plan.md) / [Requirements and Acceptance Criteria](requirements.md) / [Risk Matrix](risk-matrix.md) / [Test Matrix](test-matrix.md) / [Evidence](evidence/README.md) / [Technical Decisions](docs/technical-decisions.md) / [Assignment Checklist](docs/submission-checklist.md).
 
 Three reports: [T03 sensor fault](bug-reports/BUG-T03.md), [T04 release bounce](bug-reports/BUG-T04.md), [T05 stale feedback](bug-reports/BUG-T05.md).
 
